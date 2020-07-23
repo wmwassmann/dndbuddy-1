@@ -58,6 +58,18 @@
     width: 420px;
 }
 
+.containerCenterRight {
+    position: absolute;
+    right: 280px;
+    height: 280px;
+    width: 530px;
+}
+
+.centerRightGrid {
+    height: 280px;
+    width: 530px;
+}
+
 
 
 /* To resize for smaller screens */
@@ -89,6 +101,19 @@
 
     .centerLeftGrid {
         height: 280px;
+        width: 200px;
+    }
+
+    .containerCenterRight {
+        top: 450px;
+        position: absolute;
+        left: 85px;
+        height: 150px;
+        width: 200px;
+    }
+
+    .centerRightGrid {
+        height: 150px;
         width: 200px;
     }
 
