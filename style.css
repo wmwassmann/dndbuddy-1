@@ -1,0 +1,71 @@
+.topRow {
+    justify-content: center;
+}
+
+.topStat {
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.topName {
+}
+
+
+.containerLeft {
+    position: absolute;
+    left: 0;
+
+}
+
+.containerRight {
+    position: absolute;
+    right: 0;
+}
+
+.statDiv {
+    height: 800px;
+    width: 150px;
+    text-align: center;
+    margin-left: 126px;
+}
+
+.statDivRight {
+    height: 800px;
+    width: 150px;
+    text-align: center;
+    margin-right: 126px;
+}
+
+.sideStat {
+    padding-top: 40%;
+
+}
+
+.rightStats {
+}
+
+
+
+/* To resize for smaller screens */
+@media only screen and (max-width: 768px) {
+
+    .topName {
+    }
+
+    .statDiv {
+        width: 80px;
+        margin-left: 0;
+    }
+
+    .statDivRight {
+        width: 80px;
+        margin-right: 0;
+    }
+    
+    .sideStat {
+        padding-top: 80%;
+    }
+
+}

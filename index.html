@@ -8,28 +8,80 @@
 
     <!-- Foundation CSS -->
     <link rel="stylesheet" href="css/foundation.css" />
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="style.css" />
 
-    <!-- Foundation compressed JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
-        integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-    <div class="row">
+    <div class="grid-x topRow">
         <!-- HP Div -->
-        <div class="medium-2 columns" style="background:green">
-            2
+        <div class="medium-2 small-4 cell topStat" style="background:green;" id="hitPointsID">
+            <h2>Hitpoints</h2>
         </div>
         <!-- Name/Class Div -->
-        <div class="medium-8 columns" style="background:blue">
-            8
+        <div class="medium-6 small-4 cell topStat topName" style="background:blue;" id="nameID">
+            <h2>Name/class etc will go here</h2>
         </div>
         <!-- AC Div -->
-        <div class="medium-2 columns" style="background:black">
-            2
+        <div class="medium-2 small-4 cell topStat" style="background:purple;" id="armorID">
+            <h2>Armor Class</h2>
         </div>
     </div>
+    <br>
+
+    <!-- Left side stats -->
+<div class="containerLeft">
+    <div class="grid-y statDiv" >
+
+        <!-- Str -->
+        <div class="medium-2 small-2 cell sideStat" style="background:gray;" id="strDiv">
+            Str
+        </div>
+        <!-- Dex -->
+        <div class="medium-2 small-2 cell sideStat" style="background: hotpink;" id="dexDiv">
+            Dex
+        </div>
+
+        <!-- Con -->
+        <div class="medium-2 small-2 cell sideStat" style="background: indigo;" id="conDiv">
+            Con
+        </div>
+
+
+    </div>
+<!-- End container -->
+</div>
+
+    <!-- Middle section here -->
+
+
+
+
+    <!-- Right stats -->
+<div class="containerRight">
+    <div class="grid-y statDivRight" >
+
+        <!-- Str -->
+        <div class="medium-2 small-2 cell sideStat" style="background:gray;" id="strDiv">
+            Int
+        </div>
+        <!-- Dex -->
+        <div class="medium-2 small-2 cell sideStat" style="background: hotpink;" id="dexDiv">
+            Wis
+        </div>
+
+        <!-- Con -->
+        <div class="medium-2 small-2 cell sideStat" style="background: indigo;" id="conDiv">
+            Cha
+        </div>
+
+
+    </div>
+</div>
+
+
 
     <!-- Foundation JS -->
     <script src="js/vendor/jquery.js"></script>
