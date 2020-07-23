@@ -70,6 +70,20 @@
     width: 530px;
 }
 
+.containerDice {
+    position: absolute;
+    bottom: 115px;
+    left: 286px;
+    height: 150px;
+    width: 950px;
+
+}
+.diceGrid {
+    height: 150px;
+    width: 950px;
+
+}
+
 
 
 /* To resize for smaller screens */
@@ -115,6 +129,20 @@
     .centerRightGrid {
         height: 150px;
         width: 200px;
+    }
+
+    .containerDice {
+        position: absolute;
+        bottom: -150px;
+        left: 0;
+        height: 180px;
+        width: 375px;
+    
+    }
+    .diceGrid {
+        height: 180px;
+        width: 375px;
+    
     }
 
 }
