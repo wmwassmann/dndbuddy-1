@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Buddy</title>
+
+    <!-- Foundation CSS -->
+    <link rel="stylesheet" href="css/foundation.css" />
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+
+</head>
+
+<body>
+    <div class="grid-x topRow">
+        <!-- HP Div -->
+        <div class="medium-2 small-4 cell topStat" style="background:green;" id="hitPointsID">
+            <h2>Hitpoints</h2>
+        </div>
+        <!-- Name/Class Div -->
+        <div class="medium-6 small-4 cell topStat topName" style="background:blue;" id="nameID">
+            <h2>Name/class etc will go here</h2>
+        </div>
+        <!-- AC Div -->
+        <div class="medium-2 small-4 cell topStat" style="background:purple;" id="armorID">
+            <h2>Armor Class</h2>
+        </div>
+    </div>
+    <br>
+
+    <!-- Left side stats -->
+<div class="containerLeft">
+    <div class="grid-y statDiv" >
+
+        <!-- Str -->
+        <div class="medium-2 small-2 cell sideStat" style="background:gray;" id="strDiv">
+            Str
+        </div>
+        <!-- Dex -->
+        <div class="medium-2 small-2 cell sideStat" style="background: hotpink;" id="dexDiv">
+            Dex
+        </div>
+
+        <!-- Con -->
+        <div class="medium-2 small-2 cell sideStat" style="background: indigo;" id="conDiv">
+            Con
+        </div>
+
+
+    </div>
+<!-- End container -->
+</div>
+
+    <!-- Middle section here -->
+<!-- Middle left-->
+<div class="containerCenterLeft">
+    <div class="grid-y centerLeftGrid">
+        <div class="medium-6 small-6 cell centerBio" style="background: gray;">A short biography maybe</div>
+        <div class="medium-6 small-6 cell centerBio" style="background: gray;">Placeholder</div>
+    
+    
+    </div>
+</div>
+
+<!-- Middle right-->
+<div class="containerCenterRight">
+    <div class="grid-y centerRightGrid">
+        <div class="medium-12 small-12 cell centerBioRight" style="background: gray;">A picture/video maybe</div>    
+    
+    </div>
+</div>
+
+<!-- Dice roller -->
+<div class="containerDice">
+    <div class="grid-x diceGrid">
+        <div class="medium-12 small-12" style="background: red;">
+            Dice rolls go here
+        </div>
+    </div>
+    <!-- End Diceroller container -->
+</div>
+
+    
+    <!-- Right stats -->
+<div class="containerRight">
+    <div class="grid-y statDivRight" >
+
+        <!-- Str -->
+        <div class="medium-2 small-2 cell sideStat" style="background:gray;" id="intDiv">
+            Int
+        </div>
+        <!-- Dex -->
+        <div class="medium-2 small-2 cell sideStat" style="background: hotpink;" id="wisDiv">
+            Wis
+        </div>
+
+        <!-- Con -->
+        <div class="medium-2 small-2 cell sideStat" style="background: indigo;" id="chaDiv">
+            Cha
+        </div>
+
+
+    </div>
+<!-- End right container -->
+</div>
+
+
+
+    <!-- Foundation JS -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+</body>
+
+</html>
