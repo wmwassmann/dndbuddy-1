@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Magical Name Button</title>
+  <link rel= "stylesheet" href = "https://cdn.rawgit.com/fponticelli/dicefont/fc6b8c47/dist/dicefont/dicefont.css">
+  <link rel= "stylesheet" href = "dicestyle.css">
+</head>
+
+<body>
+    <div id="diceDiv">
+        <i id = "diceHealth" class = "df-d8-8"></i>
+        <i id = "diceDexterity" class = "df-d20-3"></i>
+        <i id = "diceStrength" class = "df-d20-13"></i>
+        <i id = "diceConstitution" class = "df-d20-9"></i>
+        <button id="roll-button">Roll</button>
+    </div>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+  var diceSound = new Audio (src = "dicesound.mp3");
+    
+    $("#roll-button").on("click", function() {
+
+        
+        // This section is to give the illusion of the dice rolling
+        setTimeout(function() { 
+        diceSound.play();
+        $("#diceHealth").removeClass("df-d8-8").removeClass("df-d8-7").removeClass("df-d8-6").removeClass("df-d8-5").removeClass("df-d8-4").removeClass("df-d8-3").removeClass("df-d8-2").removeClass("df-d8-1");
+        $("#diceHealth").addClass("df-d8-5");
+
+        $("#diceDexterity").removeClass("df-d20-20").removeClass("df-d20-19").removeClass("df-d20-18").removeClass("df-d20-17").removeClass("df-d20-16").removeClass("df-d20-15").removeClass("df-d20-14").removeClass("df-d20-13").removeClass("df-d20-12").removeClass("df-d20-11").removeClass("df-d20-10").removeClass("df-d20-9").removeClass("df-d20-8").removeClass("df-d20-7").removeClass("df-d20-6").removeClass("df-d20-5").removeClass("df-d20-4").removeClass("df-d20-3").removeClass("df-d20-2").removeClass("df-d20-1");
+        $("#diceDexterity").addClass("df-d20-14");
+      
+        $("#diceStrength").removeClass("df-d20-20").removeClass("df-d20-19").removeClass("df-d20-18").removeClass("df-d20-17").removeClass("df-d20-16").removeClass("df-d20-15").removeClass("df-d20-14").removeClass("df-d20-13").removeClass("df-d20-12").removeClass("df-d20-11").removeClass("df-d20-10").removeClass("df-d20-9").removeClass("df-d20-8").removeClass("df-d20-7").removeClass("df-d20-6").removeClass("df-d20-5").removeClass("df-d20-4").removeClass("df-d20-3").removeClass("df-d20-2").removeClass("df-d20-1");
+        $("#diceStrength").addClass("df-d20-19");
+
+        $("#diceConstitution").removeClass("df-d20-20").removeClass("df-d20-19").removeClass("df-d20-18").removeClass("df-d20-17").removeClass("df-d20-16").removeClass("df-d20-15").removeClass("df-d20-14").removeClass("df-d20-13").removeClass("df-d20-12").removeClass("df-d20-11").removeClass("df-d20-10").removeClass("df-d20-9").removeClass("df-d20-8").removeClass("df-d20-7").removeClass("df-d20-6").removeClass("df-d20-5").removeClass("df-d20-4").removeClass("df-d20-3").removeClass("df-d20-2").removeClass("df-d20-1");
+        $("#diceConstitution").addClass("df-d20-1");
+        },250);
+
+        setTimeout(function() {
+        $("#diceHealth").removeClass("df-d8-8").removeClass("df-d8-7").removeClass("df-d8-6").removeClass("df-d8-5").removeClass("df-d8-4").removeClass("df-d8-3").removeClass("df-d8-2").removeClass("df-d8-1");
+        $("#diceHealth").addClass("df-d8-4"); 
+      
+        $("#diceDexterity").removeClass("df-d20-20").removeClass("df-d20-19").removeClass("df-d20-18").removeClass("df-d20-17").removeClass("df-d20-16").removeClass("df-d20-15").removeClass("df-d20-14").removeClass("df-d20-13").removeClass("df-d20-12").removeClass("df-d20-11").removeClass("df-d20-10").removeClass("df-d20-9").removeClass("df-d20-8").removeClass("df-d20-7").removeClass("df-d20-6").removeClass("df-d20-5").removeClass("df-d20-4").removeClass("df-d20-3").removeClass("df-d20-2").removeClass("df-d20-1");
+        $("#diceDexterity").addClass("df-d20-12");
+      
+        $("#diceStrength").removeClass("df-d20-20").removeClass("df-d20-19").removeClass("df-d20-18").removeClass("df-d20-17").removeClass("df-d20-16").removeClass("df-d20-15").removeClass("df-d20-14").removeClass("df-d20-13").removeClass("df-d20-12").removeClass("df-d20-11").removeClass("df-d20-10").removeClass("df-d20-9").removeClass("df-d20-8").removeClass("df-d20-7").removeClass("df-d20-6").removeClass("df-d20-5").removeClass("df-d20-4").removeClass("df-d20-3").removeClass("df-d20-2").removeClass("df-d20-1");
+        $("#diceStrength").addClass("df-d20-6");
+
+        $("#diceConstitution").removeClass("df-d20-20").removeClass("df-d20-19").removeClass("df-d20-18").removeClass("df-d20-17").removeClass("df-d20-16").removeClass("df-d20-15").removeClass("df-d20-14").removeClass("df-d20-13").removeClass("df-d20-12").removeClass("df-d20-11").removeClass("df-d20-10").removeClass("df-d20-9").removeClass("df-d20-8").removeClass("df-d20-7").removeClass("df-d20-6").removeClass("df-d20-5").removeClass("df-d20-4").removeClass("df-d20-3").removeClass("df-d20-2").removeClass("df-d20-1");
+        $("#diceConstitution").addClass("df-d20-11");
+        },325);
+
+        setTimeout(function() {
+        $("#diceHealth").removeClass("df-d8-8").removeClass("df-d8-7").removeClass("df-d8-6").removeClass("df-d8-5").removeClass("df-d8-4").removeClass("df-d8-3").removeClass("df-d8-2").removeClass("df-d8-1");
+        $("#diceHealth").addClass("df-d8-8");
+      
+        $("#diceDexterity").removeClass("df-d20-20").removeClass("df-d20-19").removeClass("df-d20-18").removeClass("df-d20-17").removeClass("df-d20-16").removeClass("df-d20-15").removeClass("df-d20-14").removeClass("df-d20-13").removeClass("df-d20-12").removeClass("df-d20-11").removeClass("df-d20-10").removeClass("df-d20-9").removeClass("df-d20-8").removeClass("df-d20-7").removeClass("df-d20-6").removeClass("df-d20-5").removeClass("df-d20-4").removeClass("df-d20-3").removeClass("df-d20-2").removeClass("df-d20-1");
+        $("#diceDexterity").addClass("df-d20-17");
+      
+        $("#diceStrength").removeClass("df-d20-20").removeClass("df-d20-19").removeClass("df-d20-18").removeClass("df-d20-17").removeClass("df-d20-16").removeClass("df-d20-15").removeClass("df-d20-14").removeClass("df-d20-13").removeClass("df-d20-12").removeClass("df-d20-11").removeClass("df-d20-10").removeClass("df-d20-9").removeClass("df-d20-8").removeClass("df-d20-7").removeClass("df-d20-6").removeClass("df-d20-5").removeClass("df-d20-4").removeClass("df-d20-3").removeClass("df-d20-2").removeClass("df-d20-1");
+        $("#diceStrength").addClass("df-d20-9");
+
+        $("#diceConstitution").removeClass("df-d20-20").removeClass("df-d20-19").removeClass("df-d20-18").removeClass("df-d20-17").removeClass("df-d20-16").removeClass("df-d20-15").removeClass("df-d20-14").removeClass("df-d20-13").removeClass("df-d20-12").removeClass("df-d20-11").removeClass("df-d20-10").removeClass("df-d20-9").removeClass("df-d20-8").removeClass("df-d20-7").removeClass("df-d20-6").removeClass("df-d20-5").removeClass("df-d20-4").removeClass("df-d20-3").removeClass("df-d20-2").removeClass("df-d20-1");
+        $("#diceConstitution").addClass("df-d20-16");
+        },505);
+
+        setTimeout(function() {
+        $("#diceHealth").removeClass("df-d8-8").removeClass("df-d8-7").removeClass("df-d8-6").removeClass("df-d8-5").removeClass("df-d8-4").removeClass("df-d8-3").removeClass("df-d8-2").removeClass("df-d8-1");
+        $("#diceHealth").addClass("df-d8-7"); 
+      
+        $("#diceDexterity").removeClass("df-d20-20").removeClass("df-d20-19").removeClass("df-d20-18").removeClass("df-d20-17").removeClass("df-d20-16").removeClass("df-d20-15").removeClass("df-d20-14").removeClass("df-d20-13").removeClass("df-d20-12").removeClass("df-d20-11").removeClass("df-d20-10").removeClass("df-d20-9").removeClass("df-d20-8").removeClass("df-d20-7").removeClass("df-d20-6").removeClass("df-d20-5").removeClass("df-d20-4").removeClass("df-d20-3").removeClass("df-d20-2").removeClass("df-d20-1");
+        $("#diceDexterity").addClass("df-d20-14");
+      
+        $("#diceStrength").removeClass("df-d20-20").removeClass("df-d20-19").removeClass("df-d20-18").removeClass("df-d20-17").removeClass("df-d20-16").removeClass("df-d20-15").removeClass("df-d20-14").removeClass("df-d20-13").removeClass("df-d20-12").removeClass("df-d20-11").removeClass("df-d20-10").removeClass("df-d20-9").removeClass("df-d20-8").removeClass("df-d20-7").removeClass("df-d20-6").removeClass("df-d20-5").removeClass("df-d20-4").removeClass("df-d20-3").removeClass("df-d20-2").removeClass("df-d20-1");
+        $("#diceStrength").addClass("df-d20-19");
+
+        $("#diceConstitution").removeClass("df-d20-20").removeClass("df-d20-19").removeClass("df-d20-18").removeClass("df-d20-17").removeClass("df-d20-16").removeClass("df-d20-15").removeClass("df-d20-14").removeClass("df-d20-13").removeClass("df-d20-12").removeClass("df-d20-11").removeClass("df-d20-10").removeClass("df-d20-9").removeClass("df-d20-8").removeClass("df-d20-7").removeClass("df-d20-6").removeClass("df-d20-5").removeClass("df-d20-4").removeClass("df-d20-3").removeClass("df-d20-2").removeClass("df-d20-1");
+        $("#diceConstitution").addClass("df-d20-1");
+        }, 726);
+
+        setTimeout(function() {
+        $("#diceHealth").removeClass("df-d8-8").removeClass("df-d8-7").removeClass("df-d8-6").removeClass("df-d8-5").removeClass("df-d8-4").removeClass("df-d8-3").removeClass("df-d8-2").removeClass("df-d8-1");
+        $("#diceHealth").addClass("df-d8-2");
+      
+        $("#diceDexterity").removeClass("df-d20-20").removeClass("df-d20-19").removeClass("df-d20-18").removeClass("df-d20-17").removeClass("df-d20-16").removeClass("df-d20-15").removeClass("df-d20-14").removeClass("df-d20-13").removeClass("df-d20-12").removeClass("df-d20-11").removeClass("df-d20-10").removeClass("df-d20-9").removeClass("df-d20-8").removeClass("df-d20-7").removeClass("df-d20-6").removeClass("df-d20-5").removeClass("df-d20-4").removeClass("df-d20-3").removeClass("df-d20-2").removeClass("df-d20-1");
+        $("#diceDexterity").addClass("df-d20-2");
+      
+        $("#diceStrength").removeClass("df-d20-20").removeClass("df-d20-19").removeClass("df-d20-18").removeClass("df-d20-17").removeClass("df-d20-16").removeClass("df-d20-15").removeClass("df-d20-14").removeClass("df-d20-13").removeClass("df-d20-12").removeClass("df-d20-11").removeClass("df-d20-10").removeClass("df-d20-9").removeClass("df-d20-8").removeClass("df-d20-7").removeClass("df-d20-6").removeClass("df-d20-5").removeClass("df-d20-4").removeClass("df-d20-3").removeClass("df-d20-2").removeClass("df-d20-1");
+        $("#diceStrength").addClass("df-d20-4");
+
+        $("#diceConstitution").removeClass("df-d20-20").removeClass("df-d20-19").removeClass("df-d20-18").removeClass("df-d20-17").removeClass("df-d20-16").removeClass("df-d20-15").removeClass("df-d20-14").removeClass("df-d20-13").removeClass("df-d20-12").removeClass("df-d20-11").removeClass("df-d20-10").removeClass("df-d20-9").removeClass("df-d20-8").removeClass("df-d20-7").removeClass("df-d20-6").removeClass("df-d20-5").removeClass("df-d20-4").removeClass("df-d20-3").removeClass("df-d20-2").removeClass("df-d20-1");
+        $("#diceConstitution").addClass("df-d20-20");
+        }, 800);
+
+
+        // This section uses the Rolz API to determine dice roll result
+        setTimeout(function() {
+            var queryURLHealth = "https://rolz.org/api/?1d8.json";
+
+            $.ajax({
+            url: queryURLHealth,
+            method: "GET"
+            })
+
+            .then(function(response) {
+
+            console.log(response.result);
+          
+            var num = response.result;
+            var n = num.toString();
+
+            console.log(n);
+          
+            $("#diceHealth").removeClass("df-d8-2").addClass("df-d8-" + n);
+            });
+
+            var queryURLDexterity = "https://rolz.org/api/?1d20.json";
+
+            $.ajax({
+            url: queryURLDexterity,
+            method: "GET"
+            })
+
+            .then(function(response) {
+
+            var num = response.result;
+            var n = num.toString();
+
+            console.log(n);
+          
+            $("#diceDexterity").removeClass("df-d20-2").addClass("df-d20-" + n);
+            });
+          
+            var queryURLStrength = "https://rolz.org/api/?1d20.json";
+
+            $.ajax({
+            url: queryURLStrength,
+            method: "GET"
+            })
+
+            .then(function(response) {
+          
+            var num = response.result;
+            var n = num.toString();
+
+            console.log(n);
+          
+            $("#diceStrength").removeClass("df-d20-4").addClass("df-d20-" + n);
+            });
+
+            var queryURLConstitution = "https://rolz.org/api/?1d20.json";
+
+            $.ajax({
+            url: queryURLConstitution,
+            method: "GET"
+            })
+
+            .then(function(response) {
+          
+            var num = response.result;
+            var n = num.toString();
+
+            console.log(n);
+          
+            $("#diceConstitution").removeClass("df-d20-20").addClass("df-d20-" + n);
+            });
+          }, 950);
+
+    });
+  </script>
+</body>
+
+</html>

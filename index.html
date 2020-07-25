@@ -22,7 +22,7 @@
 			<!-- This is the first modal -->
 			<div class="reveal revealStyle" id="Modal1" data-reveal>
 				<h1>Welcome!</h1>
-				<p class="lead">Do you need a guidance for setting up your character</p>
+				<p class="lead">Do you need guidance in setting up your character?</p>
 				<button id="toModal2" class="button">
 					Yes
 				</button>
@@ -30,7 +30,7 @@
 					No
 				</button>
 				<button id="toRandom" class="button">
-					No, but please random a character for me
+					No, but please randomize a character for me
 				</button>
 				<button
 					class="close-button"
@@ -65,7 +65,10 @@
 					id="armorID"
 				>
 					<h2>Armor Class</h2>
-				</div>
+                </div>
+                <div class="helpButton">
+                    <a class="button tiny" href="#">Help Guide</a>
+                </div>
 			</div>
 			<br />
 
@@ -135,8 +138,13 @@
 			<!-- Dice roller -->
 			<div class="containerDice">
 				<div class="grid-x diceGrid">
-					<div class="medium-12 small-12" style="background: red;">
-						Dice rolls go here
+                    <div class="medium-12 small-12" style="background: red;">
+                        <i id = "dice4" class = "df-d4-4"></i>
+                        <i id = "dice6" class = "df-d6-6"></i>
+                        <i id = "dice8" class = "df-d8-8"></i>
+                        <i id = "dice10" class = "df-d10-10"></i>
+                        <i id = "dice12" class = "df-d12-12"></i>
+                        <i id = "dice20" class = "df-d20-20"></i>
 					</div>
 				</div>
 				<!-- End Diceroller container -->
@@ -183,18 +191,20 @@
 		<script>
 			$(document).foundation();
         </script>
+        <script src = "dice.js"></script>
                 <!--5e API-->
                 <script type="text/javascript">
                     var abilityURL = "https://www.dnd5eapi.co/api/ability-scores";
                     //GET to pull Charisma description from the API and throw the text into the "chaDiv" tag
                     var chaURL = "https://www.dnd5eapi.co/api/ability-scores/cha";
-                        
+                    $(".helpButton").on("click", function() { 
                         $.ajax ({
                             url: chaURL,
                             method: "GET"
                         }).then(function(chaRes) {
                             $(".chaDiv").html(chaRes.desc)
                         });
+                    });
             
                     var conURL = "https://www.dnd5eapi.co/api/ability-scores/con";
                     var dexURL = "https://www.dnd5eapi.co/api/ability-scores/dex";
