@@ -1,3 +1,9 @@
+.helpButton {
+    position: absolute; 
+    top: zero;
+    right: 0;
+}
+
 .topRow {
     justify-content: center;
 }
