@@ -1,0 +1,193 @@
+body {
+    background-image: url(northern_chimera-rotated.png);
+
+}
+
+.topRow {
+	justify-content: center;
+}
+
+.topStat {
+	height: 150px;
+	width: 150px;
+	text-align: center;
+	padding-top: 40px;
+}
+
+.topName {
+}
+
+.containerLeft {
+	position: absolute;
+	left: 0;
+}
+
+.containerRight {
+	position: absolute;
+	right: 0;
+}
+
+.statDiv {
+	height: 800px;
+	width: 150px;
+	text-align: center;
+	margin-left: 126px;
+}
+
+.statDivRight {
+	height: 800px;
+	width: 150px;
+	text-align: center;
+	margin-right: 126px;
+}
+
+.sideStat {
+	padding-top: 40%;
+}
+
+.rightStats {
+}
+
+.containerCenterLeft {
+	position: absolute;
+	left: 285px;
+	height: 280px;
+	width: 480px;
+}
+
+.centerLeftGrid {
+	height: 280px;
+	width: 420px;
+}
+
+.containerCenterRight {
+	position: absolute;
+	right: 280px;
+	height: 280px;
+	width: 530px;
+}
+
+.centerRightGrid {
+	height: 280px;
+	width: 530px;
+}
+
+.containerDice {
+    position: absolute;
+    bottom: 115px;
+    left: 286px;
+    height: 150px;
+    width: 950px;
+    
+
+}
+.diceGrid {
+    height: 150px;
+    width: 730px;
+    font-size: 80px;
+    text-align: center;
+    border:solid;
+     
+
+* {
+	box-sizing: border-box;
+}
+
+.reveal-overlay {
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+.revealStyle {
+	background-color: rgb(155, 155, 155);
+	font-family: 'Grenze Gotisch', cursive;
+	border-radius: 10px;
+	box-shadow: 0 0 0 0.2rem rgba(100, 100, 100, 0.5);
+}
+
+.revealStyle h1 {
+	font-family: 'Grenze Gotisch', cursive;
+}
+
+.lead {
+	font-size: 140% !important;
+}
+
+.button {
+	border-radius: 5px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+}
+
+#nameTitle {
+	font-size: 1.8rem;
+	font-family: 'Grenze Gotisch', cursive;
+}
+
+#nameResultCell {
+	padding-left: 0px;
+	padding-top: 3px;
+}
+
+#nameResult {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	font-family: 'Grenze Gotisch', cursive;
+}
+
+/* To resize for smaller screens */
+@media only screen and (max-width: 768px) {
+	.topName {
+	}
+
+	.statDiv {
+		width: 80px;
+		margin-left: 0;
+	}
+
+	.statDivRight {
+		width: 80px;
+		margin-right: 0;
+	}
+
+	.sideStat {
+		padding-top: 80%;
+	}
+
+	.containerCenterLeft {
+		position: absolute;
+		left: 85px;
+		height: 280px;
+		width: 200px;
+	}
+
+	.centerLeftGrid {
+		height: 280px;
+		width: 200px;
+	}
+
+	.containerCenterRight {
+		top: 450px;
+		position: absolute;
+		left: 85px;
+		height: 150px;
+		width: 200px;
+	}
+
+	.centerRightGrid {
+		height: 150px;
+		width: 200px;
+	}
+
+	.containerDice {
+		position: absolute;
+		bottom: -150px;
+		left: 0;
+		height: 180px;
+		width: 375px;
+	}
+	.diceGrid {
+		height: 180px;
+		width: 375px;
+	}
+}
