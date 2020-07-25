@@ -67,10 +67,10 @@
 					id="armorID"
 				>
 					<h2>Armor Class</h2>
-                </div>
-                <div class="helpButton">
-                    <a class="button tiny" href="#">Help Guide</a>
-                </div>
+				<div class="helpButton">
+					<a class="button tiny" href="#">Help Guide</a>
+				</div>
+				</div>
 			</div>
 			<br />
 
@@ -193,49 +193,7 @@
 		<script>
 			$(document).foundation();
         </script>
-
-        <script src = "dice.js"></script>
-                <!--5e API-->
-                <script type="text/javascript">
-                    var abilityURL = "https://www.dnd5eapi.co/api/ability-scores";
-                    //GET to pull Charisma description from the API and throw the text into the "chaDiv" tag
-                    var chaURL = "https://www.dnd5eapi.co/api/ability-scores/cha";
-                    $(".helpButton").on("click", function() { 
-                        $.ajax ({
-                            url: chaURL,
-                            method: "GET"
-                        }).then(function(chaRes) {
-                            $(".chaDiv").html(chaRes.desc)
-                        });
-                    });
-            
-                    var conURL = "https://www.dnd5eapi.co/api/ability-scores/con";
-                    var dexURL = "https://www.dnd5eapi.co/api/ability-scores/dex";
-                    var intURL = "https://www.dnd5eapi.co/api/ability-scores/int";
-                    var wisURL = "https://www.dnd5eapi.co/api/ability-scores/wis";
-                    var strURL = "https://www.dnd5eapi.co/api/ability-scores/str";
-                    
-                    var skillsURL = "https://www.dnd5eapi.co/api/skills";
-                    var proURL = "https://www.dnd5eapi.co/api/proficiencies";
-                    var classesURL = "https://www.dnd5eapi.co/api/classes/ranger"
-                    
-                    console.log(abilityURL);
-                    console.log(chaURL);
-                    console.log(conURL);
-                    console.log(dexURL);
-                    console.log(intURL);
-                    console.log(wisURL);
-                    console.log(strURL);
-            
-            
-                    console.log(skillsURL);
-                    console.log(proURL);
-                    console.log(classesURL);
-            
-            
-            
-                </script>
-
-
+		<script src = "assets/javascript/dice.js"></script>
+		<script src = "assets/javascript/5e.js"></script>
 	</body>
 </html>

@@ -1,8 +1,10 @@
 .helpButton {
-    position: absolute; 
-    top: zero;
-    right: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+
 }
+
 body {
     background-image: url(northern_chimera-rotated.png);
 
