@@ -1,3 +1,8 @@
+body {
+    background-image: url(northern_chimera-rotated.png);
+
+}
+
 .topRow {
     justify-content: center;
 }
@@ -51,6 +56,7 @@
     left: 285px;
     height: 280px;
     width: 480px;
+    
 }
 
 .centerLeftGrid {
@@ -63,6 +69,7 @@
     right: 280px;
     height: 280px;
     width: 530px;
+    ;
 }
 
 .centerRightGrid {
@@ -76,11 +83,16 @@
     left: 286px;
     height: 150px;
     width: 950px;
+    
 
 }
 .diceGrid {
     height: 150px;
-    width: 950px;
+    width: 730px;
+    font-size: 80px;
+    text-align: center;
+    border:solid;
+     
 
 }
 
