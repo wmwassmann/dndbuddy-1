@@ -90,7 +90,7 @@ $(document).ready(function () {
 		// create a h1 for the div
 		var modal3h1 = $('<h1>');
 		// add text for the h1 tag
-		$(modal3h1).text('Step 2 : Choose a Races');
+		$(modal3h1).text('Step 2 : Select a race');
 		// append the modal1h1 to the div
 		$(modal3).append(modal3h1);
 
@@ -99,7 +99,7 @@ $(document).ready(function () {
 		// add class and ID for modal3
 		$(modal3p1).addClass('lead');
 		// add text for the h1 tag
-		$(modal3p1).text('Select one of the folloiing options');
+		$(modal3p1).text('Select one of the following options');
 		// append the modal1h1 to the div
 		$(modal3).append(modal3p1);
 
@@ -182,7 +182,7 @@ $(document).ready(function () {
 		// add class and ID for modal3
 		$(modal4p1).addClass('lead');
 		// add text for the h1 tag
-		$(modal4p1).text('Do you want to attack from up close or from a distance?');
+		$(modal4p1).text('Do you want to attack from up close, or from afar?');
 		// append the modal4h1 to the div
 		$(modal4).append(modal4p1);
 
