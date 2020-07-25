@@ -317,34 +317,34 @@ $(document).ready(function () {
 		playerSelection.push(weapon);
 		console.log(playerSelection);
 
-		if ((playerSelection[2] = 'Either')) {
+		if (playerSelection[2] === 'Either') {
 			var suggestion = 'Rogue';
 			playerSelection.push(suggestion);
 			console.log(playerSelection[4]);
 		} else if (
-			(playerSelection[2] = 'Far') &&
-			(playerSelection[3] = 'Weapons')
+			playerSelection[2] === 'Far' &&
+			playerSelection[3] === 'Weapons'
 		) {
 			suggestion = 'Ranger';
 			playerSelection.push(suggestion);
 			console.log(playerSelection[4]);
 		} else if (
-			(playerSelection[2] = 'Far') &&
-			(playerSelection[3] = 'Spells')
+			playerSelection[2] === 'Far' &&
+			playerSelection[3] === 'Spells'
 		) {
 			suggestion = 'Wizard';
 			playerSelection.push(suggestion);
 			console.log(playerSelection[4]);
 		} else if (
-			(playerSelection[2] = 'Close') &&
-			(playerSelection[3] = 'Weapons')
+			playerSelection[2] === 'Close' &&
+			playerSelection[3] === 'Weapons'
 		) {
 			suggestion = 'Fighter';
 			playerSelection.push(suggestion);
 			console.log(playerSelection[4]);
 		} else if (
-			(playerSelection[2] = 'Close') &&
-			(playerSelection[3] = 'Spells')
+			playerSelection[2] === 'Close' &&
+			playerSelection[3] === 'Spells'
 		) {
 			suggestion = 'Cleric ';
 			playerSelection.push(suggestion);
