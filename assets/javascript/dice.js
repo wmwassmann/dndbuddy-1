@@ -1,4 +1,4 @@
-var diceSound = new Audio (src = "dicesound.mp3");
+var diceSound = new Audio ("assets/javascript/dicesound.mp3");
             
 $("#dice4").on("click", function() {
 
