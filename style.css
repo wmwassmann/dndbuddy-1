@@ -13,7 +13,34 @@ body {
 	padding-top: 40px;
 }
 
-.topName {
+.topStatText {
+	position: relative;
+	height: 10px;
+	width: 100px;
+	margin: auto;
+	bottom: 180px;
+}
+
+#topStatImg {
+	position: relative;
+	height: 180px;
+	width: 180px;
+	margin: auto;
+	bottom: 55px;
+}
+
+#topBanner {
+	position: relative;
+	height: 160px;
+	width: 910px;
+	margin: auto;
+	bottom: 45px;
+}
+
+.topNameText {
+	position: relative;
+	margin: auto;
+	bottom: 150px;
 }
 
 .containerLeft {
@@ -83,7 +110,10 @@ body {
 	width: 730px;
 	font-size: 80px;
 	text-align: center;
-	border: solid;
+}
+
+.diceTray {
+	border:solid;
 }
 
 * {
@@ -178,13 +208,13 @@ body {
 
 	.containerDice {
 		position: absolute;
-		bottom: -150px;
+		bottom: 40px;
 		left: 0;
-		height: 180px;
+		height: 170px;
 		width: 375px;
 	}
 	.diceGrid {
-		height: 180px;
+		height: 170px;
 		width: 375px;
 	}
 }
