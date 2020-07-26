@@ -236,6 +236,26 @@ body {
 		width: 465px;
 	}
 
+	.centerBioText {
+		box-sizing: border-box;
+		max-width: inherit;
+		max-height: inherit;
+		position: relative;
+		bottom: 95px;
+		left: 25px;
+	
+	}
+
+	#centerBioImg {
+		height: 100px;
+		width: 465px;
+	}
+
+	#centerVidImg {
+		height: 190px;
+		width: 465px;
+	}
+
 	.containerDice {
 		position: absolute;
 		top: 580px;
@@ -320,6 +340,16 @@ body {
 	}
 
 	.centerRightGrid {
+		height: 150px;
+		width: 200px;
+	}
+
+	#centerBioImg {
+		height: 140px;
+		width: 465px;
+	}
+
+	#centerVidImg {
 		height: 150px;
 		width: 200px;
 	}
