@@ -100,13 +100,13 @@ body {
 
 .containerDice {
 	position: absolute;
-	bottom: 115px;
-	left: 286px;
+	bottom: 110px;
+	left: 380px;
 	height: 150px;
 	width: 950px;
 }
 .diceGrid {
-	height: 150px;
+	height: 100px;
 	width: 730px;
 	font-size: 80px;
 	text-align: center;
@@ -162,6 +162,47 @@ body {
 	font-family: 'Grenze Gotisch', cursive;
 }
 
+/* For tablets */
+@media only screen and (max-width: 1024px) {
+	.containerCenterLeft {
+		position: absolute;
+		left: 142px;
+		height: 140px;
+		width: 240px;
+	}
+	
+	.centerLeftGrid {
+		height: 140px;
+		width: 210px;
+	}
+	
+	.containerCenterRight {
+		position: absolute;
+		right: 140px;
+		height: 149px;
+		width: 265px;
+	}
+	
+	.centerRightGrid {
+		height: 140px;
+		width: 265px;
+	}
+
+	.containerDice {
+		position: absolute;
+		top: 580px;
+		left: 150px;
+		height: 150px;
+		width: 950px;
+	}
+	.diceGrid {
+		height: 100px;
+		width: 730px;
+		font-size: 80px;
+		text-align: center;
+	}
+}
+
 /* To resize for smaller screens */
 @media only screen and (max-width: 768px) {
 	.topName {
@@ -208,7 +249,47 @@ body {
 
 	.containerDice {
 		position: absolute;
-		bottom: 40px;
+		bottom: 35px;
+		left: 0;
+		height: 170px;
+		width: 375px;
+	}
+	.diceGrid {
+		height: 170px;
+		width: 375px;
+	}
+}
+
+/* For tiny screens like S5/Moto G4 */
+@media only screen and (max-width: 360px) {
+	.containerCenterLeft {
+		position: absolute;
+		left: 80px;
+		height: 280px;
+		width: 200px;
+	}
+
+	.centerLeftGrid {
+		height: 280px;
+		width: 200px;
+	}
+
+	.containerCenterRight {
+		top: 450px;
+		position: absolute;
+		left: 80px;
+		height: 150px;
+		width: 200px;
+	}
+
+	.centerRightGrid {
+		height: 150px;
+		width: 200px;
+	}
+
+	.containerDice {
+		position: absolute;
+		bottom: -140px;
 		left: 0;
 		height: 170px;
 		width: 375px;
