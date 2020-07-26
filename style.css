@@ -71,6 +71,31 @@ body {
 	padding-top: 40%;
 }
 
+.sideStatText {
+	position: relative;
+	height: 10px;
+	width: 100px;
+	margin: auto;
+	bottom: 115px;
+}
+
+#sideStatNumber {
+	position: relative;
+	height: 10px;
+	width: 100px;
+	margin: auto;
+	bottom: 20px;
+}
+
+
+#sideStatImg {
+	position: relative;
+	height: 133px;
+	width: 150px;
+	margin: auto;
+	bottom: 60px;
+}
+
 .rightStats {
 }
 
@@ -210,6 +235,31 @@ body {
 
 /* To resize for smaller screens */
 @media only screen and (max-width: 768px) {
+		
+	#sideStatImg {
+		position: relative;
+		height: 133px;
+		width: 150px;
+		margin: auto;
+		bottom: 65px;
+	}
+
+	.sideStatText {
+		position: relative;
+		height: 10px;
+		width: 80px;
+		margin: auto;
+		bottom: 115px;
+	}
+
+	#sideStatNumber {
+		position: relative;
+		height: 10px;
+		width: 80px;
+		margin: auto;
+		bottom: 15px;
+	}
+	
 	.topName {
 	}
 
@@ -267,6 +317,7 @@ body {
 
 /* For tiny screens like S5/Moto G4 */
 @media only screen and (max-width: 360px) {
+
 	.containerCenterLeft {
 		position: absolute;
 		left: 80px;
