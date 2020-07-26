@@ -13,7 +13,34 @@ body {
 	padding-top: 40px;
 }
 
-.topName {
+.topStatText {
+	position: relative;
+	height: 10px;
+	width: 100px;
+	margin: auto;
+	bottom: 180px;
+}
+
+#topStatImg {
+	position: relative;
+	height: 180px;
+	width: 180px;
+	margin: auto;
+	bottom: 55px;
+}
+
+#topBanner {
+	position: relative;
+	height: 160px;
+	width: 910px;
+	margin: auto;
+	bottom: 45px;
+}
+
+.topNameText {
+	position: relative;
+	margin: auto;
+	bottom: 150px;
 }
 
 .containerLeft {
@@ -44,7 +71,33 @@ body {
 	padding-top: 40%;
 }
 
+.sideStatText {
+	position: relative;
+	height: 10px;
+	width: 100px;
+	margin: auto;
+	bottom: 115px;
+}
+
+#sideStatNumber {
+	position: relative;
+	height: 10px;
+	width: 100px;
+	margin: auto;
+	bottom: 20px;
+}
+
+
+#sideStatImg {
+	position: relative;
+	height: 133px;
+	width: 150px;
+	margin: auto;
+	bottom: 60px;
+}
+
 .rightStats {
+
 }
 
 .containerCenterLeft {
@@ -71,19 +124,43 @@ body {
 	width: 530px;
 }
 
+#centerBioImg {
+	height: 140px;
+	width: 430px;
+}
+
+.centerBioText {
+	box-sizing: border-box;
+	max-width: inherit;
+	max-height: inherit;
+	position: relative;
+	bottom: 130px;
+	left: 25px;
+
+}
+
+#centerVidImg {
+	height: 280px;
+	width: 530px;
+}
+
+
 .containerDice {
 	position: absolute;
-	bottom: 115px;
-	left: 286px;
+	bottom: 110px;
+	left: 380px;
 	height: 150px;
 	width: 950px;
 }
 .diceGrid {
-	height: 150px;
+	height: 100px;
 	width: 730px;
 	font-size: 80px;
 	text-align: center;
-	border: solid;
+}
+
+.diceTray {
+	border:solid;
 }
 
 * {
@@ -132,8 +209,99 @@ body {
 	font-family: 'Grenze Gotisch', cursive;
 }
 
+/* For tablets */
+@media only screen and (max-width: 1024px) {
+	.containerCenterLeft {
+		position: absolute;
+		left: 280px;
+		height: 140px;
+		width: 465px;
+	}
+	
+	.centerLeftGrid {
+		height: 200px;
+		width: 465px;
+	}
+	
+	.containerCenterRight {
+		position: absolute;
+		top: 380px;
+		left: 280px;
+		height: 149px;
+		width: 465px;
+	}
+	
+	.centerRightGrid {
+		height: 190px;
+		width: 465px;
+	}
+
+	.centerBioText {
+		box-sizing: border-box;
+		max-width: inherit;
+		max-height: inherit;
+		position: relative;
+		bottom: 95px;
+		left: 25px;
+	
+	}
+
+	#centerBioImg {
+		height: 100px;
+		width: 465px;
+	}
+
+	#centerVidImg {
+		height: 190px;
+		width: 465px;
+	}
+
+	.containerDice {
+		position: absolute;
+		top: 580px;
+		left: 150px;
+		height: 150px;
+		width: 950px;
+	}
+	.diceGrid {
+		height: 100px;
+		width: 730px;
+		font-size: 80px;
+		text-align: center;
+	}
+}
+
+/* Ipads */
+
+
+
 /* To resize for smaller screens */
 @media only screen and (max-width: 768px) {
+		
+	#sideStatImg {
+		position: relative;
+		height: 133px;
+		width: 150px;
+		margin: auto;
+		bottom: 65px;
+	}
+
+	.sideStatText {
+		position: relative;
+		height: 10px;
+		width: 80px;
+		margin: auto;
+		bottom: 115px;
+	}
+
+	#sideStatNumber {
+		position: relative;
+		height: 10px;
+		width: 80px;
+		margin: auto;
+		bottom: 15px;
+	}
+	
 	.topName {
 	}
 
@@ -176,15 +344,66 @@ body {
 		width: 200px;
 	}
 
+	#centerBioImg {
+		height: 140px;
+		width: 465px;
+	}
+
+	#centerVidImg {
+		height: 150px;
+		width: 200px;
+	}
+
 	.containerDice {
 		position: absolute;
-		bottom: -150px;
+		bottom: 35px;
 		left: 0;
-		height: 180px;
+		height: 170px;
 		width: 375px;
 	}
 	.diceGrid {
-		height: 180px;
+		height: 170px;
+		width: 375px;
+	}
+}
+
+/* For tiny screens like S5/Moto G4 */
+@media only screen and (max-width: 360px) {
+
+	.containerCenterLeft {
+		position: absolute;
+		left: 80px;
+		height: 280px;
+		width: 200px;
+	}
+
+	.centerLeftGrid {
+		height: 280px;
+		width: 200px;
+	}
+
+	.containerCenterRight {
+		top: 450px;
+		position: absolute;
+		left: 80px;
+		height: 150px;
+		width: 200px;
+	}
+
+	.centerRightGrid {
+		height: 150px;
+		width: 200px;
+	}
+
+	.containerDice {
+		position: absolute;
+		bottom: -140px;
+		left: 0;
+		height: 170px;
+		width: 375px;
+	}
+	.diceGrid {
+		height: 170px;
 		width: 375px;
 	}
 }
