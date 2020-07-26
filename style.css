@@ -1,6 +1,5 @@
 body {
-    background-image: url(northern_chimera-rotated.png);
-
+	background-image: url(northern_chimera-rotated.png);
 }
 
 .topRow {
@@ -73,21 +72,19 @@ body {
 }
 
 .containerDice {
-    position: absolute;
-    bottom: 115px;
-    left: 286px;
-    height: 150px;
-    width: 950px;
-    
-
+	position: absolute;
+	bottom: 115px;
+	left: 286px;
+	height: 150px;
+	width: 950px;
 }
 .diceGrid {
-    height: 150px;
-    width: 730px;
-    font-size: 80px;
-    text-align: center;
-    border:solid;
-     
+	height: 150px;
+	width: 730px;
+	font-size: 80px;
+	text-align: center;
+	border: solid;
+}
 
 * {
 	box-sizing: border-box;
