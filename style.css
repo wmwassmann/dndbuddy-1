@@ -97,6 +97,7 @@ body {
 }
 
 .rightStats {
+
 }
 
 .containerCenterLeft {
@@ -122,6 +123,27 @@ body {
 	height: 280px;
 	width: 530px;
 }
+
+#centerBioImg {
+	height: 140px;
+	width: 430px;
+}
+
+.centerBioText {
+	box-sizing: border-box;
+	max-width: inherit;
+	max-height: inherit;
+	position: relative;
+	bottom: 130px;
+	left: 25px;
+
+}
+
+#centerVidImg {
+	height: 280px;
+	width: 530px;
+}
+
 
 .containerDice {
 	position: absolute;
