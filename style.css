@@ -166,26 +166,27 @@ body {
 @media only screen and (max-width: 1024px) {
 	.containerCenterLeft {
 		position: absolute;
-		left: 142px;
+		left: 280px;
 		height: 140px;
-		width: 240px;
+		width: 465px;
 	}
 	
 	.centerLeftGrid {
-		height: 140px;
-		width: 210px;
+		height: 200px;
+		width: 465px;
 	}
 	
 	.containerCenterRight {
 		position: absolute;
-		right: 140px;
+		top: 380px;
+		left: 280px;
 		height: 149px;
-		width: 265px;
+		width: 465px;
 	}
 	
 	.centerRightGrid {
-		height: 140px;
-		width: 265px;
+		height: 190px;
+		width: 465px;
 	}
 
 	.containerDice {
@@ -202,6 +203,10 @@ body {
 		text-align: center;
 	}
 }
+
+/* Ipads */
+
+
 
 /* To resize for smaller screens */
 @media only screen and (max-width: 768px) {
