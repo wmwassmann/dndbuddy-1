@@ -1,3 +1,9 @@
+.helpButton {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
 body {
 	background-image: url(northern_chimera-rotated.png);
 	font-family: 'Grenze Gotisch', cursive;
@@ -168,6 +174,20 @@ a {
 	bottom: 130px;
 	left: 25px;
 
+}
+
+#centerVidImg {
+	height: 280px;
+	width: 530px;
+}
+
+
+.containerDice {
+	position: absolute;
+	bottom: 110px;
+	left: 380px;
+	height: 150px;
+	width: 950px;
 }
 
 #centerVidImg {
