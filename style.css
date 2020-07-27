@@ -179,6 +179,20 @@ h3 {
 	height: 150px;
 	width: 950px;
 }
+
+#centerVidImg {
+	height: 280px;
+	width: 530px;
+}
+
+
+.containerDice {
+	position: absolute;
+	bottom: 110px;
+	left: 380px;
+	height: 150px;
+	width: 950px;
+}
 .diceGrid {
 	height: 100px;
 	width: 730px;
