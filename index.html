@@ -13,12 +13,12 @@
 		/>
 		<!-- Foundation CSS -->
 		<link rel="stylesheet" href="css/foundation.css" />
-		<!-- Dice Icon Css -->
+		<!-- Dice Icon CSS -->
 		<link
 			rel="stylesheet"
 			href="https://cdn.rawgit.com/fponticelli/dicefont/fc6b8c47/dist/dicefont/dicefont.css"
 		/>
-		<!-- Our CSS -->
+			<!-- Our CSS -->
 		<link rel="stylesheet" href="style.css" />
 	</head>
 
@@ -48,21 +48,25 @@
 			</div>
 			<div class="grid-x topRow">
 				<!-- HP Div -->
-				<div class="medium-2 small-4 cell topStat" style="background: ;" id="hitPointsID">
+				<div class="medium-2 small-4 cell topStat" id="hitPointsID">
 					<img src="assets\front-end-images\hpfull.png" id="topStatImg">
 					<div class="topStatText">
 					<h4>Hitpoints</h4>
 					</div>
 				</div>
 				<!-- Name/Class Div -->
-				<div class="medium-6 small-4 cell topStat topName" style="background: ;" id="nameID">
+
+				<div class="medium-6 small-4 cell topStat topName" id="nameID">
 					<img src="assets\front-end-images\burnbanner.png" id="topBanner">
 					<div class="topNameText">
-					<h4>Name/class etc will go here</h4>
+					<h1 contenteditable="false" id = "characterName">Humberferg</h1>
+					<h3 class = "inline" id = "gender">Female</h3>
+					<h3 class = "inline" id = "race">Dwarf</h3>
+					<h3 class = "inline" id = "class">Cleric</h3>
 					</div>
 				</div>
 				<!-- AC Div -->
-				<div class="medium-2 small-4 cell topStat" style="background: ;" id="armorID">
+				<div class="medium-2 small-4 cell topStat" id="armorID">
 					<img src="assets\front-end-images\acfull.png" id="topStatImg">
 					<div class="topStatText">
 					<h4>Armor Class</h4>
@@ -75,28 +79,28 @@
 			<div class="containerLeft">
 				<div class="grid-y statDiv">
 					<!-- Str -->
-					<div class="medium-2 small-2 cell sideStat" style="background: ;" id="strDiv">
-						<img src="assets\front-end-images\medieval-frame.jpg" id="sideStatImg">
+					<div class="medium-2 small-2 cell sideStat" id="strDiv">
+						<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
 						<div class="sideStatText">
-							<h4 id="sideStatNumber">10</h4>
-							<h3>Str</h3>
+							<h3 id="sideStatNumber">10</h3>
+							<h3>Strength</h3>
 						</div>
 					</div>
-					<!-- Dex -->
-					<div class="medium-2 small-2 cell sideStat" style="background: ;" id="dexDiv">
-						<img src="assets\front-end-images\medieval-frame.jpg" id="sideStatImg">
+					<!-- Dex -->					
+					<div class="medium-2 small-2 cell sideStat" id="dexDiv">
+						<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
 						<div class="sideStatText">
-							<h4 id="sideStatNumber">10</h4>
-							<h3>Dex</h3>
+							<h3 id="sideStatNumber">10</h3>
+							<h3>Dexterity</h3>
 						</div>
 					</div>
 
 					<!-- Con -->
-					<div class="medium-2 small-2 cell sideStat" style="background: ;" id="conDiv">
-						<img src="assets\front-end-images\medieval-frame.jpg" id="sideStatImg">
+					<div class="medium-2 small-2 cell sideStat" id="conDiv">
+						<img src="assets\front-end-images\medieval-frame.jpg" class ="sideStatImg">
 						<div class="sideStatText">
-							<h4 id="sideStatNumber">10</h4>
-							<h3>Con</h3>
+							<h3 id="sideStatNumber">10</h3>
+							<h3>Constitution</h3>
 						</div>
 					</div>
 				</div>
@@ -108,7 +112,7 @@
 			<div class="containerCenterLeft">
 				<div class="grid-y centerLeftGrid">
 
-					<div class="medium-6 small-6 cell centerBio" style="background: ;">
+					<div class="medium-6 small-6 cell centerBio">
 						<img src="assets\front-end-images\tornpaperbackground.png" id="centerBioImg">
 
 						<div class="centerBioText"> 
@@ -128,7 +132,7 @@
 			<!-- Middle right-->
 			<div class="containerCenterRight">
 				<div class="grid-y centerRightGrid">
-					<div class="medium-12 small-12 cell centerBioRight" style="background: ;">
+					<div class="medium-12 small-12 cell centerBioRight">
 						<img src="assets\front-end-images\tornpaperbackground.png" id="centerVidImg">
 						<div class="centerBioText">
 						<p>A picture/video maybe</p>
@@ -157,29 +161,31 @@
 			<!-- Right stats -->
 			<div class="containerRight">
 				<div class="grid-y statDivRight">
-					<!-- Str -->
-					<div class="medium-2 small-2 cell sideStat" style="background: ;"id="intDiv">
-						<img src="assets\front-end-images\medieval-frame.jpg" id="sideStatImg">
+					<!-- Int -->
+					<div class="medium-2 small-2 cell sideStat" id="intDiv">
+						<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
 						<div class="sideStatText">
-							<h4 id="sideStatNumber">10</h4>
-							<h3>Int</h3>
+
+							<h3 id="sideStatNumber">10</h3>
+							<h3>Intelligence</h3>
 						</div>
 					</div>
-					<!-- Dex -->
-					<div class="medium-2 small-2 cell sideStat" style="background: ;" id="wisDiv">
-						<img src="assets\front-end-images\medieval-frame.jpg" id="sideStatImg">
+					<!-- Wis -->
+					<div class="medium-2 small-2 cell sideStat" id="wisDiv">
+						<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
 						<div class="sideStatText">
-							<h4 id="sideStatNumber">10</h4>
-							<h3>Wis</h3>
+
+							<h3 id="sideStatNumber">10</h3>
+							<h3>Wisdom</h3>
 						</div>
 					</div>
 
-					<!-- Con -->
-					<div class="medium-2 small-2 cell sideStat" style="background: ;" id="chaDiv">
-						<img src="assets\front-end-images\medieval-frame.jpg" id="sideStatImg">
+					<!-- Cha -->
+					<div class="medium-2 small-2 cell sideStat" id="chaDiv">
+						<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
 						<div class="sideStatText">
-							<h4 id="sideStatNumber">10</h4>
-							<h3>Cha</h3>
+							<h3 id="sideStatNumber">10</h3>
+							<h3>Charisma</h3>
 						</div>
 					</div>
 				</div>
@@ -196,7 +202,8 @@
 			$(document).foundation();
 
         </script>
-        <script src="assets/javascript/dice.js"></script>
+		<script src="assets/javascript/dice.js"></script>
+		<script src="assets/javascript/namebanner.js"></script>
 
 	</body>
 </html>

@@ -1,5 +1,14 @@
 body {
 	background-image: url(northern_chimera-rotated.png);
+	font-family: 'Grenze Gotisch', cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Grenze Gotisch', cursive;
+}
+
+h3 {
+	font-size: 28px;
 }
 
 .topRow {
@@ -31,7 +40,7 @@ body {
 
 #topBanner {
 	position: relative;
-	height: 160px;
+	height: 180px;
 	width: 910px;
 	margin: auto;
 	bottom: 45px;
@@ -40,7 +49,18 @@ body {
 .topNameText {
 	position: relative;
 	margin: auto;
-	bottom: 150px;
+	bottom: 190px;
+}
+
+.inline {
+	display: inline;
+}
+
+#edit-name-etc {
+	float: right;
+	margin-right: 40px;
+	background: transparent;
+	opacity: 50%;
 }
 
 .containerLeft {
@@ -74,23 +94,24 @@ body {
 .sideStatText {
 	position: relative;
 	height: 10px;
-	width: 100px;
+	width: 120px;
 	margin: auto;
-	bottom: 115px;
+	bottom: 125px;
 }
 
 #sideStatNumber {
 	position: relative;
-	height: 10px;
+	height: 20px;
 	width: 100px;
 	margin: auto;
-	bottom: 20px;
+	bottom: 50px;
+	font-size: 50px;
 }
 
 
-#sideStatImg {
+.sideStatImg {
 	position: relative;
-	height: 133px;
+	height: 130px;
 	width: 150px;
 	margin: auto;
 	bottom: 60px;
