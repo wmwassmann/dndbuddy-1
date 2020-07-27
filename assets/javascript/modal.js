@@ -351,6 +351,15 @@ $(document).ready(function () {
 			console.log(playerSelection[4]);
 		}
 
+		//set Race and Class to Local Storage
+		localStorage.setItem("charGender", playerSelection[0]);
+		localStorage.setItem("charRace", playerSelection[1]);
+		localStorage.setItem("charRange", playerSelection[2]);
+		localStorage.setItem("charStyle", playerSelection[3]);
+		localStorage.setItem("charClass", playerSelection[4]);
+
+		console.log(playerSelection);
+
 		// create a div for the modal6
 		var modal6 = $('<div>');
 		// add class and ID for modal6
@@ -415,5 +424,61 @@ $(document).ready(function () {
 	// 6. video modal
 	$(document).on('click', '.toModal7', function () {
 		event.preventDefault();
+
+		// create a div for the modal7
+		var modal7 = $('<div>');
+		// add class and ID for modal7
+		$(modal7).addClass('reveal revealStyle');
+		$(modal7).attr('id', 'Modal7');
+		$(modal7).attr('data-reveal', '');
+		// append the modal5 div to mainbody
+		$('#mainBody').append(modal7);
+
+		// add the span for the close button
+		$(modal7).html(
+			'<iframe id="player" type="text/html" width="560" height="340" src="" frameborder="0"></iframe>'
+		);
+
+		//var queryURL =
+		// 	'https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCRDVE5L1LTWhmPAKKbUBGtg&maxResults=25&q=' +
+		// 	playerSelection[4] +
+		// 	'%20crap%20guide&key=AIzaSyC_UlZBmubS3WD0gdVgovaHxaMb9FFgIMM';
+
+		// $.ajax({
+		// 	url: queryURL,
+		// 	method: 'GET',
+		// })
+		// .then(function (response) {
+		// 	selectedVideo = response.items[0].id.videoId;
+
+		// 	function youTubeReady() {
+		// 		$('#player').attr(
+		// 			'src',
+		// 			'http://www.youtube.com/embed/' +
+		// 				selectedVideo +
+		// 				'?enablejsapi=1&origin=http://example.com'
+		// 		);
+		// 	}
+
+		// 	youTubeReady();
+		// });
+
+		// create a button tag for the close button
+		var modal7b1 = $('<button>');
+		// add the class and attr for the button
+		$(modal7b1).addClass('close-button');
+		$(modal7b1).attr('data-close', '');
+		$(modal7b1).attr('aria-label', 'Close reveal');
+		$(modal7b1).attr('type', 'button');
+		// add the span for the close button
+		$(modal7b1).html('<span aria-hidden="true">&times;</span>');
+		// append the button to the div
+		$(modal7).append(modal7b1);
+
+		// close modal6
+		$('#Modal6').foundation('close');
+		// reload the foundation and open the modal6
+		$(document).foundation();
+		$('#Modal7').foundation('open');
 	});
 });
