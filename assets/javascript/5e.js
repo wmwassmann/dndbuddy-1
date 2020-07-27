@@ -38,6 +38,10 @@ $("#help-guide").click(function () {
     $(helpModal).attr('data-reveal', '');
     // append the modal1 div to mainbody
     $('#mainBody').append(helpModal);
+    //ABILITIES
+    var abilityTitle = $('<h1>');
+    $(abilityTitle).text("Abilities");
+    $(helpModal).append(abilityTitle);
 
     //STRENGTH
     var strTitle = $('<h2>');
@@ -53,7 +57,7 @@ $("#help-guide").click(function () {
     // append the modal1h1 to the div
     $(helpModal).append(strText);
 
-    //GET to pull Charisma description from the API and throw the text into the "chaDiv" tag
+    //GET to pull Strength description from the API 
     var strURL = "https://www.dnd5eapi.co/api/ability-scores/str";
     console.log(strURL);
 
@@ -78,7 +82,7 @@ $("#help-guide").click(function () {
     // append the modal1h1 to the div
     $(helpModal).append(dexText);
 
-    //GET to pull Charisma description from the API and throw the text into the "chaDiv" tag
+    //GET to pull Dexterity description from the API 
     var dexURL = "https://www.dnd5eapi.co/api/ability-scores/dex";
     console.log(dexURL);
 
@@ -103,7 +107,7 @@ $("#help-guide").click(function () {
     // append the modal1h1 to the div
     $(helpModal).append(conText);
 
-    //GET to pull Charisma description from the API and throw the text into the "chaDiv" tag
+    //GET to pull Constitution description from the API 
     var conURL = "https://www.dnd5eapi.co/api/ability-scores/con";
     console.log(conURL);
 
@@ -128,7 +132,7 @@ $("#help-guide").click(function () {
     // append the modal1h1 to the div
     $(helpModal).append(intText);
 
-    //GET to pull Charisma description from the API and throw the text into the "chaDiv" tag
+    //GET to pull Intelligence description from the API 
     var intURL = "https://www.dnd5eapi.co/api/ability-scores/int";
     console.log(intURL);
 
@@ -153,7 +157,7 @@ $("#help-guide").click(function () {
     // append the modal1h1 to the div
     $(helpModal).append(wisText);
 
-    //GET to pull Charisma description from the API and throw the text into the "chaDiv" tag
+    //GET to pull Wisdom description from the API 
     var wisURL = "https://www.dnd5eapi.co/api/ability-scores/wis";
     console.log(wisURL);
 
@@ -178,7 +182,7 @@ $("#help-guide").click(function () {
     // append the modal1h1 to the div
     $(helpModal).append(chaText);
 
-    //GET to pull Charisma description from the API and throw the text into the "chaDiv" tag
+    //GET to pull Charisma description from the API 
     var chaURL = "https://www.dnd5eapi.co/api/ability-scores/cha";
     console.log(chaURL);
 

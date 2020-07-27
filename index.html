@@ -1,212 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>D&D Buddy</title>
+		<!-- CSS reset -->
+		<link rel="stylesheet" type="text/CSS" href="css/reset.css" />
+		<!-- Google font -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;800&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Foundation CSS -->
+		<link rel="stylesheet" href="css/foundation.css" />
+		<!-- Dice Icon CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.rawgit.com/fponticelli/dicefont/fc6b8c47/dist/dicefont/dicefont.css"
+		/>
+			<!-- Our CSS -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>D&D Buddy</title>
-	<!-- CSS reset -->
-	<link rel="stylesheet" type="text/CSS" href="css/reset.css" />
-	<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;800&display=swap" rel="stylesheet" />
-	<!-- Foundation CSS -->
-	<link rel="stylesheet" href="css/foundation.css" />
-	<!-- Dice Icon CSS -->
-	<link rel="stylesheet" href="https://cdn.rawgit.com/fponticelli/dicefont/fc6b8c47/dist/dicefont/dicefont.css" />
-	<!-- Our CSS -->
-	<link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-	<main id="mainBody">
-		<!-- This is the first modal -->
-		<div class="reveal revealStyle" id="Modal1" data-reveal>
-			<h1>Welcome!</h1>
-			<p class="lead">Do you need guidance in setting up your character?</p>
-			<button id="toModal2" class="button">
-				Yes
-			</button>
-			<button id="closeM1" class="button">
-				No
-			</button>
-			<button id="toRandom" class="button">
-				No, but please randomize a character for me
-			</button>
-			<button class="close-button" data-close aria-label="Close reveal" type="button">
-				<span aria-hidden="true">&times;</span>
-			</button>
-		</div>
-		<div class="grid-x topRow">
-			<!-- HP Div -->
-			<div class="medium-2 small-4 cell topStat" id="hitPointsID">
-				<img src="assets\front-end-images\hpfull.png" id="topStatImg">
-				<div class="topStatText">
+	<body>
+		<main id="mainBody">
+			<!-- This is the first modal -->
+			<div class="reveal revealStyle" id="Modal1" data-reveal>
+				<h1>Welcome!</h1>
+				<p class="lead">Do you need guidance in setting up your character?</p>
+				<button id="toModal2" class="button">
+					Yes
+				</button>
+				<button id="closeM1" class="button">
+					No
+				</button>
+				<button id="toRandom" class="button">
+					No, but please randomize a character for me
+				</button>
+				<button
+					class="close-button"
+					data-close
+					aria-label="Close reveal"
+					type="button"
+				>
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="grid-x topRow">
+				<!-- HP Div -->
+				<div class="medium-2 small-4 cell topStat" id="hitPointsID">
+					<img src="assets\front-end-images\hpfull.png" id="topStatImg">
+					<div class="topStatText">
 					<h4>Hitpoints</h4>
+					</div>
 				</div>
-			</div>
-			<!-- Name/Class Div -->
+				<!-- Name/Class Div -->
 
-			<div class="medium-6 small-4 cell topStat topName" id="nameID">
-				<img src="assets\front-end-images\burnbanner.png" id="topBanner">
-				<div class="topNameText">
-					<h1 contenteditable="false" id="characterName">Humberferg</h1>
-					<h3 class="inline" id="gender">Female</h3>
-					<h3 class="inline" id="race">Dwarf</h3>
-					<h3 class="inline" id="class">Cleric</h3>
+				<div class="medium-6 small-4 cell topStat topName" id="nameID">
+					<img src="assets\front-end-images\burnbanner.png" id="topBanner">
+					<div class="topNameText">
+					<h1 contenteditable="false" id = "characterName">Humberferg</h1>
+					<h3 class = "inline" id = "gender">Female</h3>
+					<h3 class = "inline" id = "race">Dwarf</h3>
+					<h3 class = "inline" id = "class">Cleric</h3>
+					</div>
 				</div>
-			</div>
-			<!-- AC Div -->
-			<div class="medium-2 small-4 cell topStat" id="armorID">
-				<img src="assets\front-end-images\acfull.png" id="topStatImg">
-				<div class="topStatText">
+				<!-- AC Div -->
+				<div class="medium-2 small-4 cell topStat" id="armorID">
+					<img src="assets\front-end-images\acfull.png" id="topStatImg">
+					<div class="topStatText">
 					<h4>Armor Class</h4>
-				</div>
-			</div>
-			<!--Help Button-->
-			<div class="helpButton">
-				<a class="button tiny" href="#" id="help-guide" data-reveal-id="hg-modal">Help Guide
-					<div id="hg-modal" class="reveal-modal" data-reveal aria-labelledby="HG-Modal-Title"
-						aria-hidden="true" role="dialog">
-						<h2 id="HG-Modal-Title">This is a modal.</h2>
-						<p>Help Guide Text Placeholder</p>
-						<a class="close-reveal-modal" aria-label="Close">&#215;</a>
-					</div>
-				</a>
-			</div>
-		</div>
-		<br />
-
-		<!-- Left side stats -->
-		<div class="containerLeft">
-			<div class="grid-y statDiv">
-				<!-- Str -->
-				<div class="medium-2 small-2 cell sideStat" id="strDiv">
-					<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
-					<div class="sideStatText">
-						<h3 id="sideStatNumber">10</h3>
-						<h3>Strength</h3>
-					</div>
-				</div>
-				<!-- Dex -->
-				<div class="medium-2 small-2 cell sideStat" id="dexDiv">
-					<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
-					<div class="sideStatText">
-						<h3 id="sideStatNumber">10</h3>
-						<h3>Dexterity</h3>
-					</div>
-				</div>
-
-				<!-- Con -->
-				<div class="medium-2 small-2 cell sideStat" id="conDiv">
-					<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
-					<div class="sideStatText">
-						<h3 id="sideStatNumber">10</h3>
-						<h3>Constitution</h3>
 					</div>
 				</div>
 			</div>
-			<!-- End container -->
-		</div>
+				<!--Help Button-->
+				<div class="helpButton">
+					<a class="button tiny" href="#" id="help-guide" data-reveal-id="hg-modal">Help Guide
+						<div id="hg-modal" class="reveal-modal" data-reveal aria-labelledby="HG-Modal-Title"
+							aria-hidden="true" role="dialog">
+							<h2 id="HG-Modal-Title">This is a modal.</h2>
+							<p>Help Guide Text Placeholder</p>
+							<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+						</div>
+					</a>
+				</div>
+			<br />
 
-		<!-- Middle section here -->
-		<!-- Middle left-->
-		<div class="containerCenterLeft">
-			<div class="grid-y centerLeftGrid">
+			<!-- Left side stats -->
+			<div class="containerLeft">
+				<div class="grid-y statDiv">
+					<!-- Str -->
+					<div class="medium-2 small-2 cell sideStat" id="strDiv">
+						<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
+						<div class="sideStatText">
+							<h3 id="sideStatNumber">10</h3>
+							<h3>Strength</h3>
+						</div>
+					</div>
+					<!-- Dex -->					
+					<div class="medium-2 small-2 cell sideStat" id="dexDiv">
+						<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
+						<div class="sideStatText">
+							<h3 id="sideStatNumber">10</h3>
+							<h3>Dexterity</h3>
+						</div>
+					</div>
 
-				<div class="medium-6 small-6 cell centerBio">
-					<img src="assets\front-end-images\tornpaperbackground.png" id="centerBioImg">
+					<!-- Con -->
+					<div class="medium-2 small-2 cell sideStat" id="conDiv">
+						<img src="assets\front-end-images\medieval-frame.jpg" class ="sideStatImg">
+						<div class="sideStatText">
+							<h3 id="sideStatNumber">10</h3>
+							<h3>Constitution</h3>
+						</div>
+					</div>
+				</div>
+				<!-- End container -->
+			</div>
 
-					<div class="centerBioText">
+			<!-- Middle section here -->
+			<!-- Middle left-->
+			<div class="containerCenterLeft">
+				<div class="grid-y centerLeftGrid">
+
+					<div class="medium-6 small-6 cell centerBio">
+						<img src="assets\front-end-images\tornpaperbackground.png" id="centerBioImg">
+
+						<div class="centerBioText"> 
 						<p>A short bio maybe</p>
+						</div>
 					</div>
-				</div>
 
-				<img src="assets\front-end-images\tornpaperbackground.png" id="centerBioImg">
-				<div class="centerBioText">
-					<p>Placeholder</p>
+						<img src="assets\front-end-images\tornpaperbackground.png" id="centerBioImg">
+						<div class="centerBioText"> 
+						<p>Placeholder</p>
+						</div>
+					</div>
+
 				</div>
 			</div>
 
-		</div>
-		</div>
-
-		<!-- Middle right-->
-		<div class="containerCenterRight">
-			<div class="grid-y centerRightGrid">
-				<div class="medium-12 small-12 cell centerBioRight">
-					<img src="assets\front-end-images\tornpaperbackground.png" id="centerVidImg">
-					<div class="centerBioText">
+			<!-- Middle right-->
+			<div class="containerCenterRight">
+				<div class="grid-y centerRightGrid">
+					<div class="medium-12 small-12 cell centerBioRight">
+						<img src="assets\front-end-images\tornpaperbackground.png" id="centerVidImg">
+						<div class="centerBioText">
 						<p>A picture/video maybe</p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<!-- Dice roller -->
-		<div class="containerDice">
-			<div class="grid-x diceGrid">
+			<!-- Dice roller -->
+			<div class="containerDice">
+				<div class="grid-x diceGrid">
 
-				<div class="medium-12 small-12 diceTray" style="background: khaki;">
-					<i id="dice4" class="df-d4-4"></i>
-					<i id="dice6" class="df-d6-6"></i>
-					<i id="dice8" class="df-d8-8"></i>
-					<i id="dice10" class="df-d10-10"></i>
-					<i id="dice12" class="df-d12-12"></i>
-					<i id="dice20" class="df-d20-20"></i>
+                    <div class="medium-12 small-12 diceTray" style="background: khaki;">
+                        <i id="dice4" class="df-d4-4"></i>
+                        <i id="dice6" class="df-d6-6"></i>
+                        <i id="dice8" class="df-d8-8"></i>
+                        <i id="dice10" class="df-d10-10"></i>
+                        <i id="dice12" class="df-d12-12"></i>
+                        <i id="dice20" class="df-d20-20"></i>
 
+					</div>
 				</div>
+				<!-- End Diceroller container -->
 			</div>
-			<!-- End Diceroller container -->
-		</div>
 
-		<!-- Right stats -->
-		<div class="containerRight">
-			<div class="grid-y statDivRight">
-				<!-- Int -->
-				<div class="medium-2 small-2 cell sideStat" id="intDiv">
-					<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
-					<div class="sideStatText">
+			<!-- Right stats -->
+			<div class="containerRight">
+				<div class="grid-y statDivRight">
+					<!-- Int -->
+					<div class="medium-2 small-2 cell sideStat" id="intDiv">
+						<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
+						<div class="sideStatText">
 
-						<h3 id="sideStatNumber">10</h3>
-						<h3>Intelligence</h3>
+							<h3 id="sideStatNumber">10</h3>
+							<h3>Intelligence</h3>
+						</div>
+					</div>
+					<!-- Wis -->
+					<div class="medium-2 small-2 cell sideStat" id="wisDiv">
+						<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
+						<div class="sideStatText">
+
+							<h3 id="sideStatNumber">10</h3>
+							<h3>Wisdom</h3>
+						</div>
+					</div>
+
+					<!-- Cha -->
+					<div class="medium-2 small-2 cell sideStat" id="chaDiv">
+						<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
+						<div class="sideStatText">
+							<h3 id="sideStatNumber">10</h3>
+							<h3>Charisma</h3>
+						</div>
 					</div>
 				</div>
-				<!-- Wis -->
-				<div class="medium-2 small-2 cell sideStat" id="wisDiv">
-					<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
-					<div class="sideStatText">
-
-						<h3 id="sideStatNumber">10</h3>
-						<h3>Wisdom</h3>
-					</div>
-				</div>
-
-				<!-- Cha -->
-				<div class="medium-2 small-2 cell sideStat" id="chaDiv">
-					<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
-					<div class="sideStatText">
-						<h3 id="sideStatNumber">10</h3>
-						<h3>Charisma</h3>
-					</div>
-				</div>
+				<!-- End right container -->
 			</div>
-			<!-- End right container -->
-		</div>
-	</main>
-	<!-- Foundation JS -->
-	<script src="js/vendor/jquery.js"></script>
-	<script src="js/vendor/what-input.js"></script>
-	<script src="js/vendor/foundation.min.js"></script>
-	<script src="assets/javascript/globalVar.js"></script>
-	<script src="assets/javascript/modal.js"></script>
-	<script>
-		$(document).foundation();
+		</main>
+		<!-- Foundation JS -->
+		<script src="js/vendor/jquery.js"></script>
+		<script src="js/vendor/what-input.js"></script>
+		<script src="js/vendor/foundation.min.js"></script>
+		<script src="assets/javascript/globalVar.js"></script>
+		<script src="assets/javascript/modal.js"></script>
+		<script>
+			$(document).foundation();
 
-	</script>
-	<script src="assets/javascript/dice.js"></script>
-	<script src="assets/javascript/namebanner.js"></script>
-	<script src="assets/javascript/5e.js"></script>
+        </script>
+		<script src="assets/javascript/dice.js"></script>
+		<script src="assets/javascript/namebanner.js"></script>
+		<script src="assets/javascript/5e.js"></script>
 
-</body>
-
+	</body>
 </html>
