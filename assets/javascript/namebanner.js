@@ -1,7 +1,5 @@
+// Function to push modal responses to name banner
 $("body").click(function() {
-
-   
-
 
     if (localStorage.charClass != null) {
 
@@ -15,6 +13,8 @@ $("body").click(function() {
     }
 });
 
+
+// Allows Character Name to be edited after double click
 function editName() {
     $("#characterName").attr( "contenteditable", "true");
 
@@ -36,39 +36,37 @@ $("#characterName").dblclick(function() {
 });
 
 
-function editRace () {
 
-    $("#race").text("");
 
-    var createLabelRace = $("<label>");
-    $(createLabelRace).text("Select Race");
-    $(createLabelRace).attr("id", "labelRace");
-    $("#race").append(createLabelRace);
+function editGenderRaceClass () {
 
-    var createSelectRace = $("<select>");
-    $(createSelectRace).attr("id", "selectRace");
-    $("#lableRace").append(createSelectRace);
-
-    var opt1Race = $("<option>");
-    $(opt1Race).text("Dwarf");
-    $(opt1Race).attr("value", "Dwarf");
-    $("#selectRace").append(opt1Race);
-
-    var opt2Race = $("<option>");
-    $(opt2Race).text("Elf");
-    $(opt2Race).attr("value", "Elf");
-    $("#selectRace").append(opt2Race);
-
-    var opt3Race = $("<option>");
-    $(opt3Race).text("Human");
-    $(opt3Race).attr("value", "Human");
-    $("#selectRace").append(opt3Race);
+   
 };
  
 $("#race").dblclick(function() {
     event.preventDefault();
-    editRace();
-});
+   
+
+    $(document).foundation();
+
+
+    // create a div for the Gender, Race and Class
+    var genderRaceClass = $('<div>');
+    // add class and ID for Gender, Race and Class
+    $(genderRaceClass).addClass('reveal revealStyle');
+    $(genderRaceClass).attr('id', "genRaceClass");
+    $(genderRaceClass).attr('data-reveal', '');
+    // append the modal1 div to mainbody
+    $('#mainBody').append(genderRaceClass);
+
+    editGenderRaceClass();
+
+    $(document).foundation();
+    $('#genRaceClass').foundation('open');
+    
+ 
+  });
+
 
 
 {/* <label>Select Race
