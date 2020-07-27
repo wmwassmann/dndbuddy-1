@@ -351,6 +351,15 @@ $(document).ready(function () {
 			console.log(playerSelection[4]);
 		}
 
+		//set Race and Class to Local Storage
+		localStorage.setItem("charGender", playerSelection[0]);
+		localStorage.setItem("charRace", playerSelection[1]);
+		localStorage.setItem("charRange", playerSelection[2]);
+		localStorage.setItem("charStyle", playerSelection[3]);
+		localStorage.setItem("charClass", playerSelection[4]);
+
+		console.log(playerSelection);
+
 		// create a div for the modal6
 		var modal6 = $('<div>');
 		// add class and ID for modal6
@@ -430,29 +439,29 @@ $(document).ready(function () {
 			'<iframe id="player" type="text/html" width="560" height="340" src="" frameborder="0"></iframe>'
 		);
 
-		var queryURL =
-			'https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCRDVE5L1LTWhmPAKKbUBGtg&maxResults=25&q=' +
-			playerSelection[4] +
-			'%20crap%20guide&key=AIzaSyC_UlZBmubS3WD0gdVgovaHxaMb9FFgIMM';
+		//var queryURL =
+		// 	'https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCRDVE5L1LTWhmPAKKbUBGtg&maxResults=25&q=' +
+		// 	playerSelection[4] +
+		// 	'%20crap%20guide&key=AIzaSyC_UlZBmubS3WD0gdVgovaHxaMb9FFgIMM';
 
-		$.ajax({
-			url: queryURL,
-			method: 'GET',
-		})
-		.then(function (response) {
-			selectedVideo = response.items[0].id.videoId;
+		// $.ajax({
+		// 	url: queryURL,
+		// 	method: 'GET',
+		// })
+		// .then(function (response) {
+		// 	selectedVideo = response.items[0].id.videoId;
 
-			function youTubeReady() {
-				$('#player').attr(
-					'src',
-					'http://www.youtube.com/embed/' +
-						selectedVideo +
-						'?enablejsapi=1&origin=http://example.com'
-				);
-			}
+		// 	function youTubeReady() {
+		// 		$('#player').attr(
+		// 			'src',
+		// 			'http://www.youtube.com/embed/' +
+		// 				selectedVideo +
+		// 				'?enablejsapi=1&origin=http://example.com'
+		// 		);
+		// 	}
 
-			youTubeReady();
-		});
+		// 	youTubeReady();
+		// });
 
 		// create a button tag for the close button
 		var modal7b1 = $('<button>');
