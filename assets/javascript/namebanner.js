@@ -35,37 +35,25 @@ $("#characterName").dblclick(function() {
     editName();
 });
 
-
-
-
 function editGenderRaceClass () {
+
+  $(".dropdown").attr("data-options", "data-dropdown-menu");
 
    
 };
+
+$("#gender").dblclick(function() {
+  editGenderRaceClass();
+
+});
  
 $("#race").dblclick(function() {
-    event.preventDefault();
-   
+  editGenderRaceClass();
+});
 
-    $(document).foundation();
-
-
-    // create a div for the Gender, Race and Class
-    var genderRaceClass = $('<div>');
-    // add class and ID for Gender, Race and Class
-    $(genderRaceClass).addClass('reveal revealStyle');
-    $(genderRaceClass).attr('id', "genRaceClass");
-    $(genderRaceClass).attr('data-reveal', '');
-    // append the modal1 div to mainbody
-    $('#mainBody').append(genderRaceClass);
-
-    editGenderRaceClass();
-
-    $(document).foundation();
-    $('#genRaceClass').foundation('open');
-    
- 
-  });
+$("#class").dblclick(function() {
+  editGenderRaceClass();
+});
 
 
 
