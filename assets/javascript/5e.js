@@ -27,17 +27,18 @@ console.log(skillsURL);
 console.log(proURL);
 console.log(classesURL);
 
-
+//HELP GUIDE MODAL
 $("#help-guide").click(function () {
     event.preventDefault();
     // create a div for the modal
     var helpModal = $('<div>');
-    // add class and ID for modal1
+    // add class and ID for modal
     $(helpModal).addClass('reveal revealStyle');
     $(helpModal).attr('id', 'helpguide-modal');
     $(helpModal).attr('data-reveal', '');
-    // append the modal1 div to mainbody
+    // append the modal div to mainbody
     $('#mainBody').append(helpModal);
+    
     //ABILITIES
     var abilityTitle = $('<h1>');
     $(abilityTitle).text("Abilities");
@@ -193,14 +194,81 @@ $("#help-guide").click(function () {
         $("#charisma-text").text(chaRes.desc)
     });
 
+    //SPELLS DESCRIPTION
 
+    var spellsTitle = $('<h1>');
+    $(spellsTitle).text("Spells");
+    $(helpModal).append(spellsTitle);
+
+    //FIREBOLT
+    //create Title html element
+    var fbdTitle = $('<h2>');
+    // add text for the h1 tag
+    $(fbdTitle).text("Fire Bolt");
+    // append the modal1h1 to the div
+    $(helpModal).append(fbdTitle);
+
+    //creates tags for description text
+    var fbdText = $('<p>');
+    $(fbdText).attr('id', 'fbd-text');
+    // add text for the h1 tag
+    $(fbdText).text(" ");
+    // append the modal1h1 to the div
+    $(helpModal).append(fbdText);
+
+    //API "gets" spell info
+    var fbdescURL = "https://www.dnd5eapi.co/api/spells/fire-bolt";
+    $.ajax({
+        url: fbdescURL,
+        method: "GET"
+    }).then(function (fbdRes) {
+        $("#fbd-text").text(fbdRes.desc)
+    });
+
+    //MAGE HAND
+    //create Title html element
+    var mhdTitle = $('<h2>');
+    // add text for the h1 tag
+    $(mhdTitle).text("Fire Bolt");
+    // append the modal1h1 to the div
+    $(helpModal).append(fbdTitle);
+
+    //creates tags for description text
+    var fbdText = $('<p>');
+    $(fbdText).attr('id', 'fbd-text');
+    // add text for the h1 tag
+    $(fbdText).text(" ");
+    // append the modal1h1 to the div
+    $(helpModal).append(fbdText);
+
+    //API "gets" spell info
+    var fbdescURL = "https://www.dnd5eapi.co/api/spells/fire-bolt";
+    $.ajax({
+        url: fbdescURL,
+        method: "GET"
+    }).then(function (fbdRes) {
+        $("#fbd-text").text(fbdRes.desc)
+    });
+
+    //Document functionality with Foundation
     $(document).foundation();
     $('#helpguide-modal').foundation('open');
 
+});
+//EQUIPMENT
 
+//----SPELLS----
 
+//--------WIZARD SPELLS--------
 
-
-
-
+//------------FIREBOLT------------
+var fireboltURL = "https://www.dnd5eapi.co/api/spells/fire-bolt";
+$.ajax({
+    url: fireboltURL,
+    method: "GET"
+}).then(function (fbRes) {
+    $('#equipment').html("<h5>" + "Fire-Bolt: 1d10" + "</h5>")
+    .append("Range: " + fbRes.range)
+    .append("<br />" + "Casting Time: " + fbRes.casting_time)
+    .append("<br />" + "Level: " + fbRes.level)
 });
