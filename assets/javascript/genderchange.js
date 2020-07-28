@@ -74,15 +74,106 @@ function editGenderRaceClass () {
       $(wizList).text('Wizard');
     $('#classUL').append(wizList);
   
-    // Sets Female to localStorage on Click
+    // Displays and sets 'Female' to localStorage on Click
     $('#femList').click(function() {
-      var gender = "Female"
+      var gender = 'Female'
+      $('#gender').text(gender);
+      localStorage.setItem('charGender', gender);
+      $('#femList').remove();
+      $('#maleList').remove();
+    });
+
+    // Displays and sets 'Male' to localStorage on Click
+    $('#maleList').click(function() {
+      var gender = "Male"
       $('#gender').text(gender);
       localStorage.setItem('charGender', gender);
       $('#femList').remove();
       $('#maleList').remove();
     });
   
+    // Displays and sets 'Dwarf' to localStorage on Click
+    $('#dwarfList').click(function() {
+      var race = 'Dwarf'
+      $('#race').text(race);
+      localStorage.setItem('charRace', race);
+      $('#dwarfList').remove();
+      $('#elfList').remove();
+      $('#humList').remove();
+    });
+
+    // Displays and sets 'Elf' to localStorage on Click
+    $('#elfList').click(function() {
+      var race = "Elf"
+      $('#race').text(race);
+      localStorage.setItem('charRace', race);
+      $('#femList').remove();
+      $('#maleList').remove();
+      $('#humList').remove();
+    });
+
+    // Displays and sets 'Human' to localStorage on Click
+    $('#humList').click(function() {
+      var race = "Human"
+      $('#race').text(race);
+      localStorage.setItem('charRace', race);
+      $('#femList').remove();
+      $('#maleList').remove();
+      $('#humList').remove();
+    });
+
+    // Displays and sets 'Cleric' to localStorage on Click
+    $('#femList').click(function() {
+      var gender = 'Female'
+      $('#gender').text(gender);
+      localStorage.setItem('charGender', gender);
+      $('#femList').remove();
+      $('#maleList').remove();
+    });
+
+    // Displays and sets 'Fighter' to localStorage on Click
+    $('#maleList').click(function() {
+      var gender = "Male"
+      $('#gender').text(gender);
+      localStorage.setItem('charGender', gender);
+      $('#femList').remove();
+      $('#maleList').remove();
+    });
+  
+    // Displays and sets 'Ranger' to localStorage on Click
+    $('#dwarfList').click(function() {
+      var race = 'Dwarf'
+      $('#race').text(race);
+      localStorage.setItem('charRace', race);
+      $('#dwarfList').remove();
+      $('#elfList').remove();
+      $('#humList').remove();
+    });
+
+    // Displays and sets 'Rogue' to localStorage on Click
+    $('#rogList').click(function() {
+      var classDisplay = "Rogue"
+      $('#race').text(race);
+      localStorage.setItem('charClass', classDisplay);
+      $('#cleList').remove();
+      $('#figList').remove();
+      $('#ranList').remove();
+      $('#rogList').remove();
+      $('#wizList').remove();
+      
+    });
+
+    // Displays and sets 'Wizard' to localStorage on Click
+    $('#wizList').click(function() {
+      var classDisplay = "Wizard"
+      $('#race').text(race);
+      localStorage.setItem('charClass', classDisplay);
+      $('#cleList').remove();
+      $('#figList').remove();
+      $('#ranList').remove();
+      $('#rogList').remove();
+      $('#wizList').remove();
+    });
   };
   
   $("#gender").dblclick(function() {

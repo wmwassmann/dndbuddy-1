@@ -1,11 +1,17 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Function to push modal responses to name banner
 $("body").click(function() {
 
     if (localStorage.charClass != null) {
 =======
 $('body').click(function () {
+=======
+var count = 0;
+
+$(window).on('load', function () {
+>>>>>>> a282ab6adc373a51d67989f7622fd28643b6c9e3
 	if (localStorage.charClass != null) {
 		var name = localStorage.getItem('charName');
 		var gender = localStorage.getItem('charGender');
@@ -18,6 +24,7 @@ $('body').click(function () {
 		$('#class').text(classDisplay);
 	} else {
 		generateName();
+<<<<<<< HEAD
 =======
 $(document).ready(function () {
 	$(document).foundation();
@@ -27,13 +34,22 @@ $(document).ready(function () {
 	function getRandomInt(max) {
 		return Math.floor(Math.random() * Math.floor(max));
 >>>>>>> ba4444057af5a80e73ad24178cbad9558cc6cd27
+=======
+>>>>>>> a282ab6adc373a51d67989f7622fd28643b6c9e3
 	}
+});
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 function generateName() {
 	var queryURL =
 		'https://cors-anywhere.herokuapp.com/https://uzby.com/api.php?min=3&max=8';
 >>>>>>> a64f573586ab1d15bd2829548f84e95956defd30
+=======
+function generateName() {
+	var queryURL =
+		'https://cors-anywhere.herokuapp.com/https://uzby.com/api.php?min=3&max=8';
+>>>>>>> a282ab6adc373a51d67989f7622fd28643b6c9e3
 
 	$.ajax({
 		url: queryURL,
@@ -42,6 +58,7 @@ function generateName() {
 		console.log(response);
 		$('#characterName').text(response);
 		localStorage.setItem('charName', response);
+<<<<<<< HEAD
 =======
 	// when the user pick random
 	$('#toRandom').click(function () {
@@ -595,76 +612,99 @@ $('#race').dblclick(function () {
 		// reload the foundation and open the modal6
 		$(document).foundation();
 		$('#Modal6').foundation('open');
+=======
+>>>>>>> a282ab6adc373a51d67989f7622fd28643b6c9e3
 	});
+}
 
-	//set Race and Class to Local Storage
-	function saveToLocal(playerSelection) {
-		localStorage.setItem('charGender', playerSelection[0]);
-		localStorage.setItem('charRace', playerSelection[1]);
-		localStorage.setItem('charRange', playerSelection[2]);
-		localStorage.setItem('charStyle', playerSelection[3]);
-		localStorage.setItem('charClass', playerSelection[4]);
+function editName() {
+	$('#characterName').attr('contenteditable', 'true');
+
+	if (count === 0) {
+		var saveButton = $('<button>');
+		$(saveButton).text('Save');
+		$(saveButton).attr('id', 'saveBtn');
+		$(saveButton).attr('type', 'button');
+		$(saveButton).addClass('button');
+		$('#characterName').append(saveButton);
+		count = count + 1;
 	}
 
-	// 6. video modal
-	$(document).on('click', '.toModal7', function () {
-		event.preventDefault();
-
-		// create a div for the modal7
-		var modal7 = $('<div>');
-		// add class and ID for modal7
-		$(modal7).addClass('reveal revealStyle');
-		$(modal7).attr('id', 'Modal7');
-		$(modal7).attr('data-reveal', '');
-		// append the modal5 div to mainbody
-		$('#mainBody').append(modal7);
-
-		// add the span for the close button
-		$(modal7).html(
-			'<iframe id="player" type="text/html" width="560" height="340" src="" frameborder="0"></iframe>'
-		);
-
-		//var queryURL =
-		// 	'https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCRDVE5L1LTWhmPAKKbUBGtg&maxResults=25&q=' +
-		// 	playerSelection[4] +
-		// 	'%20crap%20guide&key=AIzaSyC_UlZBmubS3WD0gdVgovaHxaMb9FFgIMM';
-
-		// $.ajax({
-		// 	url: queryURL,
-		// 	method: 'GET',
-		// })
-		// .then(function (response) {
-		// 	selectedVideo = response.items[0].id.videoId;
-
-		// 	function youTubeReady() {
-		// 		$('#player').attr(
-		// 			'src',
-		// 			'http://www.youtube.com/embed/' +
-		// 				selectedVideo +
-		// 				'?enablejsapi=1&origin=http://example.com'
-		// 		);
-		// 	}
-
-		// 	youTubeReady();
-		// });
-
-		// create a button tag for the close button
-		var modal7b1 = $('<button>');
-		// add the class and attr for the button
-		$(modal7b1).addClass('close-button');
-		$(modal7b1).attr('data-close', '');
-		$(modal7b1).attr('aria-label', 'Close reveal');
-		$(modal7b1).attr('type', 'button');
-		// add the span for the close button
-		$(modal7b1).html('<span aria-hidden="true">&times;</span>');
-		// append the button to the div
-		$(modal7).append(modal7b1);
-
-		// close modal6
-		$('#Modal6').foundation('close');
-		// reload the foundation and open the modal6
-		$(document).foundation();
-		$('#Modal7').foundation('open');
+	$('#saveBtn').click(function () {
+		$('#characterName').attr('contenteditable', 'false');
+		$('#saveBtn').remove();
+		response = $('#characterName').text();
+		localStorage.setItem('charName', response);
+		count = 0;
 	});
+}
+
+$('#characterName').dblclick(function () {
+	editName();
 });
+
+function editRace() {
+	$('#race').text('');
+
+	var createLabelRace = $('<label>');
+	$(createLabelRace).text('Select Race');
+	$(createLabelRace).attr('id', 'labelRace');
+	$('#race').append(createLabelRace);
+
+	var createSelectRace = $('<select>');
+	$(createSelectRace).attr('id', 'selectRace');
+	$('#lableRace').append(createSelectRace);
+
+	var opt1Race = $('<option>');
+	$(opt1Race).text('Dwarf');
+	$(opt1Race).attr('value', 'Dwarf');
+	$('#selectRace').append(opt1Race);
+
+	var opt2Race = $('<option>');
+	$(opt2Race).text('Elf');
+	$(opt2Race).attr('value', 'Elf');
+	$('#selectRace').append(opt2Race);
+
+	var opt3Race = $('<option>');
+	$(opt3Race).text('Human');
+	$(opt3Race).attr('value', 'Human');
+	$('#selectRace').append(opt3Race);
+}
+
+$('#race').dblclick(function () {
+	event.preventDefault();
+	editRace();
+});
+<<<<<<< HEAD
 >>>>>>> ba4444057af5a80e73ad24178cbad9558cc6cd27
+=======
+
+{
+	/* <label>Select Race
+  <select>
+    <option value="Dwarf">Dwarf</option>
+    <option value="Elf">Elf</option>
+    <option value="Human">Human</option>
+  </select>
+</label>
+
+    var createLabelClass = $("<label>");
+    var createSelectClass = $("<select>");
+    var option1Class = $("<option>");
+    var option2Class = $("<option>");
+    var option3Class = $("<option>");
+    var option4Class = $("<option>");
+    var option5Class = $("<option>");
+
+
+<label>Select Class
+  <select>
+    <option value="Cleric">Cleric</option>
+    <option value="Fighter">Fighter</option>
+    <option value="Ranger">Ranger</option>
+    <option value="Rogue">Rogue</option>
+    <option value="Wizard">Wizard</option>
+  </select>
+</label> */
+}
+>>>>>>> a282ab6adc373a51d67989f7622fd28643b6c9e3
