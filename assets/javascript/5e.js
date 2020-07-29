@@ -272,3 +272,6 @@ $.ajax({
     .append("<br />" + "Casting Time: " + fbRes.casting_time)
     .append("<br />" + "Level: " + fbRes.level)
 });
+
+//add to middle left placeholder in index html
+// id="equipment"

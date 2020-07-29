@@ -2,6 +2,52 @@ $(document).ready(function () {
 	$(document).foundation();
 	$('#Modal1').foundation('open');
 
+	// generate a random number function
+	function getRandomInt(max) {
+		return Math.floor(Math.random() * Math.floor(max));
+	}
+
+	// when the user pick random
+	$('#toRandom').click(function () {
+		event.preventDefault();
+
+		// pick the gender
+		var genderNum = getRandomInt(1);
+		if (genderNum === 0) {
+			playerSelection[0] = 'Male';
+		} else {
+			playerSelection[0] = 'Female';
+		}
+
+		// pick a race
+		var raceNum = getRandomInt(2);
+		if (raceNum === 0) {
+			playerSelection[1] = 'Dwarf';
+		} else if (raceNum === 1) {
+			playerSelection[1] = 'Elf';
+		} else {
+			playerSelection[1] = 'Human';
+		}
+
+		// pick a class
+		var classNum = getRandomInt(4);
+		if (classNum === 0) {
+			playerSelection[4] = 'Cleric';
+		} else if (classNum === 1) {
+			playerSelection[4] = 'Fighter';
+		} else if (classNum === 2) {
+			playerSelection[4] = 'Rogue';
+		} else if (classNum === 3) {
+			playerSelection[4] = 'Ranger';
+		} else if (classNum === 4) {
+			playerSelection[4] = 'Wizard';
+		}
+		console.log(playerSelection);
+		saveToLocal(playerSelection);
+		// close modal1
+		$('#Modal1').foundation('close');
+	});
+
 	// 1. gender modal
 	$('#toModal2').click(function () {
 		event.preventDefault();
@@ -321,6 +367,7 @@ $(document).ready(function () {
 			var suggestion = 'Rogue';
 			playerSelection.push(suggestion);
 			console.log(playerSelection[4]);
+			saveToLocal(playerSelection);
 		} else if (
 			playerSelection[2] === 'Far' &&
 			playerSelection[3] === 'Weapons'
@@ -328,6 +375,7 @@ $(document).ready(function () {
 			suggestion = 'Ranger';
 			playerSelection.push(suggestion);
 			console.log(playerSelection[4]);
+			saveToLocal(playerSelection);
 		} else if (
 			playerSelection[2] === 'Far' &&
 			playerSelection[3] === 'Spells'
@@ -335,6 +383,7 @@ $(document).ready(function () {
 			suggestion = 'Wizard';
 			playerSelection.push(suggestion);
 			console.log(playerSelection[4]);
+			saveToLocal(playerSelection);
 		} else if (
 			playerSelection[2] === 'Close' &&
 			playerSelection[3] === 'Weapons'
@@ -342,6 +391,7 @@ $(document).ready(function () {
 			suggestion = 'Fighter';
 			playerSelection.push(suggestion);
 			console.log(playerSelection[4]);
+			saveToLocal(playerSelection);
 		} else if (
 			playerSelection[2] === 'Close' &&
 			playerSelection[3] === 'Spells'
@@ -349,15 +399,8 @@ $(document).ready(function () {
 			suggestion = 'Cleric ';
 			playerSelection.push(suggestion);
 			console.log(playerSelection[4]);
+			saveToLocal(playerSelection);
 		}
-
-		//set Race and Class to Local Storage
-		localStorage.setItem("charGender", playerSelection[0]);
-		localStorage.setItem("charRace", playerSelection[1]);
-		localStorage.setItem("charRange", playerSelection[2]);
-		localStorage.setItem("charStyle", playerSelection[3]);
-		localStorage.setItem("charClass", playerSelection[4]);
-
 		console.log(playerSelection);
 
 		// create a div for the modal6
@@ -420,6 +463,15 @@ $(document).ready(function () {
 		$(document).foundation();
 		$('#Modal6').foundation('open');
 	});
+
+	//set Race and Class to Local Storage
+	function saveToLocal(playerSelection) {
+		localStorage.setItem('charGender', playerSelection[0]);
+		localStorage.setItem('charRace', playerSelection[1]);
+		localStorage.setItem('charRange', playerSelection[2]);
+		localStorage.setItem('charStyle', playerSelection[3]);
+		localStorage.setItem('charClass', playerSelection[4]);
+	}
 
 	// 6. video modal
 	$(document).on('click', '.toModal7', function () {
