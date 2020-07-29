@@ -464,13 +464,17 @@ $(document).ready(function () {
 		$('#Modal6').foundation('open');
 	});
 
-	//set Race and Class to Local Storage
+	//set Gender, Race and Class to Local Storage and to Name Banner
 	function saveToLocal(playerSelection) {
 		localStorage.setItem('charGender', playerSelection[0]);
+		$('#gender').text(playerSelection[0]);
 		localStorage.setItem('charRace', playerSelection[1]);
+		$('#race').text(playerSelection[1]);
 		localStorage.setItem('charRange', playerSelection[2]);
 		localStorage.setItem('charStyle', playerSelection[3]);
 		localStorage.setItem('charClass', playerSelection[4]);
+		$('#class').text(playerSelection[4]);
+
 	}
 
 	// 6. video modal
@@ -491,8 +495,8 @@ $(document).ready(function () {
 			'<iframe id="player" type="text/html" width="560" height="340" src="" frameborder="0"></iframe>'
 		);
 
-		//var queryURL =
-		// 	'https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCRDVE5L1LTWhmPAKKbUBGtg&maxResults=25&q=' +
+		// var queryURL =
+		// 	'https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCRDVE5L1LTWhmPAKKbUBGtg&maxResults=5&q=' +
 		// 	playerSelection[4] +
 		// 	'%20crap%20guide&key=AIzaSyC_UlZBmubS3WD0gdVgovaHxaMb9FFgIMM';
 
