@@ -17,6 +17,16 @@ h3 {
 	font-size: 28px;
 }
 
+ul {
+	justify-content: center;
+	font-size:28px;
+
+}
+
+a {
+	color:black;
+}
+
 .topRow {
 	justify-content: center;
 }
