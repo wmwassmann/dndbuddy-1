@@ -4,6 +4,7 @@ $(document).ready(function () {
 
 
 
+
 	// Will's stuff!
 
 // arrays with images
@@ -163,6 +164,7 @@ function randomImage() {
 	$(".centerBioRight img").attr("src",result.src);
 };
 
+
 	// generate a random number function
 	function getRandomInt(max) {
 		return Math.floor(Math.random() * Math.floor(max));
@@ -205,8 +207,10 @@ function randomImage() {
 		}
 		console.log(playerSelection);
 		saveToLocal(playerSelection);
+
 		// calls the image to be generated at this point
 		randomImage();
+
 		// close modal1
 		$('#Modal1').foundation('close');
 	});
@@ -640,8 +644,7 @@ function randomImage() {
 		localStorage.setItem('charStyle', playerSelection[3]);
 		localStorage.setItem('charClass', playerSelection[4]);
 	}
-	
-	
+
 	// 6. video modal
 	$(document).on('click', '.toModal7', function () {
 		event.preventDefault();
