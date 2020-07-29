@@ -708,5 +708,7 @@ function randomImage() {
 		// reload the foundation and open the modal6
 		$(document).foundation();
 		$('#Modal7').foundation('open');
+
+		weaponsSpells();
 	});
 });

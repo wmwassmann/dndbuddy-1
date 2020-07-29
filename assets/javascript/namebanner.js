@@ -156,6 +156,8 @@ function randomImage() {
 		result.src = currentpicture;
 	}
 
+	weaponsSpells();
+
 	//updates the src.URL to equal the image
 	$(".centerBioRight img").attr("src",result.src);
 };
@@ -174,10 +176,12 @@ $(window).on('load', function () {
 		$('#class').text(classDisplay);
 
 		randomImage();
+
 	} 
 	
 	else {
 		generateName();
+
 
 	}
 });
@@ -274,6 +278,7 @@ function editGenderRaceClass () {
 	
 		raceCount = raceCount + 1;
 	}
+
 
 	if (classCount === 0) {
 		// Creates Cleric List Item
@@ -403,6 +408,8 @@ function editGenderRaceClass () {
 		$("#removeClass").removeClass();
 		$("#classUL").removeClass();
 		randomImage();
+		weaponsSpells();
+		
     });
 
     // Displays and sets 'Fighter' to localStorage on Click
@@ -421,6 +428,8 @@ function editGenderRaceClass () {
 		$("#removeClass").removeClass();
 		$("#classUL").removeClass();
 		randomImage();
+		weaponsSpells();
+		
     });
   
     // Displays and sets 'Ranger' to localStorage on Click
@@ -439,6 +448,8 @@ function editGenderRaceClass () {
 		$("#removeClass").removeClass();
 		$("#classUL").removeClass();
 		randomImage();
+		weaponsSpells();
+		
     });
 
     // Displays and sets 'Rogue' to localStorage on Click
@@ -457,8 +468,12 @@ function editGenderRaceClass () {
 	  $("#removeClass").removeClass();
 	  $("#classUL").removeClass();
 	  randomImage();
+	  weaponsSpells();
+	  
     });
 
+
+  
     // Displays and sets 'Wizard' to localStorage on Click
     $('#wizList').click(function() {
       var classDisplay = "Wizard"
@@ -475,6 +490,10 @@ function editGenderRaceClass () {
 	  $("#removeClass").removeClass();
 	  $("#classUL").removeClass();
 	  randomImage();
+
+	  weaponsSpells();
+	  
+
     });
 
 }
@@ -485,9 +504,12 @@ $("#gender").dblclick(function() {
  
 $("#race").dblclick(function() {
   editGenderRaceClass();
+
 });
 
 $("#class").dblclick(function() {
   editGenderRaceClass();
 });
+
+
 
