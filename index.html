@@ -11,6 +11,11 @@
 			href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;800&display=swap"
 			rel="stylesheet"
 		/>
+		<!--Help Icons-->
+		<link 
+			rel="stylesheet" 
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 		<!-- Foundation CSS -->
 		<link rel="stylesheet" href="css/foundation.css" />
 		<!-- Dice Icon CSS -->
@@ -73,15 +78,7 @@
 					</div>
 				</div>
 			</div>
-				<!--Help Button-->
-				<div class="helpButton">
-					<a class="button tiny" href="#" id="help-guide" data-reveal-id="hg-modal">Help Guide
-						<div id="hg-modal" class="reveal-modal" data-reveal aria-labelledby="HG-Modal-Title"
-							aria-hidden="true" role="dialog">
-							<h2 id="HG-Modal-Title">This is a modal.</h2>
-							<p>Help Guide Text Placeholder</p>
-							<a class="close-reveal-modal" aria-label="Close">&#215;</a>
-						</div>
+
 					</a>
 				</div>
 			<br />
@@ -94,7 +91,11 @@
 						<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
 						<div class="sideStatText">
 							<h3 id="sideStatNumber">10</h3>
-							<h3>Strength</h3>
+							<h3>Strength
+								<div class="helpButton">
+									<a class="fa fa-question-circle" href="#" id="str-guide" data-reveal-id="strength-modal"></a>
+								</div>	
+							</h3>			
 						</div>
 					</div>
 					<!-- Dex -->					
@@ -102,7 +103,11 @@
 						<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
 						<div class="sideStatText">
 							<h3 id="sideStatNumber">10</h3>
-							<h3>Dexterity</h3>
+							<h3>Dexterity
+								<div class="helpButton">
+									<a class="fa fa-question-circle" href="#" id="dex-guide" data-reveal-id="dexterity-modal"></a>
+								</div>	
+							</h3>
 						</div>
 					</div>
 
@@ -111,7 +116,11 @@
 						<img src="assets\front-end-images\medieval-frame.jpg" class ="sideStatImg">
 						<div class="sideStatText">
 							<h3 id="sideStatNumber">10</h3>
-							<h3>Constitution</h3>
+							<h3>Constitution
+								<div class="helpButton">
+									<a class="fa fa-question-circle" href="#" id="con-guide" data-reveal-id="constitution-modal"></a>
+								</div>	
+							</h3>
 						</div>
 					</div>
 				</div>
@@ -133,8 +142,14 @@
 
 						<img src="assets\front-end-images\tornpaperbackground.png" id="centerBioImg">
 						<div class="centerBioText"> 
-						<p>Placeholder</p>
-						</div>
+						<p>Spells and Equipment
+							
+								<a class="fa fa-question-circle" href="#" id="equipment-guide" data-reveal-id="equip-modal"></a>
+							
+						</p>
+						<p id="equipment"></p> 
+
+						
 					</div>
 
 				</div>
@@ -178,7 +193,11 @@
 						<div class="sideStatText">
 
 							<h3 id="sideStatNumber">10</h3>
-							<h3>Intelligence</h3>
+							<h3>Intelligence
+								<div class="helpButton">
+									<a class="fa fa-question-circle" href="#" id="int-guide" data-reveal-id="intelligence-modal"></a>
+								</div>
+							</h3>
 						</div>
 					</div>
 					<!-- Wis -->
@@ -187,7 +206,11 @@
 						<div class="sideStatText">
 
 							<h3 id="sideStatNumber">10</h3>
-							<h3>Wisdom</h3>
+							<h3>Wisdom
+								<div class="helpButton">
+									<a class="fa fa-question-circle" href="#" id="wis-guide" data-reveal-id="wisdom-modal"></a>
+								</div>
+							</h3>
 						</div>
 					</div>
 
@@ -196,7 +219,11 @@
 						<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
 						<div class="sideStatText">
 							<h3 id="sideStatNumber">10</h3>
-							<h3>Charisma</h3>
+							<h3>Charisma
+								<div class="helpButton">
+									<a class="fa fa-question-circle" href="#" id="cha-guide" data-reveal-id="charisma-modal"></a>
+								</div>	
+							</h3>
 						</div>
 					</div>
 				</div>
@@ -215,8 +242,9 @@
         </script>
 		<script src="assets/javascript/dice.js"></script>
 		<script src="assets/javascript/namebanner.js"></script>
-
 		<script src="assets/javascript/5e.js"></script>
+
+		<!-- <script src="assets/javascript/5e.js"></script> -->
 
 
 	</body>

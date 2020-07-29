@@ -464,6 +464,7 @@ $(document).ready(function () {
 		$('#Modal6').foundation('open');
 	});
 
+	
 	//set Race and Class to Local Storage
 	function saveToLocal(playerSelection) {
 		localStorage.setItem('charGender', playerSelection[0]);
@@ -472,6 +473,8 @@ $(document).ready(function () {
 		localStorage.setItem('charStyle', playerSelection[3]);
 		localStorage.setItem('charClass', playerSelection[4]);
 	}
+
+	
 
 	// 6. video modal
 	$(document).on('click', '.toModal7', function () {
@@ -532,5 +535,7 @@ $(document).ready(function () {
 		// reload the foundation and open the modal6
 		$(document).foundation();
 		$('#Modal7').foundation('open');
+
+		weaponsSpells();
 	});
 });
