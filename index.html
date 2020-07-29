@@ -11,6 +11,11 @@
 			href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;800&display=swap"
 			rel="stylesheet"
 		/>
+		<!--Help Icons-->
+		<link 
+			rel="stylesheet" 
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 		<!-- Foundation CSS -->
 		<link rel="stylesheet" href="css/foundation.css" />
 		<!-- Dice Icon CSS -->
@@ -70,14 +75,29 @@
 							</div>
 						</div>
 					</div>
-					<!-- HP Div -->
-					<div class="cell small-6 large-3 large-pull-6 topStatAsideContainer" id="hitPointsID">
-						<div class="cell topStatAside">
-							<img src="assets\front-end-images\hpfull.png" class="topStatImgSide" />
-							<div class="topStatText">
-								<h4>Hitpoints</h4>
-							</div>
-						</div>
+
+				</div>
+				<!-- Name/Class Div -->
+
+				<div class="medium-6 small-4 cell topStat topName" id="nameID">
+					<img src="assets\front-end-images\burnbanner.png" id="topBanner">
+					<div class="topNameText">
+						<h1 contenteditable="false" id = "characterName">Humberferg</h1>
+							<ul id = "addDrop" class="dropdown menu">
+								<li id= removeGender>
+									<a id = "gender" href = "#">Female</a>
+									<ul id = "genderUL" class="menu"></ul>
+								</li>
+								<li id = removeRace>
+									<a id = "race" href="#">Dwarf</a>
+									<ul id = "raceUL" class="menu"></ul>
+								</li>
+								<li id = removeClass>
+									<a id = "class" href="#">Cleric</a>
+									<ul id = "classUL" class="menu"></ul>>
+								</li>
+							</ul>
+
 					</div>
 					<!-- AC Div -->
 					<div class="cell small-6 large-3 topStatAsideContainer" id="hitPointsID">
@@ -89,6 +109,7 @@
 						</div>
 					</div>
 				</div>
+
 				<!-- end of 1st row -->
 				<!--Help Button-->
 				<div class="helpButton">
@@ -104,6 +125,7 @@
 				<br/>
 			</div>
 
+
 			<!-- Left side stats -->
 			<div class="containerLeft">
 				<div class="grid-y statDiv">
@@ -112,7 +134,11 @@
 						<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
 						<div class="sideStatText">
 							<h3 id="sideStatNumber">10</h3>
-							<h3>Strength</h3>
+							<h3>Strength
+								<div class="helpButton">
+									<a class="fa fa-question-circle" href="#" id="str-guide" data-reveal-id="strength-modal"></a>
+								</div>	
+							</h3>
 						</div>
 					</div>
 					<!-- Dex -->					
@@ -120,7 +146,11 @@
 						<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
 						<div class="sideStatText">
 							<h3 id="sideStatNumber">10</h3>
-							<h3>Dexterity</h3>
+							<h3>Dexterity
+								<div class="helpButton">
+									<a class="fa fa-question-circle" href="#" id="dex-guide" data-reveal-id="dexterity-modal"></a>
+								</div>	
+							</h3>
 						</div>
 					</div>
 
@@ -129,7 +159,11 @@
 						<img src="assets\front-end-images\medieval-frame.jpg" class ="sideStatImg">
 						<div class="sideStatText">
 							<h3 id="sideStatNumber">10</h3>
-							<h3>Constitution</h3>
+							<h3>Constitution
+								<div class="helpButton">
+									<a class="fa fa-question-circle" href="#" id="con-guide" data-reveal-id="constitution-modal"></a>
+								</div>	
+							</h3>
 						</div>
 					</div>
 				</div>
@@ -151,7 +185,15 @@
 
 						<img src="assets\front-end-images\tornpaperbackground.png" id="centerBioImg">
 						<div class="centerBioText"> 
-						<p>Placeholder</p>
+						<p>Spells and Equipment
+							<a class="fa fa-question-circle" href="#" id="equipment-guide" data-reveal-id="equip-modal"></a>
+						</p>
+						<p id="equipment-1"></p>
+						<p id="equipment-2"></p>
+						<p id="equipment-3"></p>
+						<p id="equipment-4"></p>
+						<p id="equipment-5"></p>
+
 						</div>
 					</div>
 
@@ -196,7 +238,11 @@
 						<div class="sideStatText">
 
 							<h3 id="sideStatNumber">10</h3>
-							<h3>Intelligence</h3>
+							<h3>Intelligence
+								<div class="helpButton">
+									<a class="fa fa-question-circle" href="#" id="int-guide" data-reveal-id="intelligence-modal"></a>
+								</div>
+							</h3>
 						</div>
 					</div>
 					<!-- Wis -->
@@ -205,7 +251,11 @@
 						<div class="sideStatText">
 
 							<h3 id="sideStatNumber">10</h3>
-							<h3>Wisdom</h3>
+							<h3>Wisdom
+								<div class="helpButton">
+									<a class="fa fa-question-circle" href="#" id="wis-guide" data-reveal-id="wisdom-modal"></a>
+								</div>
+							</h3>
 						</div>
 					</div>
 
@@ -214,7 +264,11 @@
 						<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
 						<div class="sideStatText">
 							<h3 id="sideStatNumber">10</h3>
-							<h3>Charisma</h3>
+							<h3>Charisma
+								<div class="helpButton">
+									<a class="fa fa-question-circle" href="#" id="cha-guide" data-reveal-id="charisma-modal"></a>
+								</div>
+							</h3>
 						</div>
 					</div>
 				</div>
