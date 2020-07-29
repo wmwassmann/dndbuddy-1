@@ -327,270 +327,347 @@ $("#cha-guide").click(function () {
 
 
 
-function wizardSpellsGuideRender() {
-    //SPELLS AND EQUIPMENT MODAL
-    $("#equipment-guide").click(function () {
-        event.preventDefault();
-        // create a div for the modal
-        var equipModal = $('<div>');
-        // add class and ID for modal
-        $(equipModal).addClass('reveal revealStyle');
-        $(equipModal).attr('id', 'equipguide-modal');
-        $(equipModal).attr('data-reveal', '');
-        // append the modal div to mainbody
-        $('#mainBody').append(equipModal);
-        
-        //SPELLS DESCRIPTION
 
-        var spellsTitle = $('<h1>');
-        $(spellsTitle).text("Wizard Spells");
-        $(equipModal).append(spellsTitle);
-
-        //FIREBOLT
-        //create Title html element
-        var fbdTitle = $('<h2>');
-        // add text for the h1 tag
-        $(fbdTitle).text("Fire Bolt");
-        // append the modal1h1 to the div
-        $(equipModal).append(fbdTitle);
-
-        //creates tags for description text
-        var fbdText = $('<p>');
-        $(fbdText).attr('id', 'fbd-text');
-        // add text for the h1 tag
-        $(fbdText).text(" ");
-        // append the modal1h1 to the div
-        $(equipModal).append(fbdText);
-
-        //API "gets" spell info
-        var fbdescURL = "https://www.dnd5eapi.co/api/spells/fire-bolt";
-        $.ajax({
-            url: fbdescURL,
-            method: "GET"
-        }).then(function (fbdRes) {
-            $("#fbd-text").text(fbdRes.desc)
-        });
-
-        //MAGE HAND
-        //create Title html element
-        var mhdTitle = $('<h2>');
-        // add text for the h1 tag
-        $(mhdTitle).text("Mage Hand");
-        // append the modal1h1 to the div
-        $(equipModal).append(mhdTitle);
-
-        //creates tags for description text
-        var mhdText = $('<p>');
-        $(mhdText).attr('id', 'mhd-text');
-        // add text for the h1 tag
-        $(mhdText).text(" ");
-        // append the modal1h1 to the div
-        $(equipModal).append(mhdText);
-
-        //API "gets" spell info
-        var mhdescURL = "https://www.dnd5eapi.co/api/spells/mage-hand";
-        $.ajax({
-            url: mhdescURL,
-            method: "GET"
-        }).then(function (mhdRes) {
-            $("#mhd-text").text(mhdRes.desc)
-        });
-
-        //MAGIC MISSILE
-        //create Title html element
-        var mmdTitle = $('<h2>');
-        // add text for the h1 tag
-        $(mmdTitle).text("Magic Missile");
-        // append the modal1h1 to the div
-        $(equipModal).append(mmdTitle);
-
-        //creates tags for description text
-        var mmdText = $('<p>');
-        $(mmdText).attr('id', 'mmd-text');
-        // add text for the h1 tag
-        $(mmdText).text(" ");
-        // append the modal1h1 to the div
-        $(equipModal).append(mmdText);
-
-        //API "gets" spell info
-        var mmdescURL = "https://www.dnd5eapi.co/api/spells/magic-missile";
-        $.ajax({
-            url: mmdescURL,
-            method: "GET"
-        }).then(function (mmdRes) {
-            $("#mmd-text").text(mmdRes.desc)
-        });
-
-        //MAGE ARMOR
-        //create Title html element
-        var madTitle = $('<h2>');
-        // add text for the h1 tag
-        $(madTitle).text("Mage Armor");
-        // append the modal1h1 to the div
-        $(equipModal).append(madTitle);
-
-        //creates tags for description text
-        var madText = $('<p>');
-        $(madText).attr('id', 'mad-text');
-        // add text for the h1 tag
-        $(madText).text(" ");
-        // append the modal1h1 to the div
-        $(equipModal).append(madText);
-
-        //API "gets" spell info
-        var madescURL = "https://www.dnd5eapi.co/api/spells/mage-armor";
-        $.ajax({
-            url: madescURL,
-            method: "GET"
-        }).then(function (madRes) {
-            $("#mad-text").text(madRes.desc)
-        });
-
-        // create a button tag for the close button
-        var eClose = $('<button>');
-        // add the class and attr for the button
-        $(eClose).addClass('close-button');
-        $(eClose).attr('data-close', '');
-        $(eClose).attr('aria-label', 'Close reveal');
-        $(eClose).attr('type', 'button');
-        // add the span for the close button
-        $(eClose).html('<span aria-hidden="true">&times;</span>');
-        // append the button to the div
-        $(equipModal).append(eClose);
-        //Document functionality with Foundation
-        $(document).foundation();
-        $('#equipguide-modal').foundation('open');
-    });
-}
+//SPELLS AND EQUIPMENT MODAL
 
 
-function fighterWeaponsGuideRender () {
-    $("#equipment-guide").click(function () {
-        event.preventDefault();
-        // create a div for the modal
-        var equipModal = $('<div>');
-        // add class and ID for modal
-        $(equipModal).addClass('reveal revealStyle');
-        $(equipModal).attr('id', 'equipguide-modal');
-        $(equipModal).attr('data-reveal', '');
-        // append the modal div to mainbody
-        $('#mainBody').append(equipModal);
-
-        //GREAT WEAPON FIGHTING 
-        //create Title html element
-        var gwdTitle = $('<h2>');
-        // add text for the h1 tag
-        $(gwdTitle).text("Great Weapon Fighting Style");
-        // append the modal1h1 to the div
-        $(equipModal).append(gwdTitle);
-
-        //creates tags for description text
-        var gwdText = $('<p>');
-        $(gwdText).attr('id', 'gwd-text');
-        // add text for the h1 tag
-        $(gwdText).text(" ");
-        // append the modal1h1 to the div
-        $(equipModal).append(gwdText);
-
-        //API "gets" spell info
-        var gwdescURL = "https://www.dnd5eapi.co/api/features/fighter-fighting-style-great-weapon-fighting";
-        $.ajax({
-            url: gwdescURL,
-            method: "GET"
-        }).then(function (gwdRes) {
-            $("#gwd-text").text(gwdRes.desc)
-        });
-
-        //SECOND WIND 
-        //create Title html element
-        var swdTitle = $('<h2>');
-        // add text for the h1 tag
-        $(swdTitle).text("Second Wind");
-        // append the modal1h1 to the div
-        $(equipModal).append(swdTitle);
-
-        //creates tags for description text
-        var swdText = $('<p>');
-        $(swdText).attr('id', 'swd-text');
-        // add text for the h1 tag
-        $(swdText).text(" ");
-        // append the modal1h1 to the div
-        $(equipModal).append(swdText);
-
-        //API "gets" spell info
-        var swdescURL = "https://www.dnd5eapi.co/api/features/second-wind";
-        $.ajax({
-            url: swdescURL,
-            method: "GET"
-        }).then(function (swdRes) {
-            $("#swd-text").text(swdRes.desc)
-        });
-
-
-
-        // create a button tag for the close button
-        var eClose = $('<button>');
-        // add the class and attr for the button
-        $(eClose).addClass('close-button');
-        $(eClose).attr('data-close', '');
-        $(eClose).attr('aria-label', 'Close reveal');
-        $(eClose).attr('type', 'button');
-        // add the span for the close button
-        $(eClose).html('<span aria-hidden="true">&times;</span>');
-        // append the button to the div
-        $(equipModal).append(eClose);
-        //Document functionality with Foundation
-        $(document).foundation();
-        $('#equipguide-modal').foundation('open');
-    });
-}
-
-
-
-
-
-// var equipment = $('#equiment').html(" ");
-//EQUIPMENT
-function weaponsSpells() {
-
+$("#equipment-guide").click(function () {
+    
+    event.preventDefault();
+    $(document).foundation();
     var classEquip = localStorage.getItem("charClass");
-    var fireboltURL = "https://www.dnd5eapi.co/api/spells/fire-bolt";
-    console.log(classEquip);
+
+    
+
         if (classEquip === "Wizard") {
-            wizardSpellsGuideRender();
+            // function wizardSpellsGuideRender() {
+                
+                // create a div for the modal
+                var equipModal = $('<div>');
+                // add class and ID for modal
+                $(equipModal).addClass('reveal revealStyle');
+                $(equipModal).attr('id', 'equipguide-modal');
+                $(equipModal).attr('data-reveal', '');
+                // append the modal div to mainbody
+                $('#mainBody').append(equipModal);
+                
+                //SPELLS DESCRIPTION
+
+                var spellsTitle = $('<h1>');
+                $(spellsTitle).text("Wizard Spells");
+                $(equipModal).append(spellsTitle);
+
+                //FIREBOLT
+                //create Title html element
+                var fbdTitle = $('<h2>');
+                // add text for the h1 tag
+                $(fbdTitle).text("Fire Bolt");
+                // append the modal1h1 to the div
+                $(equipModal).append(fbdTitle);
+
+                //creates tags for description text
+                var fbdText = $('<p>');
+                $(fbdText).attr('id', 'fbd-text');
+                // add text for the h1 tag
+                $(fbdText).text(" ");
+                // append the modal1h1 to the div
+                $(equipModal).append(fbdText);
+
+                //API "gets" spell info
+                var fbdescURL = "https://www.dnd5eapi.co/api/spells/fire-bolt";
+                $.ajax({
+                    url: fbdescURL,
+                    method: "GET"
+                }).then(function (fbdRes) {
+                    $("#fbd-text").text(fbdRes.desc)
+                });
+
+                //MAGE HAND
+                //create Title html element
+                var mhdTitle = $('<h2>');
+                // add text for the h1 tag
+                $(mhdTitle).text("Mage Hand");
+                // append the modal1h1 to the div
+                $(equipModal).append(mhdTitle);
+
+                //creates tags for description text
+                var mhdText = $('<p>');
+                $(mhdText).attr('id', 'mhd-text');
+                // add text for the h1 tag
+                $(mhdText).text(" ");
+                // append the modal1h1 to the div
+                $(equipModal).append(mhdText);
+
+                //API "gets" spell info
+                var mhdescURL = "https://www.dnd5eapi.co/api/spells/mage-hand";
+                $.ajax({
+                    url: mhdescURL,
+                    method: "GET"
+                }).then(function (mhdRes) {
+                    $("#mhd-text").text(mhdRes.desc)
+                });
+
+                //MAGIC MISSILE
+                //create Title html element
+                var mmdTitle = $('<h2>');
+                // add text for the h1 tag
+                $(mmdTitle).text("Magic Missile");
+                // append the modal1h1 to the div
+                $(equipModal).append(mmdTitle);
+
+                //creates tags for description text
+                var mmdText = $('<p>');
+                $(mmdText).attr('id', 'mmd-text');
+                // add text for the h1 tag
+                $(mmdText).text(" ");
+                // append the modal1h1 to the div
+                $(equipModal).append(mmdText);
+
+                //API "gets" spell info
+                var mmdescURL = "https://www.dnd5eapi.co/api/spells/magic-missile";
+                $.ajax({
+                    url: mmdescURL,
+                    method: "GET"
+                }).then(function (mmdRes) {
+                    $("#mmd-text").text(mmdRes.desc)
+                });
+
+                //MAGE ARMOR
+                //create Title html element
+                var madTitle = $('<h2>');
+                // add text for the h1 tag
+                $(madTitle).text("Mage Armor");
+                // append the modal1h1 to the div
+                $(equipModal).append(madTitle);
+
+                //creates tags for description text
+                var madText = $('<p>');
+                $(madText).attr('id', 'mad-text');
+                // add text for the h1 tag
+                $(madText).text(" ");
+                // append the modal1h1 to the div
+                $(equipModal).append(madText);
+
+                //API "gets" spell info
+                var madescURL = "https://www.dnd5eapi.co/api/spells/mage-armor";
+                $.ajax({
+                    url: madescURL,
+                    method: "GET"
+                }).then(function (madRes) {
+                    $("#mad-text").text(madRes.desc)
+                });
+
+                // create a button tag for the close button
+                var eClose = $('<button>');
+                // add the class and attr for the button
+                $(eClose).addClass('close-button');
+                $(eClose).attr('data-close', '');
+                $(eClose).attr('aria-label', 'Close reveal');
+                $(eClose).attr('type', 'button');
+                // add the span for the close button
+                $(eClose).html('<span aria-hidden="true">&times;</span>');
+                // append the button to the div
+                $(equipModal).append(eClose);
+                //Document functionality with Foundation
+                $(document).foundation();
+                $('#equipguide-modal').foundation('open');
+            
+        }else if (classEquip === "Fighter") {
+
+
+        
+            // function fighterWeaponsGuideRender() {
+                
+                // create a div for the modal
+                var equipModal2 = $('<div>');
+                // add class and ID for modal
+                $(equipModal2).addClass('reveal revealStyle');
+                $(equipModal2).attr('id', 'equipguide-modal');
+                $(equipModal2).attr('data-reveal', '');
+                // append the modal div to mainbody
+                $('#mainBody').append(equipModal2);
+
+                var fighterTitle = $('<h1>');
+                $(fighterTitle).text("Fighter Bonus Features");
+                $(equipModal2).append(fighterTitle);
+
+                //GREAT WEAPON FIGHTING 
+                //create Title html element
+                var gwdTitle = $('<h2>');
+                // add text for the h1 tag
+                $(gwdTitle).text("Great Weapon Fighting Style");
+                // append the modal1h1 to the div
+                $(equipModal2).append(gwdTitle);
+
+                //creates tags for description text
+                var gwdText = $('<p>');
+                $(gwdText).attr('id', 'gwd-text');
+                // add text for the h1 tag
+                $(gwdText).text(" ");
+                // append the modal1h1 to the div
+                $(equipModal2).append(gwdText);
+
+                //API "gets" spell info
+                var gwdescURL = "https://www.dnd5eapi.co/api/features/fighter-fighting-style-great-weapon-fighting";
+                $.ajax({
+                    url: gwdescURL,
+                    method: "GET"
+                }).then(function (gwdRes) {
+                    $("#gwd-text").text(gwdRes.desc)
+                });
+
+                //SECOND WIND 
+                //create Title html element
+                var swdTitle = $('<h2>');
+                // add text for the h1 tag
+                $(swdTitle).text("Second Wind");
+                // append the modal1h1 to the div
+                $(equipModal2).append(swdTitle);
+
+                //creates tags for description text
+                var swdText = $('<p>');
+                $(swdText).attr('id', 'swd-text');
+                // add text for the h1 tag
+                $(swdText).text(" ");
+                // append the modal1h1 to the div
+                $(equipModal2).append(swdText);
+
+                //API "gets" spell info
+                var swdescURL = "https://www.dnd5eapi.co/api/features/second-wind";
+                $.ajax({
+                    url: swdescURL,
+                    method: "GET"
+                }).then(function (swdRes) {
+                    $("#swd-text").text(swdRes.desc)
+                });
+
+
+
+                // create a button tag for the close button
+                var eClose2 = $('<button>');
+                // add the class and attr for the button
+                $(eClose2).addClass('close-button');
+                $(eClose2).attr('data-close', '');
+                $(eClose2).attr('aria-label', 'Close reveal');
+                $(eClose2).attr('type', 'button');
+                // add the span for the close button
+                $(eClose2).html('<span aria-hidden="true">&times;</span>');
+                // append the button to the div
+                $(equipModal2).append(eClose2);
+                //Document functionality with Foundation
+                $(document).foundation();
+                $('#equipguide-modal').foundation('open');
+            
+        }
+});        
+
+
+
+
+
+
+
+//EQUIPMENT
+
+
+
+
+function weaponsSpells() {
+    // console.log("weapons function is running");
+    var classEquip = localStorage.getItem("charClass");
+
+    console.log(classEquip);
+//--------WIZARD SPELLS AND GUIDE GENERATE HERE--------
+         
+        if (classEquip === "Wizard") {
+                
+            var fireboltURL = "https://www.dnd5eapi.co/api/spells/fire-bolt";
+            var magehandURL = "https://www.dnd5eapi.co/api/spells/mage-hand";
+            var magicmissileURL = "https://www.dnd5eapi.co/api/spells/magic-missile";
+            var magearmorURL = "https://www.dnd5eapi.co/api/spells/mage-armor";
             $.ajax({
                 url: fireboltURL,
                 method: "GET"
             }).then(function (fbRes) {
-                $('#equipment').html("<h5>" + "Fire-Bolt: 1d10" + "</h5>")
+                //FIREBOLT HTML
+                $('#equipment-1').html("<h5>" + "Fire-Bolt: 1d10" + "</h5>")
                 .append("Range: " + fbRes.range)
                 .append("<br />" + "Casting Time: " + fbRes.casting_time)
                 .append("<br />" + "Level: " + fbRes.level)
-                // console.log(equipment);
             });
+                //MAGE HAND HTML
+            $.ajax({
+                url: magehandURL,
+                method: "GET"
+            }).then(function (mhRes) {
+                $("#equipment-2").html("<h5>" + "Mage Hand" + "</h5>")
+                .append("Range: " + mhRes.range)
+                .append("<br />" + "Casting Time: " + mhRes.casting_time)
+                .append("<br />" + "Level: " + mhRes.level)
+            });
+                //MAGIC MISSILE HTML
+            $.ajax({
+                url: magicmissileURL,
+                method: "GET"
+            }).then(function (mmRes) {
+                $("#equipment-3").html("<h5>" + "Magic Missile: 3x (1d4)+1 force damage" + "</h5>")
+                .append("Range: " + mmRes.range)
+                .append("<br />" + "Casting Time: " + mmRes.casting_time)
+                .append("<br />" + "Level: " + mmRes.level)
+            });
+                //MAGE ARMOR HTML
+            $.ajax({
+                url: magearmorURL,
+                method: "GET"
+            }).then(function (maRes) {
+                $("#equipment-4").html("<h5>" + "Mage Armor" + "</h5>")
+                .append("Duration: " + maRes.duration)
+                .append("<br />" + "Casting Time: " + maRes.casting_time)
+                .append("<br />" + "Level: " + maRes.level)
+            });                
+
+                //QUARTERSTAFF HTML
+            $("#equipment-5").html("<h5>" + "Quarterstaff: 1d6 bludgeoning damage" + "</h5>")
+
+            //WIZARD GUIDE RENDER FUNCTION    
+            // wizardSpellsGuideRender();
+            
+
+        
+        }else if (classEquip === "Fighter") {
+            
+            //FIGHTER HELP GUIDE RENDERS
 
 
+            //GREATSWORD HTML
+            $('#equipment-1').html("<h5>" + "Greatsword: (2d6)+2 slashing damage" + "</h5>")
+            //MEDIUM ARMOR HTML
+            .append("<h5>" + "Medium Armor" + "</h5>");
+            $("#equipment-2").html(" ");
+            $("#equipment-3").html(" ");
+            $("#equipment-4").html(" ");
+            $("#equipment-5").html(" ");
+            //FIGHTER GUIDE RENDER FUNCTION                
+            // fighterWeaponsGuideRender();
+            
+        }
+
+            // $("#equipguide-modal").
+            //SPELLS AND EQUIPMENT MODAL
 
             
 
+//--------FIGHTER WEAPONS AND GUIDE GENERATE HERE--------    
+      
 
 
-        }    
-        else if (classEquip === "Fighter") {
-                fighterWeaponsGuideRender();
-                $('#equipment').html("<h5>" + "Greatsword: 2d6 slashing damage" + "</h5>")
-                .append("<h5>" + "Medium Armor" + "</h5>");
-                
-            }
         
+//--------CLERIC SPELLS AND WEAPONS GENERATE HERE--------
         if (classEquip === "Cleric");
 
         if (classEquip === "Rogue");
 
         if (classEquip === "Ranger");
-//----SPELLS----
+
 
 }
-
-//add to middle left placeholder in index html
-// id="equipment"

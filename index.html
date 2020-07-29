@@ -64,10 +64,21 @@
 				<div class="medium-6 small-4 cell topStat topName" id="nameID">
 					<img src="assets\front-end-images\burnbanner.png" id="topBanner">
 					<div class="topNameText">
-					<h1 contenteditable="false" id = "characterName">Humberferg</h1>
-					<h3 class = "inline" id = "gender">Female</h3>
-					<h3 class = "inline" id = "race">Dwarf</h3>
-					<h3 class = "inline" id = "class">Cleric</h3>
+						<h1 contenteditable="false" id = "characterName">Humberferg</h1>
+							<ul id = "addDrop" class="dropdown menu">
+								<li id= removeGender>
+									<a id = "gender" href = "#">Female</a>
+									<ul id = "genderUL" class="menu"></ul>
+								</li>
+								<li id = removeRace>
+									<a id = "race" href="#">Dwarf</a>
+									<ul id = "raceUL" class="menu"></ul>
+								</li>
+								<li id = removeClass>
+									<a id = "class" href="#">Cleric</a>
+									<ul id = "classUL" class="menu"></ul>>
+								</li>
+							</ul>
 					</div>
 				</div>
 				<!-- AC Div -->
@@ -79,8 +90,6 @@
 				</div>
 			</div>
 
-					</a>
-				</div>
 			<br />
 
 			<!-- Left side stats -->
@@ -95,7 +104,7 @@
 								<div class="helpButton">
 									<a class="fa fa-question-circle" href="#" id="str-guide" data-reveal-id="strength-modal"></a>
 								</div>	
-							</h3>			
+							</h3>
 						</div>
 					</div>
 					<!-- Dex -->					
@@ -143,13 +152,15 @@
 						<img src="assets\front-end-images\tornpaperbackground.png" id="centerBioImg">
 						<div class="centerBioText"> 
 						<p>Spells and Equipment
-							
-								<a class="fa fa-question-circle" href="#" id="equipment-guide" data-reveal-id="equip-modal"></a>
-							
+							<a class="fa fa-question-circle" href="#" id="equipment-guide" data-reveal-id="equip-modal"></a>
 						</p>
-						<p id="equipment"></p> 
+						<p id="equipment-1"></p>
+						<p id="equipment-2"></p>
+						<p id="equipment-3"></p>
+						<p id="equipment-4"></p>
+						<p id="equipment-5"></p>
 
-						
+						</div>
 					</div>
 
 				</div>
@@ -222,7 +233,7 @@
 							<h3>Charisma
 								<div class="helpButton">
 									<a class="fa fa-question-circle" href="#" id="cha-guide" data-reveal-id="charisma-modal"></a>
-								</div>	
+								</div>
 							</h3>
 						</div>
 					</div>
@@ -242,9 +253,8 @@
         </script>
 		<script src="assets/javascript/dice.js"></script>
 		<script src="assets/javascript/namebanner.js"></script>
-		<script src="assets/javascript/5e.js"></script>
 
-		<!-- <script src="assets/javascript/5e.js"></script> -->
+		<script src="assets/javascript/5e.js"></script>
 
 
 	</body>
