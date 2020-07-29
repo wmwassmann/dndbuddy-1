@@ -1,15 +1,28 @@
+/* main container style */
+.mainContainer {
+	min-width: 950px;
+	max-width: 100%;
+}
+
+/* help button style */
 .helpButton {
 	position: absolute;
 	top: 0;
 	right: 0;
 }
 
+/* main body style */
 body {
 	background-image: url(northern_chimera-rotated.png);
 	font-family: 'Grenze Gotisch', cursive;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: 'Grenze Gotisch', cursive;
 }
 
@@ -17,49 +30,90 @@ h3 {
 	font-size: 28px;
 }
 
+
+/* style for the choice */
 ul {
 	justify-content: center;
-	font-size:28px;
-
+	font-size: 28px;
 }
 
 a {
-	color:black;
+	color: black;
 }
+
+/* top row style */
 
 .topRow {
 	justify-content: center;
+	margin-bottom: 50px;
 }
 
 .topStat {
-	height: 150px;
-	width: 150px;
+	position: relative;
 	text-align: center;
-	padding-top: 40px;
+}
+
+.topStatAsideContainer {
+	position: relative;
+	height: 180px;
+}
+
+.topStatAside {
+	position: relative;
+	height: 100%;
+	max-width: 180px;
+	max-height: 180px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.topStatAsideRight {
+	position: relative;
+	height: 100%;
+	max-width: 180px;
+	max-height: 180px;
+	width: 100%;
+	margin-right: 5%;
 }
 
 .topStatText {
-	position: relative;
-	height: 10px;
-	width: 100px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 60%;
+	height: 100%;
 	margin: auto;
-	bottom: 180px;
+	padding-top: 20%;
+	text-align: center;
 }
 
-#topStatImg {
-	position: relative;
-	height: 180px;
-	width: 180px;
-	margin: auto;
-	bottom: 55px;
+.topStatImgSide {
+	height: auto;
+	width: auto;
+	max-width: 180px;
+	object-fit: scale-down;
 }
 
 #topBanner {
-	position: relative;
 	height: 180px;
-	width: 910px;
+	width: 100%;
 	margin: auto;
-	bottom: 45px;
+}
+
+.topBannerText {
+	position: relative;
+	bottom: 150px;
+}
+
+#nameID {
+	max-height: 180px;
+}
+
+#characterName {
+	font-size: 3.5rem;
 }
 
 .topNameText {
@@ -68,16 +122,13 @@ a {
 	bottom: 190px;
 }
 
-.inline {
-	display: inline;
-}
-
 #edit-name-etc {
 	float: right;
 	margin-right: 40px;
 	background: transparent;
 	opacity: 50%;
 }
+/* top row style end */
 
 .containerLeft {
 	position: absolute;
@@ -124,7 +175,6 @@ a {
 	font-size: 50px;
 }
 
-
 .sideStatImg {
 	position: relative;
 	height: 130px;
@@ -134,7 +184,6 @@ a {
 }
 
 .rightStats {
-
 }
 
 .containerCenterLeft {
@@ -173,14 +222,12 @@ a {
 	position: relative;
 	bottom: 130px;
 	left: 25px;
-
 }
 
 #centerVidImg {
 	height: 280px;
 	width: 530px;
 }
-
 
 .containerDice {
 	position: absolute;
@@ -194,7 +241,6 @@ a {
 	height: 280px;
 	width: 530px;
 }
-
 
 .containerDice {
 	position: absolute;
@@ -211,7 +257,7 @@ a {
 }
 
 .diceTray {
-	border:solid;
+	border: solid;
 }
 
 * {
@@ -268,12 +314,12 @@ a {
 		height: 140px;
 		width: 465px;
 	}
-	
+
 	.centerLeftGrid {
 		height: 200px;
 		width: 465px;
 	}
-	
+
 	.containerCenterRight {
 		position: absolute;
 		top: 380px;
@@ -281,7 +327,7 @@ a {
 		height: 149px;
 		width: 465px;
 	}
-	
+
 	.centerRightGrid {
 		height: 190px;
 		width: 465px;
@@ -294,7 +340,6 @@ a {
 		position: relative;
 		bottom: 95px;
 		left: 25px;
-	
 	}
 
 	#centerBioImg {
@@ -324,11 +369,8 @@ a {
 
 /* Ipads */
 
-
-
 /* To resize for smaller screens */
 @media only screen and (max-width: 768px) {
-		
 	#sideStatImg {
 		position: relative;
 		height: 133px;
@@ -352,7 +394,7 @@ a {
 		margin: auto;
 		bottom: 50px;
 	}
-	
+
 	.topName {
 	}
 
@@ -420,7 +462,6 @@ a {
 
 /* For tiny screens like S5/Moto G4 */
 @media only screen and (max-width: 360px) {
-
 	.containerCenterLeft {
 		position: absolute;
 		left: 80px;
