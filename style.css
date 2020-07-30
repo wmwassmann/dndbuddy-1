@@ -168,7 +168,7 @@ h3 {
 	bottom: 125px;
 }
 
-#sideStatNumber {
+#sideStatNumber1, #sideStatNumber2, #sideStatNumber3, #sideStatNumber4, #sideStatNumber5, #sideStatNumber6  {
 	position: relative;
 	height: 20px;
 	width: 100px;
@@ -316,10 +316,141 @@ h3 {
 	}
 }
 
-/* For small screens (i.e. phone)*/
-@media only screen and (max-width: 640px) {
-	.mainContainer {
-		min-width: 0px;
-		max-width: 100%;
+
+/* Ipads */
+
+
+
+/* To resize for smaller screens */
+@media only screen and (max-width: 768px) {
+		
+	#sideStatImg {
+		position: relative;
+		height: 133px;
+		width: 150px;
+		margin: auto;
+		bottom: 65px;
+	}
+
+	.sideStatText {
+		position: relative;
+		height: 10px;
+		width: 80px;
+		margin: auto;
+		bottom: 115px;
+	}
+
+	#sideStatNumber1, #sideStatNumber2, #sideStatNumber3, #sideStatNumber4, #sideStatNumber5, #sideStatNumber6  {
+		position: relative;
+		height: 10px;
+		width: 80px;
+		margin: auto;
+		bottom: 50px;
+	}
+	
+	.topName {
+	}
+
+	.statDiv {
+		width: 80px;
+		margin-left: 0;
+	}
+
+	.statDivRight {
+		width: 80px;
+		margin-right: 0;
+	}
+
+	.sideStat {
+		padding-top: 80%;
+	}
+
+	.containerCenterLeft {
+		position: absolute;
+		left: 85px;
+		height: 280px;
+		width: 200px;
+	}
+
+	.centerLeftGrid {
+		height: 280px;
+		width: 200px;
+	}
+
+	.containerCenterRight {
+		top: 450px;
+		position: absolute;
+		left: 85px;
+		height: 150px;
+		width: 200px;
+	}
+
+	.centerRightGrid {
+		height: 150px;
+		width: 200px;
+	}
+
+	#centerBioImg {
+		height: 140px;
+		width: 465px;
+	}
+
+	#centerVidImg {
+		height: 150px;
+		width: 200px;
+	}
+
+	.containerDice {
+		position: absolute;
+		bottom: 35px;
+		left: 0;
+		height: 170px;
+		width: 375px;
+	}
+	.diceGrid {
+		height: 170px;
+		width: 375px;
+	}
+}
+
+/* For tiny screens like S5/Moto G4 */
+@media only screen and (max-width: 360px) {
+
+	.containerCenterLeft {
+		position: absolute;
+		left: 80px;
+		height: 280px;
+		width: 200px;
+	}
+
+	.centerLeftGrid {
+		height: 280px;
+		width: 200px;
+	}
+
+	.containerCenterRight {
+		top: 450px;
+		position: absolute;
+		left: 80px;
+		height: 150px;
+		width: 200px;
+	}
+
+	.centerRightGrid {
+		height: 150px;
+		width: 200px;
+	}
+
+	.containerDice {
+		position: absolute;
+		bottom: -140px;
+		left: 0;
+		height: 170px;
+		width: 375px;
+	}
+	.diceGrid {
+		height: 170px;
+		width: 375px;
+
 	}
 }

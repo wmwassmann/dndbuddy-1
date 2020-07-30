@@ -210,6 +210,7 @@ function randomImage() {
 
 		// calls the image to be generated at this point
 		randomImage();
+		stats();
 
 		// close modal1
 		$('#Modal1').foundation('close');
@@ -625,6 +626,7 @@ function randomImage() {
 		$(modal6).append(modal6b2);
 		// calls the image to be generated at this point
 		randomImage();
+		stats();
 		
 		// close modal5
 		$('#Modal5').foundation('close');
@@ -712,3 +714,161 @@ function randomImage() {
 		weaponsSpells();
 	});
 });
+var hitpoints = document.getElementById("health");
+var armor = document.getElementById("armor");
+var str = document.getElementById("sideStatNumber1");
+var dex = document.getElementById("sideStatNumber2");
+var con = document.getElementById("sideStatNumber3");
+var int = document.getElementById("sideStatNumber4");
+var wis = document.getElementById("sideStatNumber5");
+var cha = document.getElementById("sideStatNumber6");
+
+function stats() {
+
+	var race = localStorage.getItem("charRace");
+	var classDisplay = localStorage.getItem("charClass");
+if (race === "Human") {
+	if (classDisplay === "Fighter") {
+		hitpoints.innerHTML = "15";
+		armor.innerHTML = "15";
+		str.innerHTML = "17";
+		dex.innerHTML = "13";
+		con.innerHTML = "14";
+		int.innerHTML = "12";
+		wis.innerHTML = "12";
+		cha.innerHTML = "8";
+	} else if (classDisplay === "Ranger") {
+		hitpoints.innerHTML = "12";
+		armor.innerHTML = "14";
+		str.innerHTML = "16";
+		dex.innerHTML = "15";
+		con.innerHTML = "12";
+		int.innerHTML = "12";
+		wis.innerHTML = "13";
+		cha.innerHTML = "8";		
+	} else if (classDisplay === "Wizard") {
+		hitpoints.innerHTML = "10";
+		armor.innerHTML = "10";
+		str.innerHTML = "10";
+		dex.innerHTML = "10";
+		con.innerHTML = "13";
+		int.innerHTML = "17";
+		wis.innerHTML = "14";
+		cha.innerHTML = "12";
+	} else if (classDisplay === "Cleric") {
+		hitpoints.innerHTML = "15";
+		armor.innerHTML = "15";
+		str.innerHTML = "15";
+		dex.innerHTML = "12";
+		con.innerHTML = "14";
+		int.innerHTML = "12";
+		wis.innerHTML = "15";
+		cha.innerHTML = "8";
+	} else if (classDisplay === "Rogue") {
+		hitpoints.innerHTML = "11";
+		armor.innerHTML = "13";
+		str.innerHTML = "15";
+		dex.innerHTML = "15";
+		con.innerHTML = "10";
+		int.innerHTML = "10";
+		wis.innerHTML = "12";
+		cha.innerHTML = "15";
+	} 
+} else if (race === "Elf") {
+	if (classDisplay === "Fighter") {
+		hitpoints.innerHTML = "15";
+		armor.innerHTML = "15";
+		str.innerHTML = "15";
+		dex.innerHTML = "15";
+		con.innerHTML = "14";
+		int.innerHTML = "10";
+		wis.innerHTML = "12";
+		cha.innerHTML = "10";
+	} else if (classDisplay === "Ranger") {
+		hitpoints.innerHTML = "12";
+		armor.innerHTML = "16";
+		str.innerHTML = "14";
+		dex.innerHTML = "17";
+		con.innerHTML = "12";
+		int.innerHTML = "10";
+		wis.innerHTML = "13";
+		cha.innerHTML = "10";		
+	} else if (classDisplay === "Wizard") {
+		hitpoints.innerHTML = "10";
+		armor.innerHTML = "11";
+		str.innerHTML = "8";
+		dex.innerHTML = "12";
+		con.innerHTML = "13";
+		int.innerHTML = "15";
+		wis.innerHTML = "14";
+		cha.innerHTML = "14";
+	} else if (classDisplay === "Cleric") {
+		hitpoints.innerHTML = "15";
+		armor.innerHTML = "16";
+		str.innerHTML = "13";
+		dex.innerHTML = "14";
+		con.innerHTML = "14";
+		int.innerHTML = "10";
+		wis.innerHTML = "15";
+		cha.innerHTML = "10";
+	} else if (classDisplay === "Rogue") {
+		hitpoints.innerHTML = "11";
+		armor.innerHTML = "14";
+		str.innerHTML = "13";
+		dex.innerHTML = "16";
+		con.innerHTML = "10";
+		int.innerHTML = "8";
+		wis.innerHTML = "12";
+		cha.innerHTML = "17";
+	} 
+} else if (race === "Dwarf") {
+	if (classDisplay === "Fighter") {
+		hitpoints.innerHTML = "20";
+		armor.innerHTML = "15";
+		str.innerHTML = "15";
+		dex.innerHTML = "13";
+		con.innerHTML = "16";
+		int.innerHTML = "10";
+		wis.innerHTML = "14";
+		cha.innerHTML = "8";
+	} else if (classDisplay === "Ranger") {
+		hitpoints.innerHTML = "14";
+		armor.innerHTML = "14";
+		str.innerHTML = "14";
+		dex.innerHTML = "15";
+		con.innerHTML = "14";
+		int.innerHTML = "10";
+		wis.innerHTML = "15";
+		cha.innerHTML = "8";		
+	} else if (classDisplay === "Wizard") {
+		hitpoints.innerHTML = "12";
+		armor.innerHTML = "10";
+		str.innerHTML = "8";
+		dex.innerHTML = "10";
+		con.innerHTML = "15";
+		int.innerHTML = "15";
+		wis.innerHTML = "16";
+		cha.innerHTML = "12";
+	} else if (classDisplay === "Cleric") {
+		hitpoints.innerHTML = "18";
+		armor.innerHTML = "15";
+		str.innerHTML = "13";
+		dex.innerHTML = "12";
+		con.innerHTML = "16";
+		int.innerHTML = "10";
+		wis.innerHTML = "17";
+		cha.innerHTML = "8";
+	} else if (classDisplay === "Rogue") {
+		hitpoints.innerHTML = "13";
+		armor.innerHTML = "13";
+		str.innerHTML = "13";
+		dex.innerHTML = "15";
+		con.innerHTML = "12";
+		int.innerHTML = "8";
+		wis.innerHTML = "14";
+		cha.innerHTML = "15";
+	} 
+}
+
+	}
+stats();
