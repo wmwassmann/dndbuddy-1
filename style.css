@@ -105,7 +105,7 @@ h3 {
 	bottom: 125px;
 }
 
-#sideStatNumber {
+#sideStatNumber1, #sideStatNumber2, #sideStatNumber3, #sideStatNumber4, #sideStatNumber5, #sideStatNumber6  {
 	position: relative;
 	height: 20px;
 	width: 100px;
@@ -335,7 +335,7 @@ h3 {
 		bottom: 115px;
 	}
 
-	#sideStatNumber {
+	#sideStatNumber1, #sideStatNumber2, #sideStatNumber3, #sideStatNumber4, #sideStatNumber5, #sideStatNumber6  {
 		position: relative;
 		height: 10px;
 		width: 80px;

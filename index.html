@@ -13,6 +13,9 @@
 		/>
 		<!-- Foundation CSS -->
 		<link rel="stylesheet" href="css/foundation.css" />
+		<link rel="stylesheet" href="css/foundation-float.css" />
+		<link rel="stylesheet" href="css/foundation.min.css" />
+		<link rel="stylesheet" href="css/foundation-float.min.css" />
 		<!-- Dice Icon CSS -->
 		<link
 			rel="stylesheet"
@@ -46,33 +49,53 @@
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
-			<div class="grid-x topRow">
-				<!-- HP Div -->
-				<div class="medium-2 small-4 cell topStat" id="hitPointsID">
-					<img src="assets\front-end-images\hpfull.png" id="topStatImg">
-					<div class="topStatText">
-					<h4>Hitpoints</h4>
+			<!-- container start-->
+			<div class="grid-container mainContainer small-centered">
+				<!-- 1st row -->
+				<div class="grid-x topRow align-middle">
+					<!-- Name/Class Div -->
+					<div class="cell small-12 large-6 topStat large-push-3" id="nameID">
+						<img src="assets\front-end-images\burnbanner.png" id="topBanner" />
+						<div class="grid-x topBannerText">
+							<div class="cell">
+								<h1 contenteditable="false" id="characterName">Humberferg</h1>
+								<div class="grid-x">
+									<div class="cell small-4">
+										<h3><span id="gender">Female</span></h3>
+									</div>
+									<div class="cell small-4">
+										<h3><span id="race">Dwarf</span></h3>
+									</div>
+									<div class="cell small-4">
+										<h3><span id="class">Cleric</span></h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- HP Div -->
+					<div class="cell small-6 large-3 large-pull-6 topStatAsideContainer" id="hitPointsID">
+						<div class="cell topStatAside">
+							<img src="assets\front-end-images\hpfull.png" class="topStatImgSide" />
+							<div class="topStatText">
+								<h3 id="health"></h3>
+								<h4>Hitpoints</h4>
+							</div>
+						</div>
+					</div>
+					<!-- AC Div -->
+					<div class="cell small-6 large-3 topStatAsideContainer" id="hitPointsID">
+						<div class="cell topStatAside">
+							<img src="assets\front-end-images\acfull.png" class="topStatImgSide" />
+							<div class="topStatText">
+								<h3 id="armor"></h3>
+								<h4>Armor Class</h4>
+							</div>
+						</div>
 					</div>
 				</div>
-				<!-- Name/Class Div -->
-
-				<div class="medium-6 small-4 cell topStat topName" id="nameID">
-					<img src="assets\front-end-images\burnbanner.png" id="topBanner">
-					<div class="topNameText">
-					<h1 contenteditable="false" id = "characterName">Humberferg</h1>
-					<h3 class = "inline" id = "gender">Female</h3>
-					<h3 class = "inline" id = "race">Dwarf</h3>
-					<h3 class = "inline" id = "class">Cleric</h3>
-					</div>
-				</div>
-				<!-- AC Div -->
-				<div class="medium-2 small-4 cell topStat" id="armorID">
-					<img src="assets\front-end-images\acfull.png" id="topStatImg">
-					<div class="topStatText">
-					<h4>Armor Class</h4>
-					</div>
-				</div>
-			</div>
+				<!-- end of 1st row -->
+				
 				<!--Help Button-->
 				<div class="helpButton">
 					<a class="button tiny" href="#" id="help-guide" data-reveal-id="hg-modal">Help Guide
@@ -84,7 +107,8 @@
 						</div>
 					</a>
 				</div>
-			<br />
+				<br/>
+			</div>
 
 			<!-- Left side stats -->
 			<div class="containerLeft">
@@ -93,7 +117,7 @@
 					<div class="medium-2 small-2 cell sideStat" id="strDiv">
 						<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
 						<div class="sideStatText">
-							<h3 id="sideStatNumber">10</h3>
+							<h3 id="sideStatNumber1">10</h3>
 							<h3>Strength</h3>
 						</div>
 					</div>
@@ -101,7 +125,7 @@
 					<div class="medium-2 small-2 cell sideStat" id="dexDiv">
 						<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
 						<div class="sideStatText">
-							<h3 id="sideStatNumber">10</h3>
+							<h3 id="sideStatNumber2">10</h3>
 							<h3>Dexterity</h3>
 						</div>
 					</div>
@@ -110,7 +134,7 @@
 					<div class="medium-2 small-2 cell sideStat" id="conDiv">
 						<img src="assets\front-end-images\medieval-frame.jpg" class ="sideStatImg">
 						<div class="sideStatText">
-							<h3 id="sideStatNumber">10</h3>
+							<h3 id="sideStatNumber3">10</h3>
 							<h3>Constitution</h3>
 						</div>
 					</div>
@@ -177,7 +201,7 @@
 						<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
 						<div class="sideStatText">
 
-							<h3 id="sideStatNumber">10</h3>
+							<h3 id="sideStatNumber4">10</h3>
 							<h3>Intelligence</h3>
 						</div>
 					</div>
@@ -186,7 +210,7 @@
 						<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
 						<div class="sideStatText">
 
-							<h3 id="sideStatNumber">10</h3>
+							<h3 id="sideStatNumber5">10</h3>
 							<h3>Wisdom</h3>
 						</div>
 					</div>
@@ -195,7 +219,7 @@
 					<div class="medium-2 small-2 cell sideStat" id="chaDiv">
 						<img src="assets\front-end-images\medieval-frame.jpg" class="sideStatImg">
 						<div class="sideStatText">
-							<h3 id="sideStatNumber">10</h3>
+							<h3 id="sideStatNumber6">10</h3>
 							<h3>Charisma</h3>
 						</div>
 					</div>
