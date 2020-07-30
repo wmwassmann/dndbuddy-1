@@ -1,15 +1,28 @@
+/* main container style */
+.mainContainer {
+	min-width: 950px;
+	max-width: 100%;
+}
+
+/* help button style */
 .helpButton {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 0;
 }
 
+/* main body style */
 body {
 	background-image: url(northern_chimera-rotated.png);
 	font-family: 'Grenze Gotisch', cursive;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: 'Grenze Gotisch', cursive;
 }
 
@@ -17,39 +30,92 @@ h3 {
 	font-size: 28px;
 }
 
-.topRow {
+/* style for the choice */
+.grid-namebanner {
 	justify-content: center;
 }
 
+.grid-namebanner ul {
+	justify-content: center;
+	font-size: 28px;
+}
+
+.grid-namebanner a {
+	color: black;
+}
+
+/* top row style */
+
+.topRow {
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
 .topStat {
-	height: 150px;
-	width: 150px;
+	position: relative;
 	text-align: center;
-	padding-top: 40px;
+}
+
+.topStatAsideContainer {
+	position: relative;
+}
+
+.topStatAside {
+	position: relative;
+	height: 100%;
+	max-width: 180px;
+	max-height: 180px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.topStatAsideRight {
+	position: relative;
+	height: 100%;
+	max-width: 180px;
+	max-height: 180px;
+	width: 100%;
+	margin-right: 5%;
 }
 
 .topStatText {
-	position: relative;
-	height: 10px;
-	width: 100px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 60%;
+	height: 100%;
 	margin: auto;
-	bottom: 180px;
+	padding-top: 20%;
+	text-align: center;
 }
 
-#topStatImg {
-	position: relative;
-	height: 180px;
-	width: 180px;
-	margin: auto;
-	bottom: 55px;
+.topStatImgSide {
+	height: auto;
+	width: 100%;
+	max-width: 180px;
+	object-fit: scale-down;
 }
 
 #topBanner {
-	position: relative;
 	height: 180px;
-	width: 910px;
+	width: 100%;
 	margin: auto;
-	bottom: 45px;
+}
+
+.topBannerText {
+	position: relative;
+	bottom: 150px;
+}
+
+#nameID {
+	max-height: 180px;
+}
+
+#characterName {
+	font-size: 3.5rem;
 }
 
 .topNameText {
@@ -58,16 +124,13 @@ h3 {
 	bottom: 190px;
 }
 
-.inline {
-	display: inline;
-}
-
 #edit-name-etc {
 	float: right;
 	margin-right: 40px;
 	background: transparent;
 	opacity: 50%;
 }
+/* top row style end */
 
 .containerLeft {
 	position: absolute;
@@ -114,7 +177,6 @@ h3 {
 	font-size: 50px;
 }
 
-
 .sideStatImg {
 	position: relative;
 	height: 130px;
@@ -124,7 +186,6 @@ h3 {
 }
 
 .rightStats {
-
 }
 
 .containerCenterLeft {
@@ -163,14 +224,12 @@ h3 {
 	position: relative;
 	bottom: 130px;
 	left: 25px;
-
 }
 
 #centerVidImg {
 	height: 280px;
 	width: 530px;
 }
-
 
 .containerDice {
 	position: absolute;
@@ -184,7 +243,6 @@ h3 {
 	height: 280px;
 	width: 530px;
 }
-
 
 .containerDice {
 	position: absolute;
@@ -201,7 +259,7 @@ h3 {
 }
 
 .diceTray {
-	border:solid;
+	border: solid;
 }
 
 * {
@@ -250,67 +308,14 @@ h3 {
 	font-family: 'Grenze Gotisch', cursive;
 }
 
-/* For tablets */
-@media only screen and (max-width: 1024px) {
-	.containerCenterLeft {
-		position: absolute;
-		left: 280px;
-		height: 140px;
-		width: 465px;
-	}
-	
-	.centerLeftGrid {
-		height: 200px;
-		width: 465px;
-	}
-	
-	.containerCenterRight {
-		position: absolute;
-		top: 380px;
-		left: 280px;
-		height: 149px;
-		width: 465px;
-	}
-	
-	.centerRightGrid {
-		height: 190px;
-		width: 465px;
-	}
-
-	.centerBioText {
-		box-sizing: border-box;
-		max-width: inherit;
-		max-height: inherit;
-		position: relative;
-		bottom: 95px;
-		left: 25px;
-	
-	}
-
-	#centerBioImg {
-		height: 100px;
-		width: 465px;
-	}
-
-	#centerVidImg {
-		height: 190px;
-		width: 465px;
-	}
-
-	.containerDice {
-		position: absolute;
-		top: 580px;
-		left: 150px;
-		height: 150px;
-		width: 950px;
-	}
-	.diceGrid {
-		height: 100px;
-		width: 730px;
-		font-size: 80px;
-		text-align: center;
+/* For medium screen (i.e. tablets) */
+@media screen and (min-width: 640px) and (max-width: 768px) {
+	.mainContainer {
+		min-width: 380px;
+		max-width: 100%;
 	}
 }
+
 
 /* Ipads */
 
@@ -446,5 +451,6 @@ h3 {
 	.diceGrid {
 		height: 170px;
 		width: 375px;
+
 	}
 }
