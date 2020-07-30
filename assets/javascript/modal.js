@@ -424,6 +424,7 @@ $('#toRandom').click(function () {
 	// calls the image to be generated at this point
 	randomImage();
 	weaponsSpells();
+
 	stats();
 
 	// close modal1
@@ -772,7 +773,9 @@ $(document).on('click', '.toModal6', function () {
 		playerSelection[2] === 'Close' &&
 		playerSelection[3] === 'Spells'
 	) {
+
 		suggestion = 'Cleric';
+
 		playerSelection.push(suggestion);
 		console.log(playerSelection[4]);
 		saveToLocal(playerSelection);
@@ -835,6 +838,7 @@ $(document).on('click', '.toModal6', function () {
 	// calls the image to be generated at this point
 	randomImage();
 	weaponsSpells();
+
 	stats();
 
 	// close modal5
