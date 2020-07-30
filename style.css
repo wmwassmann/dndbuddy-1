@@ -30,6 +30,13 @@ h3 {
 	font-size: 28px;
 }
 
+.hitpoints {
+	font-size: 40px;
+	font-weight: bold;
+	color: black;
+	display:inline;
+}
+
 /* style for the choice */
 .grid-namebanner {
 	justify-content: center;
@@ -88,7 +95,7 @@ h3 {
 	width: 60%;
 	height: 100%;
 	margin: auto;
-	padding-top: 20%;
+	padding-top: 15%;
 	text-align: center;
 }
 
