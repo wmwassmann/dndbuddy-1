@@ -30,7 +30,9 @@ h3 {
 	font-size: 28px;
 }
 
-
+.grid-namebanner {
+	justify-content: center;
+}
 /* style for the choice */
 ul {
 	justify-content: center;
