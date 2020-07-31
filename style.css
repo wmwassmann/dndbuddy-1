@@ -11,6 +11,10 @@
 	right: 0;
 }
 
+.fa-question-circle {
+	color: black;
+}
+
 .helpButtonMain {
 	position: fixed;
 	top: 0;
