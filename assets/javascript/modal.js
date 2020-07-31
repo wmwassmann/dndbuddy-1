@@ -944,6 +944,10 @@ function stats() {
 			int.innerHTML = '12';
 			wis.innerHTML = '12';
 			cha.innerHTML = '8';
+			$("#skill-1").html("<h5>" + "Athletics: +5" + "</h5>");
+			$("#skill-2").html("<h5>" + "Intimidation: +1" + "</h5>");
+			$("#skill-3").html(" ");
+			$("#skill-4").html(" ");
 		} else if (classDisplay === 'Ranger') {
 			hitpoints.innerHTML = '12';
 			armor.innerHTML = '14';
@@ -953,6 +957,10 @@ function stats() {
 			int.innerHTML = '12';
 			wis.innerHTML = '13';
 			cha.innerHTML = '8';
+			$("#skill-1").html("<h5>" + "Animal Handling: +3" + "</h5>");
+			$("#skill-2").html("<h5>" + "Survival: +3" + "</h5>");
+			$("#skill-3").html("<h5>" + "Perception: +3" + "</h5>");
+			$("#skill-4").html(" ");
 		} else if (classDisplay === 'Wizard') {
 			hitpoints.innerHTML = '10';
 			armor.innerHTML = '10';
@@ -962,6 +970,10 @@ function stats() {
 			int.innerHTML = '17';
 			wis.innerHTML = '14';
 			cha.innerHTML = '12';
+			$("#skill-1").html("<h5>" + "Arcana: +5" + "</h5>");
+			$("#skill-2").html("<h5>" + "Investigation: +5" + "</h5>");
+			$("#skill-3").html(" ");
+			$("#skill-4").html(" ");
 		} else if (classDisplay === 'Cleric') {
 			hitpoints.innerHTML = '15';
 			armor.innerHTML = '15';
@@ -971,6 +983,10 @@ function stats() {
 			int.innerHTML = '12';
 			wis.innerHTML = '15';
 			cha.innerHTML = '8';
+			$("#skill-1").html("<h5>" + "Medicine: +4" + "</h5>");
+			$("#skill-2").html("<h5>" + "Insight: +4" + "</h5>");
+			$("#skill-3").html(" ");
+			$("#skill-4").html(" ");
 		} else if (classDisplay === 'Rogue') {
 			hitpoints.innerHTML = '11';
 			armor.innerHTML = '13';
@@ -980,6 +996,10 @@ function stats() {
 			int.innerHTML = '10';
 			wis.innerHTML = '12';
 			cha.innerHTML = '15';
+			$("#skill-1").html("<h5>" + "Stealth: +4" + "</h5>");
+			$("#skill-2").html("<h5>" + "Acrobatics: +4" + "</h5>");
+			$("#skill-3").html("<h5>" + "Sleight of Hand: +4" + "</h5>");
+			$("#skill-4").html("<h5>" + "Persuasion: +4" + "</h5>");
 		}
 	} else if (race === 'Elf') {
 		if (classDisplay === 'Fighter') {
@@ -991,6 +1011,10 @@ function stats() {
 			int.innerHTML = '10';
 			wis.innerHTML = '12';
 			cha.innerHTML = '10';
+			$("#skill-1").html("<h5>" + "Athletics: +4" + "</h5>");
+			$("#skill-2").html("<h5>" + "Intimidation: +2" + "</h5>");
+			$("#skill-3").html(" ");
+			$("#skill-4").html(" ");
 		} else if (classDisplay === 'Ranger') {
 			hitpoints.innerHTML = '12';
 			armor.innerHTML = '16';
@@ -1000,6 +1024,10 @@ function stats() {
 			int.innerHTML = '10';
 			wis.innerHTML = '13';
 			cha.innerHTML = '10';
+			$("#skill-1").html("<h5>" + "Animal Handling: +3" + "</h5>");
+			$("#skill-2").html("<h5>" + "Survival: +3" + "</h5>");
+			$("#skill-3").html("<h5>" + "Perception: +3" + "</h5>");
+			$("#skill-4").html(" ");
 		} else if (classDisplay === 'Wizard') {
 			hitpoints.innerHTML = '10';
 			armor.innerHTML = '11';
@@ -1009,6 +1037,10 @@ function stats() {
 			int.innerHTML = '15';
 			wis.innerHTML = '14';
 			cha.innerHTML = '14';
+			$("#skill-1").html("<h5>" + "Arcana: +4" + "</h5>");
+			$("#skill-2").html("<h5>" + "Investigation: +4" + "</h5>");
+			$("#skill-3").html(" ");
+			$("#skill-4").html(" ");
 		} else if (classDisplay === 'Cleric') {
 			hitpoints.innerHTML = '15';
 			armor.innerHTML = '16';
@@ -1018,6 +1050,10 @@ function stats() {
 			int.innerHTML = '10';
 			wis.innerHTML = '15';
 			cha.innerHTML = '10';
+			$("#skill-1").html("<h5>" + "Medicine: +4" + "</h5>");
+			$("#skill-2").html("<h5>" + "Insight: +4" + "</h5>");
+			$("#skill-3").html(" ");
+			$("#skill-4").html(" ");
 		} else if (classDisplay === 'Rogue') {
 			hitpoints.innerHTML = '11';
 			armor.innerHTML = '14';
@@ -1027,6 +1063,10 @@ function stats() {
 			int.innerHTML = '8';
 			wis.innerHTML = '12';
 			cha.innerHTML = '17';
+			$("#skill-1").html("<h5>" + "Stealth: +5" + "</h5>");
+			$("#skill-2").html("<h5>" + "Acrobatics: +5" + "</h5>");
+			$("#skill-3").html("<h5>" + "Sleight of Hand: +5" + "</h5>");
+			$("#skill-4").html("<h5>" + "Persuasion: +5" + "</h5>");
 		}
 	} else if (race === 'Dwarf') {
 		if (classDisplay === 'Fighter') {
@@ -1038,6 +1078,10 @@ function stats() {
 			int.innerHTML = '10';
 			wis.innerHTML = '14';
 			cha.innerHTML = '8';
+			$("#skill-1").html("<h5>" + "Athletics: +4" + "</h5>");
+			$("#skill-2").html("<h5>" + "Intimidation: +1" + "</h5>");
+			$("#skill-3").html(" ");
+			$("#skill-4").html(" ");
 		} else if (classDisplay === 'Ranger') {
 			hitpoints.innerHTML = '14';
 			armor.innerHTML = '14';
@@ -1047,6 +1091,10 @@ function stats() {
 			int.innerHTML = '10';
 			wis.innerHTML = '15';
 			cha.innerHTML = '8';
+			$("#skill-1").html("<h5>" + "Animal Handling: +4" + "</h5>");
+			$("#skill-2").html("<h5>" + "Survival: +4" + "</h5>");
+			$("#skill-3").html("<h5>" + "Perception: +4" + "</h5>");
+			$("#skill-4").html(" ");
 		} else if (classDisplay === 'Wizard') {
 			hitpoints.innerHTML = '12';
 			armor.innerHTML = '10';
@@ -1056,6 +1104,10 @@ function stats() {
 			int.innerHTML = '15';
 			wis.innerHTML = '16';
 			cha.innerHTML = '12';
+			$("#skill-1").html("<h5>" + "Arcana: +4" + "</h5>");
+			$("#skill-2").html("<h5>" + "Investigation: +4" + "</h5>");
+			$("#skill-3").html(" ");
+			$("#skill-4").html(" ");
 		} else if (classDisplay === 'Cleric') {
 			hitpoints.innerHTML = '18';
 			armor.innerHTML = '15';
@@ -1065,6 +1117,10 @@ function stats() {
 			int.innerHTML = '10';
 			wis.innerHTML = '17';
 			cha.innerHTML = '8';
+			$("#skill-1").html("<h5>" + "Medicine: +5" + "</h5>");
+			$("#skill-2").html("<h5>" + "Insight: +5" + "</h5>");
+			$("#skill-3").html(" ");
+			$("#skill-4").html(" ");
 		} else if (classDisplay === 'Rogue') {
 			hitpoints.innerHTML = '13';
 			armor.innerHTML = '13';
@@ -1074,6 +1130,10 @@ function stats() {
 			int.innerHTML = '8';
 			wis.innerHTML = '14';
 			cha.innerHTML = '15';
+			$("#skill-1").html("<h5>" + "Stealth: +4" + "</h5>");
+			$("#skill-2").html("<h5>" + "Acrobatics: +4" + "</h5>");
+			$("#skill-3").html("<h5>" + "Sleight of Hand: +4" + "</h5>");
+			$("#skill-4").html("<h5>" + "Persuasion: +4" + "</h5>");
 		}
 	}
 }
