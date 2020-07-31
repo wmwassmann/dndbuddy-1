@@ -1,18 +1,20 @@
-var hitpoints = 14;
-var countplus = 0;
-var countminus = 0;
-
-$("#health").text(hitpoints);
-
 $("#hitplus").click(function() {
-    countplus ++;
-    var total = hitpoints + countplus + countminus;
-    $("#health").text(total);
+
+	var health = $("#health").text();
+	var hitpoints = parseInt(health);
+    var total = hitpoints + 1;
+	$("#health").text(total);
+	console.log(total);
 });
 
 $("#hitminus").click(function() {
-    countminus --;
-    var total = hitpoints + countplus + countminus;
-    $("#health").text(total);
+
+	var health = $("#health").text();
+	var hitpoints = parseInt(health);
+    var total = hitpoints -1;
+	$("#health").text(total);
+	console.log(total);
 });
+
+
 

@@ -13,7 +13,7 @@
 
 /* main body style */
 body {
-	background-image: url(northern_chimera-rotated.png);
+	background-image: url(assets/front-end-images/northern_chimera-rotated.png);
 	font-family: 'Grenze Gotisch', cursive;
 }
 
@@ -49,6 +49,10 @@ h3 {
 
 .grid-namebanner a {
 	color: black;
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+	border-color: black transparent transparent;
 }
 
 /* top row style */
@@ -139,125 +143,119 @@ h3 {
 }
 /* top row style end */
 
-.containerLeft {
-	position: absolute;
-	left: 0;
-}
-
-.containerRight {
-	position: absolute;
-	right: 0;
+/* third row begin */
+.thirdRow {
+	justify-content: center;
+	margin-bottom: 50px;
 }
 
 .statDiv {
-	height: 800px;
-	width: 150px;
 	text-align: center;
-	margin-left: 126px;
-}
-
-.statDivRight {
-	height: 800px;
-	width: 150px;
-	text-align: center;
-	margin-right: 126px;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 .sideStat {
-	padding-top: 40%;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	position: relative;
 }
 
 .sideStatText {
-	position: relative;
-	height: 10px;
-	width: 120px;
-	margin: auto;
-	bottom: 125px;
+	position: absolute;
+	width: 100%;
+	padding-left: auto;
+	padding-right: auto;
+	bottom: 25%;
+	font-size: 20px;
 }
 
-#sideStatNumber {
-	position: relative;
-	height: 20px;
-	width: 100px;
-	margin: auto;
-	bottom: 50px;
-	font-size: 50px;
+.sideStatNumber {
+	font-size: 2.5rem;
 }
 
 .sideStatImg {
-	position: relative;
-	height: 130px;
-	width: 150px;
+	width: 100%;
+	height: 100%;
 	margin: auto;
-	bottom: 60px;
+	bottom: 45px;
+	right: 20px;
 }
 
-.rightStats {
+.centerBioImage {
+	padding-left: auto;
+	padding-right: auto;
+	max-width: 100%;
+	max-height: 200px;
 }
 
-.containerCenterLeft {
-	position: absolute;
-	left: 285px;
-	height: 280px;
-	width: 480px;
+.vidImageDiv {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
 }
 
-.centerLeftGrid {
-	height: 280px;
-	width: 420px;
+#centerVidImg {
+	max-height: 300px;
+	max-width: 300px;
+	object-fit: cover;
 }
 
-.containerCenterRight {
-	position: absolute;
-	right: 280px;
-	height: 280px;
-	width: 530px;
-}
-
-.centerRightGrid {
-	height: 280px;
-	width: 530px;
-}
-
-#centerBioImg {
-	height: 140px;
-	width: 430px;
-}
-
-.centerBioText {
-	box-sizing: border-box;
-	max-width: inherit;
-	max-height: inherit;
+.skillDiv {
 	position: relative;
-	bottom: 130px;
-	left: 25px;
+	display: flex;
+	justify-content: center;
 }
 
-#centerVidImg {
-	height: 280px;
-	width: 530px;
+.skillImage {
+	height: 100%;
+}
+
+.skillText {
+	width: 90%;
+	position: absolute;
+	top: 5%;
+}
+
+.spellEquDiv {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.spellEquImage {
+	height: 100%;
+}
+
+.spellEquText {
+	width: 90%;
+	position: absolute;
+	top: 5%;
+}
+
+/* third row end */
+
+/* second & forth row begin  */
+.secondRow {
+	display: none;
+}
+
+.diceRow {
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 .containerDice {
-	position: absolute;
-	bottom: 110px;
-	left: 380px;
-	height: 150px;
+	min-height: 150px;
 	width: 950px;
 }
 
-#centerVidImg {
-	height: 280px;
-	width: 530px;
+.grid-container.full {
+	display: flex;
+	justify-content: center;
 }
 
-.containerDice {
-	position: absolute;
-	bottom: 110px;
-	left: 380px;
-	height: 150px;
-	width: 950px;
-}
 .diceGrid {
 	height: 100px;
 	width: 730px;
@@ -265,9 +263,23 @@ h3 {
 	text-align: center;
 }
 
-.diceTray {
-	border: solid;
+.diceTray1 {
+	border-left: solid;
+	border-top: solid;
+	border-bottom: solid;
+	display: flex;
+	justify-content: space-evenly;
 }
+
+.diceTray2 {
+	border-right: solid;
+	border-top: solid;
+	border-bottom: solid;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+/* second & forth row end */
 
 * {
 	box-sizing: border-box;
@@ -315,18 +327,70 @@ h3 {
 	font-family: 'Grenze Gotisch', cursive;
 }
 
-/* For medium screen (i.e. tablets) */
+/* For tablets */
 @media screen and (min-width: 640px) and (max-width: 768px) {
 	.mainContainer {
 		min-width: 380px;
 		max-width: 100%;
 	}
+
+	.topRow {
+		margin-bottom: 20px;
+	}
+
+	.secondRow {
+		display: block;
+	}
+
+	.forthRow {
+		display: none;
+	}
 }
 
-/* For small screens (i.e. phone)*/
+/* To resize for smaller screens */
+
 @media only screen and (max-width: 640px) {
 	.mainContainer {
 		min-width: 0px;
 		max-width: 100%;
+	}
+
+	.reveal button {
+		margin-bottom: 10px;
+		display: block;
+	}
+
+	.topRow {
+		margin-bottom: 20px;
+	}
+
+	.secondRow {
+		display: block;
+	}
+
+	.containerDice {
+		min-height: 280px;
+		width: 950px;
+	}
+
+	.forthRow {
+		display: none;
+	}
+
+	.diceTray1 {
+		border-left: solid;
+		border-top: solid;
+		border-bottom: solid;
+		border-right: solid;
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.diceTray2 {
+		border-right: solid;
+		border-bottom: solid;
+		border-left: solid;
+		display: flex;
+		justify-content: space-evenly;
 	}
 }
