@@ -4,7 +4,6 @@ $("#hitplus").click(function() {
 	var hitpoints = parseInt(health);
     var total = hitpoints + 1;
 	$("#health").text(total);
-	console.log(total);
 });
 
 $("#hitminus").click(function() {
@@ -13,8 +12,4 @@ $("#hitminus").click(function() {
 	var hitpoints = parseInt(health);
     var total = hitpoints -1;
 	$("#health").text(total);
-	console.log(total);
 });
-
-
-

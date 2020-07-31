@@ -42,7 +42,7 @@ h3 {
 }
 
 .hitpoints {
-	font-size: 40px;
+	font-size: 38px;
 	font-weight: bold;
 	color: black;
 	display:inline;
@@ -280,6 +280,7 @@ h3 {
 	border-bottom: solid;
 	display: flex;
 	justify-content: space-evenly;
+	background: khaki;
 }
 
 .diceTray2 {
@@ -288,6 +289,7 @@ h3 {
 	border-bottom: solid;
 	display: flex;
 	justify-content: space-evenly;
+	background: khaki;
 }
 
 /* second & forth row end */
@@ -395,6 +397,7 @@ h3 {
 		border-right: solid;
 		display: flex;
 		justify-content: space-evenly;
+		background: khaki;
 	}
 
 	.diceTray2 {
@@ -403,5 +406,6 @@ h3 {
 		border-left: solid;
 		display: flex;
 		justify-content: space-evenly;
+		background: khaki;
 	}
 }

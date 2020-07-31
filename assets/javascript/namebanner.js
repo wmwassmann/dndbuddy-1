@@ -1,18 +1,30 @@
+// Function to load character information from Local Storage if any exists
 $(window).on('load', function () {
+
+	//If statement to check if Local Storage has charcater info
 	if (localStorage.charClass != null) {
+		
+		//Get info from local storage
 		var name = localStorage.getItem('charName');
 		var gender = localStorage.getItem('charGender');
 		var race = localStorage.getItem('charRace');
 		var classDisplay = localStorage.getItem('charClass');
 
+		//Display info to html
 		$('#characterName').text(name);
 		$('#gender').text(gender);
 		$('#race').text(race);
 		$('#class').text(classDisplay);
 
+		//Calls functions to generate image, stats and weapons/skills
+		weaponsSpells();
 		randomImage();
 		stats();
-	} else {
+	}
+	
+	else {
+
+		//Generates name and creates dropdown for Gender, Race and Class
 		generateName();
 		$('#gender').text('Gender');
 		$('#race').text('Race');
@@ -21,7 +33,11 @@ $(window).on('load', function () {
 	}
 });
 
+
+// Random Name Function
 function generateName() {
+
+	// Random Name API, ajax GET and Then function
 	var queryURL =
 		'https://cors-anywhere.herokuapp.com/https://uzby.com/api.php?min=3&max=10';
 
@@ -35,10 +51,11 @@ function generateName() {
 	});
 }
 
-// Allows Character Name to be edited after double click
+//Function to edit Character Name
 function editName() {
 	$('#characterName').attr('contenteditable', 'true');
 
+	// If 1st Double Click, save button will be generated
 	if (count === 0) {
 		var saveButton = $('<button>');
 		$(saveButton).text('Save');
@@ -49,6 +66,7 @@ function editName() {
 		count = count + 1;
 	}
 
+	// Save Buttton sets user typed name to name banner, Local Storage and resets count
 	$('#saveBtn').click(function () {
 		$('#characterName').attr('contenteditable', 'false');
 		$('#saveBtn').remove();
@@ -58,12 +76,15 @@ function editName() {
 	});
 }
 
+// Allows Character Name to be edited after double click
 $('#characterName').dblclick(function () {
 	editName();
 });
 
-// Allows user to edit Gender, Race and Class after double click
+// Allows user to edit Gender, Race and Class
 function editGenderRaceClass() {
+
+	//Dynamically creates dropdown
 	$('#addDrop').attr('data-dropdown-menu', '');
 	$('#removeGender').addClass('is-dropdown-submenu-parent opens-right');
 	$('#removeRace').addClass('is-dropdown-submenu-parent opens-right');
@@ -559,14 +580,17 @@ function editGenderRaceClass() {
 	});
 }
 
+// Allows user to edit Gender, Race and Class after double click
 $('#gender').dblclick(function () {
 	editGenderRaceClass();
 });
 
+// Allows user to edit Gender, Race and Class after double click
 $('#race').dblclick(function () {
 	editGenderRaceClass();
 });
 
+// Allows user to edit Gender, Race and Class after double click
 $('#class').dblclick(function () {
 	editGenderRaceClass();
 });
