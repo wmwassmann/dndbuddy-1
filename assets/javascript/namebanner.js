@@ -535,7 +535,6 @@ function editGenderRaceClass() {
 		randomImage();
 		weaponsSpells();
 		stats();
-
 		var gender = localStorage.getItem('charGender');
 		var race = localStorage.getItem('charRace');
 		if (gender !== null) {

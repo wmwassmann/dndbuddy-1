@@ -1015,6 +1015,12 @@ $("#skills-guide").click(function () {
         $(skillsTitle).text("Skills");
         $(skillModal).append(skillsTitle);
 
+    //SKILLS EXPLAINED 
+        var skillsDesc = $("<p>");
+        $(skillsDesc).text("Each ability covers a broad range of capabilities, including Skills that a character or a monster can be proficient in. A skill represents a specific aspect of an ability score, and an individual’s proficiency in a skill demonstrates a focus on that aspect. Sometimes, the GM might ask for an ability check using a specific skill—for example, “Make a Wisdom (Perception) check.” At other times, a player might ask the GM if proficiency in a particular skill applies to a check. In either case, proficiency in a skill means an individual can add his or her Proficiency Bonus to Ability Checks that involve that skill. Without proficiency in the skill, the individual makes a normal ability check.");
+        $(skillModal).append(skillsDesc);
+
+
     //ACROBATICS
         //create Title html element
         var arcoTitle = $('<h2>');
