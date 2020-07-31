@@ -11,7 +11,7 @@ $('#toRandom').click(function () {
 	event.preventDefault();
 
 	// Picks a gender
-	var genderNum = getRandomInt(1);
+	var genderNum = getRandomInt(2);
 	if (genderNum === 0) {
 		playerSelection[0] = 'Male';
 	} else {
@@ -19,7 +19,7 @@ $('#toRandom').click(function () {
 	}
 
 	// Picks a race
-	var raceNum = getRandomInt(2);
+	var raceNum = getRandomInt(3);
 	if (raceNum === 0) {
 		playerSelection[1] = 'Dwarf';
 	} else if (raceNum === 1) {
@@ -29,7 +29,7 @@ $('#toRandom').click(function () {
 	}
 
 	// Picks a class
-	var classNum = getRandomInt(4);
+	var classNum = getRandomInt(5);
 	if (classNum === 0) {
 		playerSelection[4] = 'Cleric';
 	} else if (classNum === 1) {

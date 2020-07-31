@@ -16,14 +16,14 @@ $("#str-guide").click(function () {
     var strTitle = $('<h2>');
     // add text for the h1 tag
     $(strTitle).text("Strength");
-    // append the modal1h1 to the div
+    // append the modal to the div
     $(strModal).append(strTitle);
 
     var strText = $('<p>');
     $(strText).attr('id', 'strength-text');
     // add text for the h1 tag
     $(strText).text(" ");
-    // append the modal1h1 to the div
+    // append the modal to the div
     $(strModal).append(strText);
 
     //GET to pull Strength description from the API 
@@ -37,7 +37,7 @@ $("#str-guide").click(function () {
         $("#strength-text").text(strRes.desc)
     });
 
-        // create a button tag for the close button
+    // create a button tag for the close button
     var strClose = $('<button>');
     // add the class and attr for the button
     $(strClose).addClass('close-button');
@@ -71,14 +71,14 @@ $("#dex-guide").click(function () {
     var dexTitle = $('<h2>');
     // add text for the h1 tag
     $(dexTitle).text("Dexterity");
-    // append the modal1h1 to the div
+    // append the modal to the div
     $(dexModal).append(dexTitle);
 
     var dexText = $('<p>');
     $(dexText).attr('id', 'dex-text');
     // add text for the h1 tag
     $(dexText).text(" ");
-    // append the modal1h1 to the div
+    // append the modal to the div
     $(dexModal).append(dexText);
 
     //GET to pull Dexterity description from the API 
@@ -125,14 +125,14 @@ $("#con-guide").click(function () {
     var conTitle = $('<h2>');
     // add text for the h1 tag
     $(conTitle).text("Constitution");
-    // append the modal1h1 to the div
+    // append the modal to the div
     $(conModal).append(conTitle);
 
     var conText = $('<p>');
     $(conText).attr('id', 'con-text');
     // add text for the h1 tag
     $(conText).text(" ");
-    // append the modal1h1 to the div
+    // append the modal to the div
     $(conModal).append(conText);
 
     //GET to pull Constitution description from the API 
@@ -179,14 +179,14 @@ $("#int-guide").click(function () {
     var intTitle = $('<h2>');
     // add text for the h1 tag
     $(intTitle).text("Intelligence");
-    // append the modal1h1 to the div
+    // append the modal to the div
     $(intModal).append(intTitle);
 
     var intText = $('<p>');
     $(intText).attr('id', 'int-text');
     // add text for the h1 tag
     $(intText).text(" ");
-    // append the modal1h1 to the div
+    // append the modal to the div
     $(intModal).append(intText);
 
     //GET to pull Intelligence description from the API 
@@ -232,14 +232,14 @@ $("#wis-guide").click(function () {
     var wisTitle = $('<h2>');
     // add text for the h1 tag
     $(wisTitle).text("Wisdom");
-    // append the modal1h1 to the div
+    // append the modal to the div
     $(wisModal).append(wisTitle);
 
     var wisText = $('<p>');
     $(wisText).attr('id', 'wis-text');
     // add text for the h1 tag
     $(wisText).text(" ");
-    // append the modal1h1 to the div
+    // append the modal to the div
     $(wisModal).append(wisText);
 
     //GET to pull Wisdom description from the API 
@@ -286,14 +286,14 @@ $("#cha-guide").click(function () {
     var chaTitle = $('<h2>');
     // add text for the h1 tag
     $(chaTitle).text("Charisma");
-    // append the modal1h1 to the div
+    // append the modal to the div
     $(chaModal).append(chaTitle);
 
     var chaText = $('<p>');
     $(chaText).attr('id', 'charisma-text');
     // add text for the h1 tag
     $(chaText).text(" ");
-    // append the modal1h1 to the div
+    // append the modal to the div
     $(chaModal).append(chaText);
 
     //GET to pull Charisma description from the API 

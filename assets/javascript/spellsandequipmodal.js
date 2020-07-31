@@ -34,7 +34,7 @@ function guideRender() {
                 var fbdTitle = $('<h2>');
                 // add text for the h1 tag
                 $(fbdTitle).text("Fire Bolt");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal).append(fbdTitle);
 
                 //creates tags for description text
@@ -42,7 +42,7 @@ function guideRender() {
                 $(fbdText).attr('id', 'fbd-text');
                 // add text for the h1 tag
                 $(fbdText).text(" ");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal).append(fbdText);
 
                 //API "gets" spell info
@@ -59,7 +59,7 @@ function guideRender() {
                 var mhdTitle = $('<h2>');
                 // add text for the h1 tag
                 $(mhdTitle).text("Mage Hand");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal).append(mhdTitle);
 
                 //creates tags for description text
@@ -67,7 +67,7 @@ function guideRender() {
                 $(mhdText).attr('id', 'mhd-text');
                 // add text for the h1 tag
                 $(mhdText).text(" ");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal).append(mhdText);
 
                 //API "gets" spell info
@@ -82,17 +82,17 @@ function guideRender() {
             //MAGIC MISSILE
                 //create Title html element
                 var mmdTitle = $('<h2>');
-                // add text for the h1 tag
+                // add text for the h2 tag
                 $(mmdTitle).text("Magic Missile");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal).append(mmdTitle);
 
                 //creates tags for description text
                 var mmdText = $('<p>');
                 $(mmdText).attr('id', 'mmd-text');
-                // add text for the h1 tag
+                // add text for the p tag
                 $(mmdText).text(" ");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal).append(mmdText);
 
                 //API "gets" spell info
@@ -107,17 +107,17 @@ function guideRender() {
             //MAGE ARMOR
                 //create Title html element
                 var madTitle = $('<h2>');
-                // add text for the h1 tag
+                // add text for the h2 tag
                 $(madTitle).text("Mage Armor");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal).append(madTitle);
 
                 //creates tags for description text
                 var madText = $('<p>');
                 $(madText).attr('id', 'mad-text');
-                // add text for the h1 tag
+                // add text for the p tag
                 $(madText).text(" ");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal).append(madText);
 
                 //API "gets" spell info
@@ -166,17 +166,17 @@ function guideRender() {
             //GREAT WEAPON FIGHTING 
                 //create Title html element
                 var gwdTitle = $('<h2>');
-                // add text for the h1 tag
+                // add text for the h2 tag
                 $(gwdTitle).text("Great Weapon Fighting Style");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal2).append(gwdTitle);
 
                 //creates tags for description text
                 var gwdText = $('<p>');
                 $(gwdText).attr('id', 'gwd-text');
-                // add text for the h1 tag
+                // add text for the p tag
                 $(gwdText).text(" ");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal2).append(gwdText);
 
                 //API "gets" spell info
@@ -191,17 +191,17 @@ function guideRender() {
             //SECOND WIND 
                 //create Title html element
                 var swdTitle = $('<h2>');
-                // add text for the h1 tag
+                // add text for the h2 tag
                 $(swdTitle).text("Second Wind");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal2).append(swdTitle);
 
                 //creates tags for description text
                 var swdText = $('<p>');
                 $(swdText).attr('id', 'swd-text');
-                // add text for the h1 tag
+                // add text for the p tag
                 $(swdText).text(" ");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal2).append(swdText);
 
                 //API "gets" spell info
@@ -250,17 +250,17 @@ function guideRender() {
             //CURE WOUNDS
                 //create Title html element
                 var cwdTitle = $('<h2>');
-                // add text for the h1 tag
+                // add text for the h2 tag
                 $(cwdTitle).text("Cure Wounds");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal3).append(cwdTitle);
 
                 //creates tags for description text
                 var cwdText = $('<p>');
                 $(cwdText).attr('id', 'cwd-text');
-                // add text for the h1 tag
+                // add text for the p tag
                 $(cwdText).text(" ");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal3).append(cwdText);
 
                 //API "gets" spell info
@@ -275,17 +275,17 @@ function guideRender() {
             //SPARE THE DYING
                 //create Title html element
                 var sddTitle = $('<h2>');
-                // add text for the h1 tag
+                // add text for the h2 tag
                 $(sddTitle).text("Spare The Dying");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal3).append(sddTitle);
 
                 //creates tags for description text
                 var sddText = $('<p>');
                 $(sddText).attr('id', 'sdd-text');
-                // add text for the h1 tag
+                // add text for the p tag
                 $(sddText).text(" ");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal3).append(sddText);
 
                 //API "gets" spell info
@@ -334,17 +334,17 @@ function guideRender() {
             //SNEAK ATTACK    
                 //create Title html element
                 var snkdTitle = $('<h2>');
-                // add text for the h1 tag
+                // add text for the h2 tag
                 $(snkdTitle).text("Sneak Attack");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal4).append(snkdTitle);
 
                 //creates tags for description text
                 var snkdText = $('<p>');
                 $(snkdText).attr('id', 'snkd-text');
-                // add text for the h1 tag
+                // add text for the p tag
                 $(snkdText).text(" ");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal4).append(snkdText);
 
                 //API "gets" spell info
@@ -359,17 +359,17 @@ function guideRender() {
             //THIEVES' CANT
                 //create Title html element
                 var cantdTitle = $('<h2>');
-                // add text for the h1 tag
+                // add text for the h2 tag
                 $(cantdTitle).text("Thieves' Cant");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal4).append(cantdTitle);
 
                 //creates tags for description text
                 var cantdText = $('<p>');
                 $(cantdText).attr('id', 'cantd-text');
-                // add text for the h1 tag
+                // add text for the p tag
                 $(cantdText).text(" ");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal4).append(cantdText);
 
                 //API "gets" spell info
@@ -384,17 +384,17 @@ function guideRender() {
             //THIEVES' TOOLS
                 //create Title html element
                 var ttdTitle = $('<h2>');
-                // add text for the h1 tag
+                // add text for the h2 tag
                 $(ttdTitle).text("Thieves' Tools");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal4).append(ttdTitle);
 
                 //creates tags for description text
                 var ttdText = $('<p>');
                 $(ttdText).attr('id', 'ttd-text');
-                // add text for the h1 tag
+                // add text for the p tag
                 $(ttdText).text(" ");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal4).append(ttdText);
 
                 //API "gets" spell info
@@ -443,17 +443,17 @@ function guideRender() {
             //FAVORED ENEMY   
                 //create Title html element
                 var fedTitle = $('<h2>');
-                // add text for the h1 tag
+                // add text for the h2 tag
                 $(fedTitle).text("Favored Enemy");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal5).append(fedTitle);
 
                 //creates tags for description text
                 var fedText = $('<p>');
                 $(fedText).attr('id', 'fed-text');
-                // add text for the h1 tag
+                // add text for the p tag
                 $(fedText).text(" ");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal5).append(fedText);
 
                 //API "gets" spell info
@@ -468,17 +468,17 @@ function guideRender() {
             //NATURAL EXPLORER
                 //create Title html element
                 var nedTitle = $('<h2>');
-                // add text for the h1 tag
+                // add text for the h2 tag
                 $(nedTitle).text("Natural Explorer");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal5).append(nedTitle);
 
                 //creates tags for description text
                 var nedText = $('<p>');
                 $(nedText).attr('id', 'ned-text');
-                // add text for the h1 tag
+                // add text for the p tag
                 $(nedText).text(" ");
-                // append the modal1h1 to the div
+                // append the modal to the div
                 $(equipModal5).append(nedText);
 
                 //API "gets" spell info
