@@ -6,6 +6,16 @@
 
 /* help button style */
 .helpButton {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.fa-question-circle {
+	color: black;
+}
+
+.helpButtonMain {
 	position: fixed;
 	top: 0;
 	right: 0;
