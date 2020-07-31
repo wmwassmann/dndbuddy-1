@@ -239,6 +239,7 @@ function editGenderRaceClass() {
 		$('#removeRace').removeClass();
 		$('#raceUL').removeClass();
 		randomImage();
+		stats();
 		var gender = localStorage.getItem('charGender');
 		var classDisplay = localStorage.getItem('charClass');
 		if (gender !== null) {
@@ -278,6 +279,7 @@ function editGenderRaceClass() {
 		$('#removeRace').removeClass();
 		$('#raceUL').removeClass();
 		randomImage();
+		stats();
 		var gender = localStorage.getItem('charGender');
 		var classDisplay = localStorage.getItem('charClass');
 		if (gender !== null) {
@@ -317,6 +319,7 @@ function editGenderRaceClass() {
 		$('#removeRace').removeClass();
 		$('#raceUL').removeClass();
 		randomImage();
+		stats();
 		var gender = localStorage.getItem('charGender');
 		var classDisplay = localStorage.getItem('charClass');
 		if (gender !== null) {
@@ -359,6 +362,7 @@ function editGenderRaceClass() {
 		$('#classUL').removeClass();
 		randomImage();
 		weaponsSpells();
+		stats();
 		var gender = localStorage.getItem('charGender');
 		var race = localStorage.getItem('charRace');
 		if (gender !== null) {
@@ -399,6 +403,7 @@ function editGenderRaceClass() {
 		$('#classUL').removeClass();
 		randomImage();
 		weaponsSpells();
+		stats();
 		var gender = localStorage.getItem('charGender');
 		var race = localStorage.getItem('charRace');
 		if (gender !== null) {
@@ -439,6 +444,7 @@ function editGenderRaceClass() {
 		$('#classUL').removeClass();
 		randomImage();
 		weaponsSpells();
+		stats();
 		var gender = localStorage.getItem('charGender');
 		var race = localStorage.getItem('charRace');
 		if (gender !== null) {
@@ -479,6 +485,7 @@ function editGenderRaceClass() {
 		$('#classUL').removeClass();
 		randomImage();
 		weaponsSpells();
+		stats();
 		var gender = localStorage.getItem('charGender');
 		var race = localStorage.getItem('charRace');
 		if (gender !== null) {
@@ -518,8 +525,8 @@ function editGenderRaceClass() {
 		$('#removeClass').removeClass();
 		$('#classUL').removeClass();
 		randomImage();
-
 		weaponsSpells();
+		stats();
 		var gender = localStorage.getItem('charGender');
 		var race = localStorage.getItem('charRace');
 		if (gender !== null) {
