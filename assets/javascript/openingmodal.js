@@ -456,7 +456,7 @@ $(document).on('click', '.toModal7', function () {
 	);
 
 	// Split Youtube API key to prevent API key theft
-	var apikey1 = 'AIzaSyCWx6jN3pnU';
+	var apikey1 = 'AIzaSyCWx6jN3pnUi';
 	var apikey2 = '-0v7oF5wMmI3z';
 	var apikey3 = 'MEx2_ctmc';
 
