@@ -1,33 +1,47 @@
-/* main container style */
+/* Part 1 - main container style */
+/* Part 1.1 - set the size fot the main container
+Note: Please refer to @ media query for different min-width for the main container (Part 1.1.a)*/
+* {
+	box-sizing: border-box;
+}
+
 .mainContainer {
 	min-width: 950px;
 	max-width: 100%;
 }
+/* end of Part 1.1 */
 
-/* help button style */
+/* Part 1.2 - help button style */
+/* set the position for the help button */
 .helpButton {
+	/* keep the help button on the right top corner of the container */
 	position: absolute;
 	top: 0;
 	right: 0;
 }
-
+/* the style for the question mark button */
 .fa-question-circle {
 	color: black;
 	top: 0;
 }
-
+/* the user guide button */
 .helpButtonMain {
+	/* fixed the position so it will move with the screen */
 	position: fixed;
 	top: 0;
 	right: 0;
+	/* change the z-index to make the button show on top of other element */
+	z-index: 10;
 }
+/* end of part 1.2 */
 
-/* main body style */
+/* Part 1.3 - main body style */
+/* set the background image and font style */
 body {
 	background-image: url(assets/front-end-images/northern_chimera-rotated.png);
 	font-family: 'Grenze Gotisch', cursive;
 }
-
+/* set the font size for all title */
 h1,
 h2,
 h3,
@@ -36,19 +50,53 @@ h5,
 h6 {
 	font-family: 'Grenze Gotisch', cursive;
 }
-
+/* set the font size for h3 */
 h3 {
 	font-size: 28px;
 }
+/* end of part 1.3 */
+/* end of Part 1 */
 
-.hitpoints {
-	font-size: 38px;
-	font-weight: bold;
-	color: black;
-	display:inline;
+/* Part 2 - style for the 1st row */
+/* Part 2.1  - the style for the main div for 1st row
+Note : Please refer to @ media query for different margin-bottom for the top row (Part 2.1.a) */
+.topRow {
+	/* align the item in center and add the margin for the bottom  */
+	justify-content: center;
+	margin-bottom: 50px;
 }
+/* end of Part 2.1 */
 
-/* style for the choice */
+/* Part 2.2 - the style for the name banner 
+			(the container for the user name/gender/race/class) */
+/* Part 2.2.1 - the style for the div to keep the name banner item*/
+.topStat {
+	/* align the text in center */
+	text-align: center;
+	max-height: 180px;
+}
+/* Part 2.2.2 - the style for the image for the name banner */
+#topBanner {
+	height: 180px;
+	width: 100%;
+	margin: auto;
+}
+/* Part 2.2.3 - the style for the text on the banner image */
+.topBannerText {
+	position: relative;
+	bottom: 150px;
+}
+/* Part 2.2.4 - the style for the character name */
+#characterName {
+	font-size: 3.5rem;
+}
+/* test (take out before final submit) */
+/* .topNameText {
+	position: relative;
+	margin: auto;
+	bottom: 190px;
+} */
+/* Part 2.2.5 - style for the dropdown selection for gender/race/class */
 .grid-namebanner {
 	justify-content: center;
 }
@@ -65,24 +113,12 @@ h3 {
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
 	border-color: black transparent transparent;
 }
-
-/* top row style */
-
-.topRow {
-	justify-content: center;
-	margin-bottom: 50px;
-}
-
-.topStat {
-	position: relative;
-	text-align: center;
-}
-
+/* end of part 2.2.5 */
+/* end of Part 2.2 */
+/* Part 2.3 - the style for the aside div (for Hitpoint and Amour class) */
+/* Part 2.3.1 - the style of the main aside div */
 .topStatAsideContainer {
-	position: relative;
-}
-
-.topStatAside {
+	/* make the positon relative for the absolute child item */
 	position: relative;
 	height: 100%;
 	max-width: 180px;
@@ -91,16 +127,14 @@ h3 {
 	margin-right: auto;
 	margin-left: auto;
 }
-
-.topStatAsideRight {
-	position: relative;
-	height: 100%;
-	max-width: 180px;
-	max-height: 180px;
+/* Part 2.3.2 - the style for the hitpoint and Amour image */
+.topStatImgSide {
+	height: auto;
 	width: 100%;
-	margin-right: 5%;
+	max-width: 180px;
+	object-fit: scale-down;
 }
-
+/* Part 2.3.3 - the style for the text on the hitpoint and Amour image */
 .topStatText {
 	position: absolute;
 	left: 0;
@@ -110,49 +144,69 @@ h3 {
 	width: 60%;
 	height: 100%;
 	margin: auto;
-	padding-top: 15%;
+	padding-top: 20%;
 	text-align: center;
 }
+/* part 2.3.4 - the style for the number on the hitpoint and Amour image */
+.topStatTextNum {
+	font-size: 38px;
+	font-weight: bold;
+	color: black;
+	display: inline;
+}
+/* end of part 2.3 */
+/* end of Part 2 - 1st row style*/
 
-.topStatImgSide {
-	height: auto;
-	width: 100%;
-	max-width: 180px;
-	object-fit: scale-down;
+/* Part 3 - styling for the dice row */
+/* Part 3.1 - hide the upper row dice for large screen
+Note: the @media query will display second row (Part 3.1.a & 3.1.b)*/
+.secondRow {
+	display: none;
+}
+/* Part 3.2 - the styling for the dice row */
+.diceRow {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+/* Part 3.3 - set the style for the dice container 
+Note: different container max-dimension in @media query (Part 3.3.a) */
+.containerDice {
+	min-height: 150px;
+	width: 950px;
 }
 
-#topBanner {
-	height: 180px;
-	width: 100%;
-	margin: auto;
+.grid-container.full {
+	display: flex;
+	justify-content: center;
 }
-
-.topBannerText {
-	position: relative;
-	bottom: 150px;
+/* Part 3.4 - set a row for styling the dice tray */
+.diceGrid {
+	height: 100px;
+	width: 730px;
+	font-size: 80px;
+	text-align: center;
 }
-
-#nameID {
-	max-height: 180px;
+/* Part 3.5 - set the styling for the first 3 dice div
+Note: different border setup for the dice tray in small screen @media query (Part 3.5.a)  */
+.diceTray1 {
+	border-left: solid;
+	border-top: solid;
+	border-bottom: solid;
+	display: flex;
+	justify-content: space-evenly;
+	background-color: rgb(180, 150, 120);
 }
-
-#characterName {
-	font-size: 3.5rem;
+/* Part 3.6 - set the styling for the last 3 dice div 
+Note: different border setup for the dice tray in small screen @media query (Part 3.6.a)  */
+.diceTray2 {
+	border-right: solid;
+	border-top: solid;
+	border-bottom: solid;
+	display: flex;
+	justify-content: space-evenly;
+	background-color: rgb(180, 150, 120);
 }
-
-.topNameText {
-	position: relative;
-	margin: auto;
-	bottom: 190px;
-}
-
-#edit-name-etc {
-	float: right;
-	margin-right: 40px;
-	background: transparent;
-	opacity: 50%;
-}
-/* top row style end */
+/* end of Part 3 - styling for the dice row */
 
 /* third row begin */
 .thirdRow {
@@ -247,53 +301,6 @@ h3 {
 
 /* third row end */
 
-/* second & forth row begin  */
-.secondRow {
-	display: none;
-}
-
-.diceRow {
-	padding-left: 10%;
-	padding-right: 10%;
-}
-
-.containerDice {
-	min-height: 150px;
-	width: 950px;
-}
-
-.grid-container.full {
-	display: flex;
-	justify-content: center;
-}
-
-.diceGrid {
-	height: 100px;
-	width: 730px;
-	font-size: 80px;
-	text-align: center;
-}
-
-.diceTray1 {
-	border-left: solid;
-	border-top: solid;
-	border-bottom: solid;
-	display: flex;
-	justify-content: space-evenly;
-	background: khaki;
-}
-
-.diceTray2 {
-	border-right: solid;
-	border-top: solid;
-	border-bottom: solid;
-	display: flex;
-	justify-content: space-evenly;
-	background: khaki;
-}
-
-/* second & forth row end */
-
 * {
 	box-sizing: border-box;
 }
@@ -323,46 +330,48 @@ h3 {
 	margin-left: 5px;
 }
 
-#nameTitle {
+/* #nameTitle {
 	font-size: 1.8rem;
 	font-family: 'Grenze Gotisch', cursive;
-}
+} */
 
-#nameResultCell {
+/* #nameResultCell {
 	padding-left: 0px;
 	padding-top: 3px;
-}
+} */
 
-#nameResult {
+/* #nameResult {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-radius: 10px;
 	font-family: 'Grenze Gotisch', cursive;
-}
+} */
 
-/* For tablets */
+/* For medium screen (e.g. tablets) */
 @media screen and (min-width: 640px) and (max-width: 768px) {
+	/* Part 1.1.a - change the min-width of the main container */
 	.mainContainer {
 		min-width: 380px;
 		max-width: 100%;
 	}
-
+	/* Part 2.1.a - change the margin-bottom of the top row div */
 	.topRow {
 		margin-bottom: 20px;
 	}
 
+	/* Part 3.1.a - display the upper row dice */
 	.secondRow {
 		display: block;
 	}
-
+	/* Part 3.1.b - hide the upper row dice */
 	.forthRow {
 		display: none;
 	}
 }
 
-/* To resize for smaller screens */
-
+/* For small screens (e.g. phone) */
 @media only screen and (max-width: 640px) {
+	/* Part 1.1.a - change the min-width of the main container */
 	.mainContainer {
 		min-width: 0px;
 		max-width: 100%;
@@ -372,24 +381,25 @@ h3 {
 		margin-bottom: 10px;
 		display: block;
 	}
-
+	/* Part 2.1.a - change the margin-bottom of the top row div */
 	.topRow {
 		margin-bottom: 20px;
 	}
 
+	/* Part 3.1.a - display the upper row dice */
 	.secondRow {
 		display: block;
 	}
-
+	/* Part 3.1.b - hide the upper row dice */
+	.forthRow {
+		display: none;
+	}
+	/* Part 3.3.a - change the min-height for dice container dimension */
 	.containerDice {
 		min-height: 280px;
 		width: 950px;
 	}
-
-	.forthRow {
-		display: none;
-	}
-
+	/* Part 3.5.a - change the border setting */
 	.diceTray1 {
 		border-left: solid;
 		border-top: solid;
@@ -397,15 +407,15 @@ h3 {
 		border-right: solid;
 		display: flex;
 		justify-content: space-evenly;
-		background: khaki;
+		background-color: rgb(180, 150, 120);
 	}
-
+	/* Part 3.6.a - change the border setting */
 	.diceTray2 {
 		border-right: solid;
 		border-bottom: solid;
 		border-left: solid;
 		display: flex;
 		justify-content: space-evenly;
-		background: khaki;
+		background-color: rgb(180, 150, 120);
 	}
 }
