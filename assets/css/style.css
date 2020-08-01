@@ -37,6 +37,7 @@ Note: Please refer to @ media query for different min-width for the main contain
 	position: absolute;
 	top: 5%;
 	right: 5%;
+	z-index: 100;
 }
 /* the style for the question mark button */
 .fa-question-circle {
