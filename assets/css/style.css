@@ -7,7 +7,8 @@ Note: Please refer to @ media query for different min-width for the main contain
 
 .mainContainer {
 	min-width: 950px;
-	max-width: 100%;
+	width: 100%;
+	max-width: 1250px;
 }
 /* Part 1.1.2 - set the style for the scroll bar */
 ::-webkit-scrollbar {
@@ -56,7 +57,7 @@ Note: Please refer to @ media query for different min-width for the main contain
 /* Part 1.3 - main body style */
 /* set the background image and font style */
 body {
-	background-image: url(assets/front-end-images/northern_chimera-rotated.png);
+	background-image: url(../front-end-images/northern_chimera-rotated.png);
 	font-family: 'Grenze Gotisch', cursive;
 }
 /* set the font size for all title */
