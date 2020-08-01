@@ -1,33 +1,46 @@
-/* main container style */
+/* Part 1 - main container style */
+/* Part 1.1 - set the size fot the main container */
+* {
+	box-sizing: border-box;
+}
+
 .mainContainer {
 	min-width: 950px;
 	max-width: 100%;
 }
+/* end of Part 1.1 */
 
-/* help button style */
+/* Part 1.2 - help button style */
+/* set the position for the help button */
 .helpButton {
+	/* keep the help button on the right top corner of the container */
 	position: absolute;
 	top: 0;
 	right: 0;
 }
-
+/* the style for the question mark button */
 .fa-question-circle {
 	color: black;
 	top: 0;
 }
-
+/* the user guide button */
 .helpButtonMain {
+	/* fixed the position so it will move with the screen */
 	position: fixed;
 	top: 0;
 	right: 0;
+	/* change the z-index to make the button show on top of other element */
+	z-index: 10;
 }
+/* end of part 1.2 */
 
-/* main body style */
+/* Part 1.3 - main body style */
+/* set the background image and font style */
 body {
 	background-image: url(assets/front-end-images/northern_chimera-rotated.png);
 	font-family: 'Grenze Gotisch', cursive;
 }
-
+/* set the font size for all title */
 h1,
 h2,
 h3,
@@ -36,19 +49,52 @@ h5,
 h6 {
 	font-family: 'Grenze Gotisch', cursive;
 }
-
+/* set the font size for h3 */
 h3 {
 	font-size: 28px;
 }
+/* end of part 1.3 */
+/* end of Part 1 */
 
-.hitpoints {
-	font-size: 38px;
-	font-weight: bold;
-	color: black;
-	display:inline;
+/* Part 2 - style for the 1st row */
+/* Part 2.1  - the style for the main div for 1st row */
+.topRow {
+	/* align the item in center and add the margin for the bottom  */
+	justify-content: center;
+	margin-bottom: 50px;
 }
+/* end of Part 2.1 */
 
-/* style for the choice */
+/* Part 2.2 - the style for the name banner 
+			(the container for the user name/gender/race/class) */
+/* Part 2.2.1 - the style for the div to keep the name banner item*/
+.topStat {
+	/* align the text in center */
+	text-align: center;
+	max-height: 180px;
+}
+/* Part 2.2.2 - the style for the image for the name banner */
+#topBanner {
+	height: 180px;
+	width: 100%;
+	margin: auto;
+}
+/* Part 2.2.3 - the style for the text on the banner image */
+.topBannerText {
+	position: relative;
+	bottom: 150px;
+}
+/* Part 2.2.4 - the style for the character name */
+#characterName {
+	font-size: 3.5rem;
+}
+/* test (take out before final submit) */
+/* .topNameText {
+	position: relative;
+	margin: auto;
+	bottom: 190px;
+} */
+/* Part 2.2.5 - style for the dropdown selection for gender/race/class */
 .grid-namebanner {
 	justify-content: center;
 }
@@ -65,24 +111,12 @@ h3 {
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
 	border-color: black transparent transparent;
 }
-
-/* top row style */
-
-.topRow {
-	justify-content: center;
-	margin-bottom: 50px;
-}
-
-.topStat {
-	position: relative;
-	text-align: center;
-}
-
+/* end of part 2.2.5 */
+/* end of Part 2.2 */
+/* Part 2.3 - the style for the aside div (for Hitpoint and Amour class) */
+/* Part 2.3.1 - the style of the main aside div */
 .topStatAsideContainer {
-	position: relative;
-}
-
-.topStatAside {
+	/* make the positon relative for the absolute child item */
 	position: relative;
 	height: 100%;
 	max-width: 180px;
@@ -91,16 +125,14 @@ h3 {
 	margin-right: auto;
 	margin-left: auto;
 }
-
-.topStatAsideRight {
-	position: relative;
-	height: 100%;
-	max-width: 180px;
-	max-height: 180px;
+/* Part 2.3.2 - the style for the hitpoint and Amour image */
+.topStatImgSide {
+	height: auto;
 	width: 100%;
-	margin-right: 5%;
+	max-width: 180px;
+	object-fit: scale-down;
 }
-
+/* Part 2.3.3 - the style for the text on the hitpoint and Amour image */
 .topStatText {
 	position: absolute;
 	left: 0;
@@ -113,46 +145,15 @@ h3 {
 	padding-top: 15%;
 	text-align: center;
 }
-
-.topStatImgSide {
-	height: auto;
-	width: 100%;
-	max-width: 180px;
-	object-fit: scale-down;
+/* part 2.3.4 - the style for the number on the hitpoint and Amour image */
+.topStatTextNum {
+	font-size: 38px;
+	font-weight: bold;
+	color: black;
+	display: inline;
 }
-
-#topBanner {
-	height: 180px;
-	width: 100%;
-	margin: auto;
-}
-
-.topBannerText {
-	position: relative;
-	bottom: 150px;
-}
-
-#nameID {
-	max-height: 180px;
-}
-
-#characterName {
-	font-size: 3.5rem;
-}
-
-.topNameText {
-	position: relative;
-	margin: auto;
-	bottom: 190px;
-}
-
-#edit-name-etc {
-	float: right;
-	margin-right: 40px;
-	background: transparent;
-	opacity: 50%;
-}
-/* top row style end */
+/* end of part 2.3 */
+/* end of Part 2 - 1st row style*/
 
 /* third row begin */
 .thirdRow {
@@ -323,22 +324,22 @@ h3 {
 	margin-left: 5px;
 }
 
-#nameTitle {
+/* #nameTitle {
 	font-size: 1.8rem;
 	font-family: 'Grenze Gotisch', cursive;
-}
+} */
 
-#nameResultCell {
+/* #nameResultCell {
 	padding-left: 0px;
 	padding-top: 3px;
-}
+} */
 
-#nameResult {
+/* #nameResult {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-radius: 10px;
 	font-family: 'Grenze Gotisch', cursive;
-}
+} */
 
 /* For tablets */
 @media screen and (min-width: 640px) and (max-width: 768px) {
