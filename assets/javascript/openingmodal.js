@@ -23,7 +23,7 @@ $('#toModal2').click(function () {
 	// create a button tag for the answers
 	var modal2b1 = $('<button>');
 	// add the class and ID for the button
-	$(modal2b1).addClass('button toModal3');
+	$(modal2b1).addClass('button revealButton toModal3');
 	$(modal2b1).attr('id', 'maleBtn');
 	// add the data value for the button
 	$(modal2b1).attr('dataValue', 'Male');
@@ -35,7 +35,7 @@ $('#toModal2').click(function () {
 	// create a button tag for the answers
 	var modal2b2 = $('<button>');
 	// add the class and ID for the button
-	$(modal2b2).addClass('button toModal3');
+	$(modal2b2).addClass('button revealButton toModal3');
 	$(modal2b2).attr('id', 'femaleBtn');
 	// add the data value for the button
 	$(modal2b2).attr('dataValue', 'Female');
@@ -104,7 +104,7 @@ $(document).on('click', '.toModal3', function () {
 	// create a button tag for the answers
 	var modal3b1 = $('<button>');
 	// add the class and ID for the button
-	$(modal3b1).addClass('button toModal4');
+	$(modal3b1).addClass('button revealButton toModal4');
 	// add the data value for the button
 	$(modal3b1).attr('dataValue', 'Dwarf');
 	// add value for the button
@@ -115,7 +115,7 @@ $(document).on('click', '.toModal3', function () {
 	// create a button tag for the answers
 	var modal3b2 = $('<button>');
 	// add the class and ID for the button
-	$(modal3b2).addClass('button toModal4');
+	$(modal3b2).addClass('button revealButton toModal4');
 	// add the data value for the button
 	$(modal3b2).attr('dataValue', 'Elf');
 	// add value for the button
@@ -126,7 +126,7 @@ $(document).on('click', '.toModal3', function () {
 	// create a button tag for the answers
 	var modal3b3 = $('<button>');
 	// add the class and ID for the button
-	$(modal3b3).addClass('button toModal4');
+	$(modal3b3).addClass('button revealButton toModal4');
 	// add the data value for the button
 	$(modal3b3).attr('dataValue', 'Human');
 	// add value for the button
@@ -187,7 +187,7 @@ $(document).on('click', '.toModal4', function () {
 	// create a button tag for the answers
 	var modal4b1 = $('<button>');
 	// add the class and ID for the button
-	$(modal4b1).addClass('button toModal5');
+	$(modal4b1).addClass('button revealButton toModal5');
 	// add the data value for the button
 	$(modal4b1).attr('dataValue', 'Close');
 	// add value for the button
@@ -198,7 +198,7 @@ $(document).on('click', '.toModal4', function () {
 	// create a button tag for the answers
 	var modal4b2 = $('<button>');
 	// add the class and ID for the button
-	$(modal4b2).addClass('button toModal5');
+	$(modal4b2).addClass('button revealButton toModal5');
 	// add the data value for the button
 	$(modal4b2).attr('dataValue', 'Far');
 	// add value for the button
@@ -209,7 +209,7 @@ $(document).on('click', '.toModal4', function () {
 	// create a button tag for the answers
 	var modal4b3 = $('<button>');
 	// add the class and ID for the button
-	$(modal4b3).addClass('button toModal5');
+	$(modal4b3).addClass('button revealButton toModal5');
 	// add the data value for the button
 	$(modal4b3).attr('dataValue', 'Either');
 	// add value for the button
@@ -270,7 +270,7 @@ $(document).on('click', '.toModal5', function () {
 	// create a button tag for the answers
 	var modal5b1 = $('<button>');
 	// add the class and ID for the button
-	$(modal5b1).addClass('button toModal6');
+	$(modal5b1).addClass('button revealButton toModal6');
 	// add the data value for the button
 	$(modal5b1).attr('dataValue', 'Weapons');
 	// add value for the button
@@ -281,7 +281,7 @@ $(document).on('click', '.toModal5', function () {
 	// create a button tag for the answers
 	var modal5b2 = $('<button>');
 	// add the class and ID for the button
-	$(modal5b2).addClass('button toModal6');
+	$(modal5b2).addClass('button revealButton toModal6');
 	// add the data value for the button
 	$(modal5b2).attr('dataValue', 'Spells');
 	// add value for the button
@@ -309,7 +309,7 @@ $(document).on('click', '.toModal5', function () {
 });
 
 // 5. Suggestion modal
-$(document).on('click','.toModal6', function () {
+$(document).on('click', '.toModal6', function () {
 	event.preventDefault();
 	weapon = $(this).attr('dataValue');
 	playerSelection.push(weapon);
@@ -318,27 +318,25 @@ $(document).on('click','.toModal6', function () {
 		var suggestion = 'Rogue';
 		playerSelection.push(suggestion);
 		saveToLocal(playerSelection);
-	} 
-	
-	else if (playerSelection[2] === 'Far' && playerSelection[3] === 'Weapons') {
+	} else if (playerSelection[2] === 'Far' && playerSelection[3] === 'Weapons') {
 		suggestion = 'Ranger';
 		playerSelection.push(suggestion);
 		saveToLocal(playerSelection);
-	} 
-	
-	else if (playerSelection[2] === 'Far' && playerSelection[3] === 'Spells') {
+	} else if (playerSelection[2] === 'Far' && playerSelection[3] === 'Spells') {
 		suggestion = 'Wizard';
 		playerSelection.push(suggestion);
 		saveToLocal(playerSelection);
-	} 
-	
-	else if (playerSelection[2] === 'Close' && playerSelection[3] === 'Weapons') {
+	} else if (
+		playerSelection[2] === 'Close' &&
+		playerSelection[3] === 'Weapons'
+	) {
 		suggestion = 'Fighter';
 		playerSelection.push(suggestion);
 		saveToLocal(playerSelection);
-	} 
-	
-	else if (playerSelection[2] === 'Close' && playerSelection[3] === 'Spells') {
+	} else if (
+		playerSelection[2] === 'Close' &&
+		playerSelection[3] === 'Spells'
+	) {
 		suggestion = 'Cleric';
 		playerSelection.push(suggestion);
 		saveToLocal(playerSelection);
@@ -419,7 +417,7 @@ function saveToLocal(playerSelection) {
 	localStorage.setItem('charStyle', playerSelection[3]);
 	localStorage.setItem('charClass', playerSelection[4]);
 	$('#class').text(playerSelection[4]);
-	
+
 	// Remove dropdowm elements
 	$('#femList').remove();
 	$('#maleList').remove();
@@ -458,36 +456,39 @@ $(document).on('click', '.toModal7', function () {
 	);
 
 	// Split Youtube API key to prevent API key theft
-	var apikey1 = "AIzaSyCWx6jN3pnU";
-	var apikey2 = "-0v7oF5wMmI3z";
-	var apikey3 = "MEx2_ctmc";
+	var apikey1 = 'AIzaSyCWx6jN3pnU';
+	var apikey2 = '-0v7oF5wMmI3z';
+	var apikey3 = 'MEx2_ctmc';
 
 	// Youtube API Query and ajax GET
 	var queryURL =
 		'https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCRDVE5L1LTWhmPAKKbUBGtg&maxResults=5&q=' +
 		playerSelection[4] +
-		'%20crap%20guide&key=' + apikey1 + apikey2 + apikey3;
+		'%20crap%20guide&key=' +
+		apikey1 +
+		apikey2 +
+		apikey3;
 
 	$.ajax({
 		url: queryURL,
 		method: 'GET',
 	})
 
-	// Then function to play selected video
-	.then(function (response) {
-		selectedVideo = response.items[0].id.videoId;
+		// Then function to play selected video
+		.then(function (response) {
+			selectedVideo = response.items[0].id.videoId;
 
-		function youTubeReady() {
-			$('#player').attr(
-				'src',
-				'http://www.youtube.com/embed/' +
-					selectedVideo +
-					'?enablejsapi=1&origin=http://example.com'
-			);
-		}
+			function youTubeReady() {
+				$('#player').attr(
+					'src',
+					'http://www.youtube.com/embed/' +
+						selectedVideo +
+						'?enablejsapi=1&origin=http://example.com'
+				);
+			}
 
-		youTubeReady();
-	});
+			youTubeReady();
+		});
 
 	// create a button tag for the close button
 	var modal7b1 = $('<button>');
