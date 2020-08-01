@@ -481,7 +481,7 @@ $(document).on('click', '.toModal7', function () {
 			function youTubeReady() {
 				$('#player').attr(
 					'src',
-					'http://www.youtube.com/embed/' +
+					'https://www.youtube.com/embed/' +
 						selectedVideo +
 						'?enablejsapi=1&origin=http://example.com'
 				);
