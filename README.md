@@ -20,7 +20,17 @@ Please visit [https://wmwassmann.github.io/dndbuddy-1/](https://wmwassmann.githu
 For the feature of the site, please visit the [Features](#features) section for more details.
 
 # Screenshots
-![screenshot](https://github.com/rickyfuk/uwbootscamphomework4/blob/master/assets/image/screenshot.PNG?raw=true)
+Large Screen:
+
+![screenshotlg](assets/front-end-images/screenshot_large.PNG?raw=true)
+
+Medium Screen:
+
+![screenshotmd](assets/front-end-images/screenshot_medium.PNG?raw=true)
+
+Small Screen:
+
+![screenshotsm](assets/front-end-images/screenshot_small.PNG?raw=true)
 
 # Features
 D&D Buddy contains the following features:
