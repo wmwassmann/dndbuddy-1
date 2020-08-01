@@ -4,8 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>D&D Buddy</title>
+
 		<!-- CSS reset -->
 		<link rel="stylesheet" type="text/CSS" href="css/reset.css"/>
+
 		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;800&display=swap" rel="stylesheet">
 	
@@ -17,54 +19,60 @@
 		<link rel="stylesheet" href="css/foundation-float.css"/>
 		<link rel="stylesheet" href="css/foundation.min.css"/>
 		<link rel="stylesheet" href="css/foundation-float.min.css"/>
+
 		<!-- Dice Icon CSS -->
 		<link rel="stylesheet" href="https://cdn.rawgit.com/fponticelli/dicefont/fc6b8c47/dist/dicefont/dicefont.css"/>
+
 		<!-- Our CSS -->
 		<link rel="stylesheet" href="style.css"/>
+
 	</head>
 
 	<body>
 		<main id="mainBody">
+
 			<!-- This is the first modal -->
 			<div class="reveal revealStyle" id="Modal1" data-reveal>
 				<h1>Welcome!</h1>
-				<p class="lead">Do you need guidance in setting up your character?</p>
-				<button id="toModal2" class="button">
-					Yes
-				</button>
-				<button id="closeM1" class="button">
-					No
-				</button>
-				<button id="toRandom" class="button">
-					No, but please randomize a character for me
-				</button>
+				<p class="lead">Do you need guidance setting up your character?</p>
+					<button id="toModal2" class="button">
+						Yes
+					</button>
+					<button id="closeM1" class="button">
+						No
+					</button>
+					<button id="toRandom" class="button">
+						No, but please randomize a character for me
+					</button>
 				<button class="close-button" data-close aria-label="Close reveal" type="button">
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
-			<!-- container start-->
+
+			<!-- Container start-->
 			<div class="grid-container mainContainer small-centered">
+
 				<!-- 1st row -->
 				<div class="grid-x topRow align-middle">
+
 					<!-- Name/Class Div -->
 					<div class="cell small-12 large-6 topStat large-push-3" id="nameID">
 						<img src="assets\front-end-images\burnbanner.png" id="topBanner"/>
 						<div class="grid-x topBannerText">
 							<div class="cell">
 								<h1 contenteditable="false" id="characterName">Humberferg</h1>
-
 								<div class="grid-namebanner">
 									<ul id="addDrop" class="dropdown menu">
 										<li id="removeGender">
-											<a id="gender" href="#">Female</a>
+											<a id="gender" href="#"></a>
 											<ul id="genderUL" class="menu"></ul>
 										</li>
 										<li id="removeRace">
-											<a id="race" href="#">Dwarf</a>
+											<a id="race" href="#"></a>
 											<ul id="raceUL" class="menu"></ul>
 										</li>
 										<li id="removeClass">
-											<a id="class" href="#">Cleric</a>
+											<a id="class" href="#"></a>
 											<ul id="classUL" class="menu"></ul>
 										</li>
 									</ul>
@@ -72,181 +80,152 @@
 							</div>
 						</div>
 					</div>
+
 					<!-- HP Div -->
 					<div class="cell small-6 large-3 large-pull-6 topStatAsideContainer" id="hitPointsID">
 						<div class="cell topStatAside">
 							<img src="assets\front-end-images\hpfull.png" class="topStatImgSide"/>
 							<div class="topStatText">
-								<h3 id="health"></h3>
-
+								<a id ="hitplus" href ="#" class ="hitpoints">+</a>
+								<h4 id ="health" class ="hitpoints"></h4>
+								<a id ="hitminus" href ="#" class ="hitpoints">-</a>
 								<h4>Hitpoints</h4>
 							</div>
 						</div>
 					</div>
+
 					<!-- AC Div -->
 					<div class="cell small-6 large-3 topStatAsideContainer" id="hitPointsID">
 						<div class="cell topStatAside">
 							<img src="assets\front-end-images\acfull.png" class="topStatImgSide"/>
 							<div class="topStatText">
-								<h3 id="armor"></h3>
-
+								<h4 id="armor" class = "hitpoints"></h4>
 								<h4>Armor Class</h4>
 							</div>
 						</div>
 					</div>
+				
 				</div>
 				<!-- end of 1st row -->
 
 				<!--Help Button-->
-				<div class="helpButtonMain">
-					<a class="button tiny" href="#" id="help-guide" data-reveal-id="hg-modal">Help Guide
-						<div id="hg-modal" class="reveal-modal" data-reveal aria-labelledby="HG-Modal-Title" aria-hidden="true" role="dialog">
-							<h2 id="HG-Modal-Title">This is a modal.</h2>
-							<p>Help Guide Text Placeholder</p>
-							<a class="close-reveal-modal" aria-label="Close">&#215;</a>
-						</div>
-					</a>
+				<div class="helpButton">
+					<a class="button tiny" href="#" id="user-guide" data-reveal-id="ug-modal">User Guide</a>
 				</div>
-				<br>
 				<!-- end of help button -->
 
 				<!-- 2nd row -->
 				<div class="grid-x diceRow secondRow">
+
 					<!-- Dice roller -->
 					<div class="containerDice grid-container full">
 						<div class="grid-x diceGrid">
-
-							<div class="medium-6 small-12 diceTray1" style="background: khaki;">
+							<div class="medium-6 small-12 diceTray1">
 								<i id="diceup4" class="df-d4-4"></i>
 								<i id="diceup6" class="df-d6-6"></i>
 								<i id="diceup8" class="df-d8-8"></i>
 							</div>
-							<div class="medium-6 small-12 diceTray2" style="background: khaki;">
+							<div class="medium-6 small-12 diceTray2">
 								<i id="diceup10" class="df-d10-10"></i>
 								<i id="diceup12" class="df-d12-12"></i>
 								<i id="diceup20" class="df-d20-20"></i>
-                
 							</div>
 						</div>
 					</div>
 					<!-- End Diceroller container -->
+
 				</div>
 				<!-- end of second row -->
 
 				<!-- 3rd row -->
 				<div class="grid-x thirdRow">
+
 					<!-- Left side stats -->
-					<!-- 1st column **stat part 1-->
 					<div class="cell small-6 medium-3 large-2 statDiv">
-						<!-- Str -->
+
+						<!-- Strength -->
 						<div class="cell small-12 sideStat" id="strDiv">
 							<div class="helpButton">
 								<a class="fa fa-question-circle" href="#" id="str-guide" data-reveal-id="strength-modal"></a>
 							</div>
 							<img src="assets/front-end-images/medieval-frame.png" class="sideStatImg"/>
 							<div class="sideStatText">
-								<h2 class="sideStatNumber" id="sideStatNumber1">10</h2>
-
-								<h3>Strength
-									<!-- <div class="helpButton">
-										<a class="fa fa-question-circle" href="#" id="str-guide" data-reveal-id="strength-modal"></a>
-									</div> -->
-								</h3>
-
+								<h2 class="sideStatNumber" id="sideStatNumber1"></h2>
+								<h3>Strength</h3>
 							</div>
 						</div>
-						<!-- Dex -->
+
+						<!-- Dexterity -->
 						<div class="small-12 cell sideStat" id="dexDiv">
 							<div class="helpButton">
 								<a class="fa fa-question-circle" href="#" id="dex-guide" data-reveal-id="dexterity-modal"></a>
 							</div>
 							<img src="assets/front-end-images/medieval-frame.png" class="sideStatImg"/>
 							<div class="sideStatText">
-								<h2 class="sideStatNumber" id="sideStatNumber2">10</h2>
-
-								<h3>Dexterity
-									<!-- <div class="helpButton">
-										<a class="fa fa-question-circle" href="#" id="dex-guide" data-reveal-id="dexterity-modal"></a>
-									</div> -->
-								</h3>
-
+								<h2 class="sideStatNumber" id="sideStatNumber2"></h2>
+								<h3>Dexterity</h3>
 							</div>
 						</div>
-						<!-- Con -->
+
+						<!-- Constitution -->
 						<div class="small-12 cell sideStat" id="conDiv">
 							<div class="helpButton">
 								<a class="fa fa-question-circle" href="#" id="con-guide" data-reveal-id="constitution-modal"></a>
 							</div>
-							<img
-								src="assets/front-end-images/medieval-frame.png"
-								class="sideStatImg"
-							/>
+							<img src="assets/front-end-images/medieval-frame.png" class="sideStatImg"/>
 							<div class="sideStatText">
-								<h2 class="sideStatNumber" id="sideStatNumber3">10</h2>
-								<h3>Constitution
-									<!-- <div class="helpButton">
-										<a class="fa fa-question-circle" href="#" id="con-guide" data-reveal-id="constitution-modal"></a>
-									</div>	 -->
-								</h3>
-
+								<h2 class="sideStatNumber" id="sideStatNumber3"></h2>
+								<h3>Constitution</h3>
 							</div>
 						</div>
+
 					</div>
 					<!-- end of left side stats -->
+
 					<!-- Right side stats -->
-					<!-- 2nd column **stat part 2-->
 					<div class="cell small-6 medium-3 medium-push-6 large-2 large-push-8 statDiv">
-						<!-- Int -->
+						
+						<!-- Intelligence -->
 						<div class="cell small-12 sideStat" id="intDiv">
 							<div class="helpButton">
 								<a class="fa fa-question-circle" href="#" id="int-guide" data-reveal-id="intelligence-modal"></a>
 							</div>
 							<img src="assets/front-end-images/medieval-frame.png" class="sideStatImg"/>
 							<div class="sideStatText">
-								<h3 class="sideStatNumber" id="sideStatNumber4">10</h3>
-								<h3>Intelligence
-									<!-- <div class="helpButton">
-										<a class="fa fa-question-circle" href="#" id="int-guide" data-reveal-id="intelligence-modal"></a>
-									</div> -->
-								</h3>
-
+								<h3 class="sideStatNumber" id="sideStatNumber4"></h3>
+								<h3>Intelligence</h3>
 							</div>
 						</div>
-						<!-- Wis -->
+
+						<!-- Wisdom -->
 						<div class="small-12 cell sideStat" id="wisDiv">
 							<div class="helpButton" >
 								<a class="fa fa-question-circle" href="#" id="wis-guide" data-reveal-id="wisdom-modal"></a>
 							</div>
 							<img src="assets/front-end-images/medieval-frame.png" class="sideStatImg"/>
 							<div class="sideStatText">
-								<h3 class="sideStatNumber" id="sideStatNumber5">10</h3>
-								<h3>Wisdom
-									<!-- <div class="helpButton">
-										<a class="fa fa-question-circle" href="#" id="wis-guide" data-reveal-id="wisdom-modal"></a>
-									</div> -->
-								</h3>
-
+								<h3 class="sideStatNumber" id="sideStatNumber5"></h3>
+								<h3>Wisdom</h3>
 							</div>
 						</div>
-						<!-- Cha -->
+
+						<!-- Charisma -->
 						<div class="small-12 cell sideStat" id="chaDiv">
 							<div class="helpButton">
 								<a class="fa fa-question-circle" href="#" id="cha-guide" data-reveal-id="charisma-modal"></a>
 							</div>
 							<img src="assets/front-end-images/medieval-frame.png" class="sideStatImg"/>
 							<div class="sideStatText">
-								<h3 class="sideStatNumber" id="sideStatNumber6">10</h3>
-								<h3>Charisma
-									<!-- <div class="helpButton">
-										<a class="fa fa-question-circle" href="#" id="cha-guide" data-reveal-id="charisma-modal"></a>
-									</div> -->
-								</h3>
+								<h3 class="sideStatNumber" id="sideStatNumber6"></h3>
+								<h3>Charisma</h3>
 							</div>
 						</div>
+
 					</div>
 					<!-- end of right side stats -->
-					<!-- 3rd column-->
-					<!-- Middle left in large screen-->
+
+					
+					<!-- Character Image, Proficient Skills and Spells and Equipment Column-->
 					<div class="containerCenter cell medium-6 medium-pull-3 large-8 large-pull-2">
 						<div class="grid-x">
 							<!-- left side of the center container -->
@@ -271,7 +250,6 @@
 							<div class="containerCenterRight cell large-6 spellEquDiv">
 								<img src="assets\front-end-images\tornpaperbackground.png" id="spellEquImg" class="spellEquImage"/>
 								<div class="spellEquText">
-
 									<p>Spells and Equipment
 										<a class="fa fa-question-circle" href="#" id="equipment-guide" data-reveal-id="equip-modal"></a>
 									</p>
@@ -281,25 +259,27 @@
 									<p id="equipment-4"></p>
 									<p id="equipment-5"></p>
 									</div>
-
 								</div>
 							</div>
 						</div>
 					</div>
+					<!-- End of Character Image, Proficient Skills and Spells and Equipment Column -->
+
 				</div>
 				<!-- End of third row -->
 
 				<!-- 4th row -->
 				<div class="grid-x diceRow forthRow">
+
 					<!-- Dice roller -->
 					<div class="containerDice grid-container full">
 						<div class="grid-x diceGrid">
-							<div class="medium-6 small-12 diceTray1" style="background: khaki;">
+							<div class="medium-6 small-12 diceTray1">
 								<i id="dice4" class="df-d4-4"></i>
 								<i id="dice6" class="df-d6-6"></i>
 								<i id="dice8" class="df-d8-8"></i>
 							</div>
-							<div class="medium-6 small-12 diceTray2" style="background: khaki;">
+							<div class="medium-6 small-12 diceTray2">
 								<i id="dice10" class="df-d10-10"></i>
 								<i id="dice12" class="df-d12-12"></i>
 								<i id="dice20" class="df-d20-20"></i>
@@ -307,23 +287,36 @@
 						</div>
 					</div>
 					<!-- End Diceroller container -->
+
 				</div>
 				<!-- end of forth row -->
+
 			</div>
 			<!-- end of container -->
+
 		</main>
+
 		<!-- Foundation JS -->
 		<script src="js/vendor/jquery.js"></script>
 		<script src="js/vendor/what-input.js"></script>
 		<script src="js/vendor/foundation.min.js"></script>
-		<script src="assets/javascript/globalVar.js"></script>
-		<script src="assets/javascript/modal.js"></script>
 		<script>
 			$(document).foundation();
 		</script>
+
+		<!-- D&D Buddy JS -->
+		<script src="assets/javascript/globalVar.js"></script>
+		<script src="assets/javascript/openingmodal.js"></script>
+		<script src="assets/javascript/randomcharacter.js"></script>
+		<script src="assets/javascript/characterimage.js"></script>
+		<script src="assets/javascript/stats.js"></script>
+		<script src="assets/javascript/statmodalguides.js"></script>
 		<script src="assets/javascript/dice.js"></script>
 		<script src="assets/javascript/namebanner.js"></script>
+		<script src="assets/javascript/userguide.js"></script>
+		<script src="assets/javascript/skillsguidemodal.js"></script>
+		<script src="assets/javascript/spellsandequipmodal.js"></script>
+		<script src="assets/javascript/weaponspells.js"></script>
 
-		<script src="assets/javascript/5e.js"></script>
 	</body>
 </html>
