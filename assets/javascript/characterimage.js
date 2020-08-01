@@ -1,154 +1,155 @@
 // Arrays of character images
 var mhf = [
-	'images-male/human-fighter-1.png',
-	'images-male/human-fighter-2.png',
-	'images-male/human-fighter-3.png',
+	'assets/images-male/human-fighter-1.jpg',
+	'assets/images-male/human-fighter-2.jpg',
+	'assets/images-male/human-fighter-3.jpg',
 ];
 var mhra = [
-	'images-male/human-ranger-1.png',
-	'images-male/human-ranger-2.png',
-	//'images-male/human-ranger-3.png',
+	'assets/images-male/human-ranger-1.jpg',
+	'assets/images-male/human-ranger-2.jpg',
+	'assets/images-male/human-ranger-3.jpg',
 ];
 var mhm = [
-	'images-male/human-mage-1.png',
-	'images-male/human-mage-2.png',
-	//'images-male/human-mage-3.png',
+	'assets/images-male/human-mage-1.jpg',
+	'assets/images-male/human-mage-2.jpg',
+	'assets/images-male/human-mage-3.jpg',
 ];
 var mhc = [
-	'images-male/human-cleric-1.png',
-	'images-male/human-cleric-2.png',
-	'images-male/human-cleric-3.png',
+	'assets/images-male/human-cleric-1.jpg',
+	'assets/images-male/human-cleric-2.jpg',
+	'assets/images-male/human-cleric-3.jpg',
 ];
 var mhro = [
-	'images-male/human-rogue-1.png',
-	'images-male/human-rogue-2.png',
-	//'images-male/human-rogue-3.png',
+	'assets/images-male/human-rogue-1.jpg',
+	'assets/images-male/human-rogue-2.jpg',
+	'assets/images-male/human-rogue-3.jpg',
 ];
 var fhf = [
-	'images-female/human-fighter-1.png',
-	//'images-female/human-fighter-2.png',
-	//'images-female/human-fighter-3.png',
+	'assets/images-female/human-fighter-1.jpg',
+	'assets/images-female/human-fighter-2.jpg',
+	'assets/images-female/human-fighter-3.jpg',
 ];
 var fhra = [
-	'images-female/human-ranger-1.png',
-	//'images-female/human-ranger-2.png',
-	//'images-female/human-ranger-3.png',
+	'assets/images-female/human-ranger-1.jpg',
+	'assets/images-female/human-ranger-2.jpg',
+	'assets/images-female/human-ranger-3.jpg',
 ];
 var fhm = [
-	'images-female/human-mage-1.png',
-	//'images-female/human-mage-2.png',
-	//'images-female/human-mage-3.png',
+	'assets/images-female/human-mage-1.jpg',
+	'assets/images-female/human-mage-2.jpg',
+	'assets/images-female/human-mage-3.jpg',
 ];
 var fhc = [
-	'images-female/human-cleric-1.png',
-	//'images-female/human-cleric-2.png',
-	//'images-female/human-cleric-3.png',
+	'assets/images-female/human-cleric-1.jpg',
+	'assets/images-female/human-cleric-2.jpg',
+	'assets/images-female/human-cleric-3.jpg',
 ];
 var fhro = [
-	'assets/images-female/human-rogue-1.png',
-	//'images-female/human-rogue-2.png',
-	//'images-female/human-rogue-3.png',
+	'assets/images-female/human-rogue-1.jpg',
+	'assets/images-female/human-rogue-2.jpg',
+	'assets/images-female/human-rogue-3.jpg',
 ];
 var mef = [
-	'assets/images-male/elf-fighter-1.png',
-	'assets/images-male/elf-fighter-2.png',
-	'assets/images-male/elf-fighter-3.png',
+	'assets/images-male/elf-fighter-1.jpg',
+	'assets/images-male/elf-fighter-2.jpg',
+	'assets/images-male/elf-fighter-3.jpg',
 ];
 var fef = [
-	'assets/images-female/elf-fighter-1.png',
-	'assets/images-female/elf-fighter-2.png',
-	'assets/images-female/elf-fighter-3.png',
+	'assets/images-female/elf-fighter-1.jpg',
+	'assets/images-female/elf-fighter-2.jpg',
+	'assets/images-female/elf-fighter-3.jpg',
 ];
 var mera = [
-	'assets/images-male/elf-ranger-1.png',
-	'assets/images-male/elf-ranger-2.png',
-	'assets/images-male/elf-ranger-3.png',
+	'assets/images-male/elf-ranger-1.jpg',
+	'assets/images-male/elf-ranger-2.jpg',
+	'assets/images-male/elf-ranger-3.jpg',
 ];
 var fera = [
-	'assets/images-female/elf-ranger-1.png',
-	//'images-female/elf-ranger-2.png',
-	//'images-female/elf-ranger-3.png',
+	'assets/images-female/elf-ranger-1.jpg',
+	'assets/images-female/elf-ranger-2.jpg',
+	'assets/images-female/elf-ranger-3.jpg',
 ];
 var mem = [
-	'assets/images-male/elf-mage-1.png',
-	'assets/images-male/elf-mage-2.png',
-	'assets/images-male/elf-mage-3.png',
+	'assets/images-male/elf-mage-1.jpg',
+	'assets/images-male/elf-mage-2.jpg',
+	'assets/images-male/elf-mage-3.jpg',
 ];
 var fem = [
-	'assets/images-female/elf-mage-1.png',
-	//'images-female/elf-mage-2.png',
-	//'images-female/elf-mage-3.png',
+	'assets/images-female/elf-mage-1.jpg',
+	'assets/images-female/elf-mage-2.jpg',
+	'assets/images-female/elf-mage-3.jpg',
 ];
 var mec = [
-	'assets/images-male/elf-cleric-1.png',
-	'assets/images-male/elf-cleric-2.png',
-	'assets/images-male/elf-cleric-3.png',
+	'assets/images-male/elf-cleric-1.jpg',
+	'assets/images-male/elf-cleric-2.jpg',
+	'assets/images-male/elf-cleric-3.jpg',
 ];
 var fec = [
-	//'images-female/elf-cleric-1.png',
-	//'images-female/elf-cleric-2.png',
-	'assets/images-female/elf-cleric-3.png',
+	'assets/images-female/elf-cleric-1.jpg',
+	'assets/images-female/elf-cleric-2.jpg',
+	'assets/images-female/elf-cleric-3.jpg',
 ];
 var mero = [
-	//'images-male/elf-rogue-1.png',
-	'assets/images-male/elf-rogue-2.png',
-	'assets/images-male/elf-rogue-3.png',
+	'assets/images-male/elf-rogue-1.jpg',
+	'assets/images-male/elf-rogue-2.jpg',
+	'assets/images-male/elf-rogue-3.jpg',
 ];
 var fero = [
-	'assets/images-female/elf-rogue-1.png',
-	//'images-female/elf-rogue-2.png',
-	//'images-female/elf-rogue-3.png',
+	'assets/images-female/elf-rogue-1.jpg',
+	'assets/images-female/elf-rogue-2.jpg',
+	'assets/images-female/elf-rogue-3.jpg',
 ];
 var mdf = [
-	//'images-male/dwarf-fighter-1.png',
-	//'images-male/dwarf-fighter-2.png',
-	'assets/images-male/dwarf-fighter-3.png',
+	'assets/images-male/dwarf-fighter-1.jpg',
+	'assets/images-male/dwarf-fighter-2.jpg',
+	'assets/images-male/dwarf-fighter-3.jpg',
 ];
 var fdf = [
-	'assets/images-female/dwarf-fighter-1.png',
-	'assets/images-female/dwarf-fighter-2.png',
-	//'images-female/dwarf-fighter-3.png',
+	'assets/images-female/dwarf-fighter-1.jpg',
+	'assets/images-female/dwarf-fighter-2.jpg',
+	'assets/images-female/dwarf-fighter-3.jpg',
 ];
 var mdra = [
-	'assets/mages-male/dwarf-ranger-1.png',
-	//'images-male/dwarf-ranger-2.png',
-	'assets/images-male/dwarf-ranger-3.png',
+	'assets/images-male/dwarf-ranger-1.jpg',
+	'assets/images-male/dwarf-ranger-2.jpg',
+	'assets/images-male/dwarf-ranger-3.jpg',
 ];
 var fdra = [
-	'assets/images-female/dwarf-ranger-1.png',
-	//'images-female/dwarf-ranger-2.png',
-	//'images-female/dwarf-ranger-3.png',
+	'assets/images-female/dwarf-ranger-1.jpg',
+	'assets/images-female/dwarf-ranger-2.jpg',
+	'assets/images-female/dwarf-ranger-3.jpg',
 ];
 var mdm = [
-	//'images-male/dwarf-mage-1.png',
-	'assets/images-male/dwarf-mage-2.png',
-	'assets/images-male/dwarf-mage-3.png',
+	'assets/images-male/dwarf-mage-1.jpg',
+	'assets/images-male/dwarf-mage-2.jpg',
+	'assets/images-male/dwarf-mage-3.jpg',
 ];
 var fdm = [
-	'assets/images-female/dwarf-mage-1.png',
-	//'images-female/dwarf-mage-2.png',
-	//'images-female/dwarf-mage-3.png',
+	'assets/images-female/dwarf-mage-1.jpg',
+	'assets/images-female/dwarf-mage-2.jpg',
+	'assets/images-female/dwarf-mage-3.jpg',
 ];
 var mdc = [
-	//'images-male/dwarf-cleric-1.png',
-	//'images-male/dwarf-cleric-2.png',
-	'assets/images-male/dwarf-cleric-3.png',
+	'assets/images-male/dwarf-cleric-1.jpg',
+	'assets/images-male/dwarf-cleric-2.jpg',
+	'assets/images-male/dwarf-cleric-3.jpg',
 ];
 var fdc = [
-	//'images-female/dwarf-cleric-1.png',
-	//'images-female/dwarf-cleric-2.png',
-	'assets/images-female/dwarf-cleric-3.png',
+	'assets/images-female/dwarf-cleric-1.jpg',
+	'assets/images-female/dwarf-cleric-2.jpg',
+	'assets/images-female/dwarf-cleric-3.jpg',
 ];
 var mdro = [
-	'assets/images-male/dwarf-rogue-1.png',
-	'assets/images-male/dwarf-rogue-2.png',
-	'assets/images-male/dwarf-rogue-3.png',
+	'assets/images-male/dwarf-rogue-1.jpg',
+	'assets/images-male/dwarf-rogue-2.jpg',
+	'assets/images-male/dwarf-rogue-3.jpg',
 ];
 var fdro = [
-	'assets/images-female/dwarf-rogue-1.png',
-	//'images-female/dwarf-rogue-2.png',
-	//'images-female/dwarf-rogue-3.png',
+	'assets/images-female/dwarf-rogue-1.jpg',
+	'assets/images-female/dwarf-rogue-2.jpg',
+	'assets/images-female/dwarf-rogue-3.jpg',
 ];
+
 
 // Generates a random number which is called in each if statement
 function randomNumber(min, max) {
