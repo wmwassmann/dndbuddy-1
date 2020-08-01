@@ -1,46 +1,46 @@
 // Arrays of character images
 var mhf = [
-	'images-male/human-fighter-1.png',
-	'images-male/human-fighter-2.png',
-	'images-male/human-fighter-3.png',
+	'assets/images-male/human-fighter-1.png',
+	'assets/images-male/human-fighter-2.png',
+	'assets/images-male/human-fighter-3.png',
 ];
 var mhra = [
-	'images-male/human-ranger-1.png',
-	'images-male/human-ranger-2.png',
+	'assets/images-male/human-ranger-1.png',
+	'assets/images-male/human-ranger-2.png',
 	//'images-male/human-ranger-3.png',
 ];
 var mhm = [
-	'images-male/human-mage-1.png',
-	'images-male/human-mage-2.png',
+	'assets/images-male/human-mage-1.png',
+	'assets/images-male/human-mage-2.png',
 	//'images-male/human-mage-3.png',
 ];
 var mhc = [
-	'images-male/human-cleric-1.png',
-	'images-male/human-cleric-2.png',
-	'images-male/human-cleric-3.png',
+	'assets/images-male/human-cleric-1.png',
+	'assets/images-male/human-cleric-2.png',
+	'assets/images-male/human-cleric-3.png',
 ];
 var mhro = [
-	'images-male/human-rogue-1.png',
-	'images-male/human-rogue-2.png',
+	'assets/images-male/human-rogue-1.png',
+	'assets/images-male/human-rogue-2.png',
 	//'images-male/human-rogue-3.png',
 ];
 var fhf = [
-	'images-female/human-fighter-1.png',
+	'assets/images-female/human-fighter-1.png',
 	//'images-female/human-fighter-2.png',
 	//'images-female/human-fighter-3.png',
 ];
 var fhra = [
-	'images-female/human-ranger-1.png',
+	'assets/images-female/human-ranger-1.png',
 	//'images-female/human-ranger-2.png',
 	//'images-female/human-ranger-3.png',
 ];
 var fhm = [
-	'images-female/human-mage-1.png',
+	'assets/images-female/human-mage-1.png',
 	//'images-female/human-mage-2.png',
 	//'images-female/human-mage-3.png',
 ];
 var fhc = [
-	'images-female/human-cleric-1.png',
+	'assets/images-female/human-cleric-1.png',
 	//'images-female/human-cleric-2.png',
 	//'images-female/human-cleric-3.png',
 ];
@@ -110,7 +110,7 @@ var fdf = [
 	//'images-female/dwarf-fighter-3.png',
 ];
 var mdra = [
-	'assets/mages-male/dwarf-ranger-1.png',
+	'assets/images-male/dwarf-ranger-1.png',
 	//'images-male/dwarf-ranger-2.png',
 	'assets/images-male/dwarf-ranger-3.png',
 ];
