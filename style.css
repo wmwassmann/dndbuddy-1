@@ -1,5 +1,6 @@
 /* Part 1 - main container style */
-/* Part 1.1 - set the size fot the main container */
+/* Part 1.1 - set the size fot the main container
+Note: Please refer to @ media query for different min-width for the main container (Part 1.1.a)*/
 * {
 	box-sizing: border-box;
 }
@@ -57,7 +58,8 @@ h3 {
 /* end of Part 1 */
 
 /* Part 2 - style for the 1st row */
-/* Part 2.1  - the style for the main div for 1st row */
+/* Part 2.1  - the style for the main div for 1st row
+Note : Please refer to @ media query for different margin-bottom for the top row (Part 2.1.a) */
 .topRow {
 	/* align the item in center and add the margin for the bottom  */
 	justify-content: center;
@@ -142,7 +144,7 @@ h3 {
 	width: 60%;
 	height: 100%;
 	margin: auto;
-	padding-top: 15%;
+	padding-top: 20%;
 	text-align: center;
 }
 /* part 2.3.4 - the style for the number on the hitpoint and Amour image */
@@ -154,6 +156,57 @@ h3 {
 }
 /* end of part 2.3 */
 /* end of Part 2 - 1st row style*/
+
+/* Part 3 - styling for the dice row */
+/* Part 3.1 - hide the upper row dice for large screen
+Note: the @media query will display second row (Part 3.1.a & 3.1.b)*/
+.secondRow {
+	display: none;
+}
+/* Part 3.2 - the styling for the dice row */
+.diceRow {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+/* Part 3.3 - set the style for the dice container 
+Note: different container max-dimension in @media query (Part 3.3.a) */
+.containerDice {
+	min-height: 150px;
+	width: 950px;
+}
+
+.grid-container.full {
+	display: flex;
+	justify-content: center;
+}
+/* Part 3.4 - set a row for styling the dice tray */
+.diceGrid {
+	height: 100px;
+	width: 730px;
+	font-size: 80px;
+	text-align: center;
+}
+/* Part 3.5 - set the styling for the first 3 dice div
+Note: different border setup for the dice tray in small screen @media query (Part 3.5.a)  */
+.diceTray1 {
+	border-left: solid;
+	border-top: solid;
+	border-bottom: solid;
+	display: flex;
+	justify-content: space-evenly;
+	background-color: rgb(180, 150, 120);
+}
+/* Part 3.6 - set the styling for the last 3 dice div 
+Note: different border setup for the dice tray in small screen @media query (Part 3.6.a)  */
+.diceTray2 {
+	border-right: solid;
+	border-top: solid;
+	border-bottom: solid;
+	display: flex;
+	justify-content: space-evenly;
+	background-color: rgb(180, 150, 120);
+}
+/* end of Part 3 - styling for the dice row */
 
 /* third row begin */
 .thirdRow {
@@ -248,53 +301,6 @@ h3 {
 
 /* third row end */
 
-/* second & forth row begin  */
-.secondRow {
-	display: none;
-}
-
-.diceRow {
-	padding-left: 10%;
-	padding-right: 10%;
-}
-
-.containerDice {
-	min-height: 150px;
-	width: 950px;
-}
-
-.grid-container.full {
-	display: flex;
-	justify-content: center;
-}
-
-.diceGrid {
-	height: 100px;
-	width: 730px;
-	font-size: 80px;
-	text-align: center;
-}
-
-.diceTray1 {
-	border-left: solid;
-	border-top: solid;
-	border-bottom: solid;
-	display: flex;
-	justify-content: space-evenly;
-	background: khaki;
-}
-
-.diceTray2 {
-	border-right: solid;
-	border-top: solid;
-	border-bottom: solid;
-	display: flex;
-	justify-content: space-evenly;
-	background: khaki;
-}
-
-/* second & forth row end */
-
 * {
 	box-sizing: border-box;
 }
@@ -341,29 +347,31 @@ h3 {
 	font-family: 'Grenze Gotisch', cursive;
 } */
 
-/* For tablets */
+/* For medium screen (e.g. tablets) */
 @media screen and (min-width: 640px) and (max-width: 768px) {
+	/* Part 1.1.a - change the min-width of the main container */
 	.mainContainer {
 		min-width: 380px;
 		max-width: 100%;
 	}
-
+	/* Part 2.1.a - change the margin-bottom of the top row div */
 	.topRow {
 		margin-bottom: 20px;
 	}
 
+	/* Part 3.1.a - display the upper row dice */
 	.secondRow {
 		display: block;
 	}
-
+	/* Part 3.1.b - hide the upper row dice */
 	.forthRow {
 		display: none;
 	}
 }
 
-/* To resize for smaller screens */
-
+/* For small screens (e.g. phone) */
 @media only screen and (max-width: 640px) {
+	/* Part 1.1.a - change the min-width of the main container */
 	.mainContainer {
 		min-width: 0px;
 		max-width: 100%;
@@ -373,24 +381,25 @@ h3 {
 		margin-bottom: 10px;
 		display: block;
 	}
-
+	/* Part 2.1.a - change the margin-bottom of the top row div */
 	.topRow {
 		margin-bottom: 20px;
 	}
 
+	/* Part 3.1.a - display the upper row dice */
 	.secondRow {
 		display: block;
 	}
-
+	/* Part 3.1.b - hide the upper row dice */
+	.forthRow {
+		display: none;
+	}
+	/* Part 3.3.a - change the min-height for dice container dimension */
 	.containerDice {
 		min-height: 280px;
 		width: 950px;
 	}
-
-	.forthRow {
-		display: none;
-	}
-
+	/* Part 3.5.a - change the border setting */
 	.diceTray1 {
 		border-left: solid;
 		border-top: solid;
@@ -398,15 +407,15 @@ h3 {
 		border-right: solid;
 		display: flex;
 		justify-content: space-evenly;
-		background: khaki;
+		background-color: rgb(180, 150, 120);
 	}
-
+	/* Part 3.6.a - change the border setting */
 	.diceTray2 {
 		border-right: solid;
 		border-bottom: solid;
 		border-left: solid;
 		display: flex;
 		justify-content: space-evenly;
-		background: khaki;
+		background-color: rgb(180, 150, 120);
 	}
 }
