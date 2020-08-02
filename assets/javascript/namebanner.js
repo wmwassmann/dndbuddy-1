@@ -1,9 +1,7 @@
 // Function to load character information from Local Storage if any exists
 $(window).on('load', function () {
-
 	//If statement to check if Local Storage has charcater info
 	if (localStorage.charClass != null) {
-		
 		//Get info from local storage
 		var name = localStorage.getItem('charName');
 		var gender = localStorage.getItem('charGender');
@@ -20,10 +18,7 @@ $(window).on('load', function () {
 		weaponsSpells();
 		randomImage();
 		stats();
-	}
-	
-	else {
-
+	} else {
 		//Generates name and creates dropdown for Gender, Race and Class
 		generateName();
 		$('#gender').text('Gender');
@@ -33,10 +28,8 @@ $(window).on('load', function () {
 	}
 });
 
-
 // Random Name Function
 function generateName() {
-
 	// Random Name API, ajax GET and Then function
 	var queryURL =
 		'https://cors-anywhere.herokuapp.com/https://uzby.com/api.php?min=3&max=10';
@@ -83,13 +76,15 @@ $('#characterName').dblclick(function () {
 
 // Allows user to edit Gender, Race and Class
 function editGenderRaceClass() {
-
+	$(document).foundation();
 	//Dynamically creates dropdown
 	$('#addDrop').attr('data-dropdown-menu', '');
 	$('#removeGender').addClass('is-dropdown-submenu-parent opens-right');
 	$('#removeRace').addClass('is-dropdown-submenu-parent opens-right');
 	$('#removeClass').addClass('is-dropdown-submenu-parent opens-right');
-	$('#genderUL').addClass('menu submenu is-dropdown-submenu first-sub vertical');
+	$('#genderUL').addClass(
+		'menu submenu is-dropdown-submenu first-sub vertical'
+	);
 	$('#raceUL').addClass('menu submenu is-dropdown-submenu first-sub vertical');
 	$('#classUL').addClass('menu submenu is-dropdown-submenu first-sub vertical');
 
