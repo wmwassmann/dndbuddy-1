@@ -56,6 +56,11 @@ $('#toModal2').click(function () {
 	// append the button to the div
 	$(modal2).append(modal2b3);
 
+	// reset the gender/race/class count as 0
+	genderCount = 0;
+	raceCount = 0;
+	classCount = 0;
+
 	// close modal1
 	$('#Modal1').foundation('close');
 	// reload the foundation and open the modal2
@@ -494,6 +499,7 @@ $(document).on('click', '.toModal7', function () {
 	var modal7b1 = $('<button>');
 	// add the class and attr for the button
 	$(modal7b1).addClass('close-button');
+	$(modal7b1).attr('id', 'close-button-m7');
 	$(modal7b1).attr('data-close', '');
 	$(modal7b1).attr('aria-label', 'Close reveal');
 	$(modal7b1).attr('type', 'button');
@@ -507,4 +513,9 @@ $(document).on('click', '.toModal7', function () {
 	// reload the foundation and open the modal6
 	$(document).foundation();
 	$('#Modal7').foundation('open');
+});
+
+// stop the video if the close button for modal 7 is click
+$(document).on('click', '#close-button-m7', function () {
+	$('#Modal7 iframe').attr('src', '');
 });
